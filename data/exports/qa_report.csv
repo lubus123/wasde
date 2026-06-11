@@ -1,0 +1,884 @@
+release_id,table_slug,check_name,severity,detail,observed,expected
+wasde-1981-01-15,us_soybeans,use_identity,fail,soybeans/united_states 1980/81 Jan: |-50.0 - -60| > 1.5,-50.0,-60.0
+wasde-1981-03-11,us_soybeans,use_identity,fail,soybeans/united_states 1978/79 base: |1856.0 - 1757| > 1.5,1856.0,1757.0
+wasde-1981-03-11,us_soybeans,use_identity,fail,soybeans/united_states 1979/80 base: |2083.0 - 1998| > 1.5,2083.0,1998.0
+wasde-1981-03-11,us_soybeans,use_identity,fail,soybeans/united_states 1980/81 Feb: |1941.0 - 1850| > 1.5,1941.0,1850.0
+wasde-1982-08-12,us_soybeans,use_identity,fail,soybeans/united_states 1980/81 base: |11800.0 - 1043| > 1.5,11800.0,1043.0
+wasde-1982-08-12,us_soybeans,use_identity,fail,soybeans/united_states 1981/82 base: |1.0 - 1123| > 1.5,1.0,1123.0
+wasde-1982-11-12,us_soybeans,use_identity,fail,soybeans/united_states 1980/81 base: |1833.0 - 1043| > 1.5,1833.0,1043.0
+wasde-1982-11-12,us_soybeans,use_identity,fail,soybeans/united_states 1981/82 base: |2050.0 - 1051| > 1.5,2050.0,1051.0
+wasde-1982-11-12,us_soybeans,use_identity,fail,soybeans/united_states 1982/83 Nov: |2118.0 - 1108| > 1.5,2118.0,1108.0
+wasde-1982-11-12,us_soybeans,use_identity,fail,soybeans/united_states 1982/83 Oct: |2138.0 - 1108| > 1.5,2138.0,1108.0
+wasde-1982-12-13,us_corn,ending_identity,fail,feed_grains/united_states 1982/83 Nov: |105.3 - 105.9| > 0.15,105.3,105.90000000000003
+wasde-1983-01-24,us_soybeans,use_identity,fail,soybeans/united_states 1982/83 Jan: |2155.0 - 1090| > 1.5,2155.0,1090.0
+wasde-1984-04-10,us_soybeans,use_identity,fail,soybeans/united_states 1981/82 base: |2052.0 - 1053| > 1.5,2052.0,1053.0
+wasde-1984-04-10,us_soybeans,use_identity,fail,soybeans/united_states 1982/83 base: |2112.0 - 1146| > 1.5,2112.0,1146.0
+wasde-1984-04-10,us_soybeans,use_identity,fail,soybeans/united_states 1983/84 Apr: |1833.0 - 1021| > 1.5,1833.0,1021.0
+wasde-1984-04-10,us_soybeans,use_identity,fail,soybeans/united_states 1983/84 Mar: |1828.0 - 1031| > 1.5,1828.0,1031.0
+wasde-1984-04-24,us_soybeans,use_identity,fail,soybeans/united_states 1981/82 base: |55.8 - 53.3| > 1.5,55.8,53.3
+wasde-1984-04-24,us_soybeans,use_identity,fail,soybeans/united_states 1982/83 base: |57.5 - 54.8| > 0.15,57.5,54.8
+wasde-1984-04-24,us_soybeans,use_identity,fail,soybeans/united_states 1983/84 Apr: |50.4 - 46.5| > 0.15,50.4,46.5
+wasde-1984-04-24,us_soybeans,use_identity,fail,soybeans/united_states 1983/84 Mar: |49.9 - 46.6| > 0.15,49.9,46.6
+wasde-1984-08-13,us_soybeans,use_identity,fail,soybeans/united_states 1982/83 base: |11883.0 - 1.278e+04| > 1.5,11883.0,12783.0
+wasde-1984-10-12,us_soybeans,use_identity,fail,soybeans/united_states 1984/85 Oct: |1897.0 - 1050| > 1.5,1897.0,1050.0
+wasde-1984-10-24,us_soybeans,use_identity,fail,soybeans/united_states 1982/83 base: |57.1 - 54.6| > 0.15,57.1,54.599999999999994
+wasde-1984-11-13,us_corn,supply_identity,fail,feed_grains/united_states 1983/84 base: |234.0 - 232.8| > 0.2,234.0,232.79999999999998
+wasde-1984-12-11,us_soybeans,use_identity,fail,soybeans/united_states 1982/83 base: |11883.0 - 1.076e+04| > 1.5,11883.0,10763.0
+wasde-1984-12-11,us_soybeans,use_identity,fail,soybeans/united_states 1983/84 base: |11412.0 - 1.034e+04| > 1.5,11412.0,10338.0
+wasde-1984-12-11,us_soybeans,use_identity,fail,soybeans/united_states 1984/85 Dec: |11200.0 - 1.744e+04| > 1.5,11200.0,17435.0
+wasde-1984-12-11,us_soybeans,use_identity,fail,soybeans/united_states 1984/85 Nov: |11200.0 - 8.161e+04| > 1.5,11200.0,81609.0
+wasde-1985-06-10,us_soybeans,use_identity,fail,soybeans/united_states 1983/84 base: |1805.0 - 983| > 1,1805.0,983.0
+wasde-1985-06-10,us_soybeans,use_identity,fail,soybeans/united_states 1985/86 May: |1780.0 - 1920| > 1,1780.0,1920.0
+wasde-1985-11-12,us_corn,use_identity,fail,feed_grains/united_states 1985/86 Oct: |219.9 - 219.4| > 0.15,219.9,219.4
+wasde-1985-12-10,us_corn,supply_identity,fail,feed_grains/united_states 1983/84 base: |234.4 - 234.1| > 0.2,234.4,234.1
+wasde-1986-01-10,us_corn,use_identity,fail,feed_grains/united_states 1984/85 base: |218.8 - 219.7| > 0.15,218.8,219.70000000000002
+wasde-1986-08-12,us_soybeans,use_identity,fail,soybeans/united_states 1984/85 base: |11569.0 - 9917| > 1.5,11569.0,9917.0
+wasde-1986-08-12,us_soybeans,use_identity,fail,soybeans/united_states 1985/86 base: |11100.0 - 9850| > 1.5,11100.0,9850.0
+wasde-1986-08-12,us_soybeans,use_identity,fail,soybeans/united_states 1986/87 Aug: |11300.0 - 1.01e+04| > 1.5,11300.0,10100.0
+wasde-1986-08-12,us_soybeans,use_identity,fail,soybeans/united_states 1986/87 Jul: |11300.0 - 1.01e+04| > 1.5,11300.0,10100.0
+wasde-1986-09-11,us_soybeans,use_identity,fail,soybeans/united_states 1984/85 base: |1721.0 - 1062| > 1.5,1721.0,1062.0
+wasde-1986-09-11,us_soybeans,use_identity,fail,soybeans/united_states 1985/86 base: |1880.0 - 1080| > 1.5,1880.0,1080.0
+wasde-1986-09-11,us_soybeans,use_identity,fail,soybeans/united_states 1986/87 Aug: |1904.0 - 1084| > 1.5,1904.0,1084.0
+wasde-1986-11-10,us_soybeans,use_identity,fail,soybeans/united_states 1984/85 base: |1721.0 - 1030| > 1,1721.0,1030.0
+wasde-1986-11-10,us_soybeans,use_identity,fail,soybeans/united_states 1985/86 base: |1879.0 - 1053| > 1,1879.0,1053.0
+wasde-1986-11-10,us_soybeans,use_identity,fail,soybeans/united_states 1986/87 Nov: |1930.0 - 1080| > 1,1930.0,1080.0
+wasde-1986-11-10,us_soybeans,use_identity,fail,soybeans/united_states 1986/87 Oct: |1928.0 - 1073| > 1,1928.0,1073.0
+wasde-1987-08-11,us_soybeans,use_identity,fail,soybeans/united_states 1985/86 base: |1879.0 - 1793| > 1.5,1879.0,1793.0
+wasde-1987-08-11,us_soybeans,use_identity,fail,soybeans/united_states 1987/88 Jul: |1915.0 - 1825| > 1.5,1915.0,1825.0
+wasde-1992-05-11,us_soybeans,use_identity,fail,soybeans/united_states 1990/91 base: |1838.0 - 1226| > 1.5,1838.0,1226.0
+wasde-1992-05-11,us_soybeans,use_identity,fail,soybeans/united_states 1991/92 base: |2025.0 - 1282| > 1.5,2025.0,1282.0
+wasde-1992-05-11,us_soybeans,use_identity,fail,soybeans/united_states 1992/93 May: |1980.0 - 1275| > 1.5,1980.0,1275.0
+wasde-1992-06-10,us_soybeans,use_identity,fail,soybeans/united_states 1990/91 base: |1838.0 - 1187| > 1,1838.0,1187.0
+wasde-1992-06-10,us_soybeans,use_identity,fail,soybeans/united_states 1991/92 base: |2020.0 - 1235| > 1,2020.0,1235.0
+wasde-1992-06-10,us_soybeans,use_identity,fail,soybeans/united_states 1992/93 Jun: |1980.0 - 1235| > 1,1980.0,1235.0
+wasde-1992-06-10,us_soybeans,use_identity,fail,soybeans/united_states 1992/93 May: |1980.0 - 1235| > 1,1980.0,1235.0
+wasde-1992-08-12,us_soybeans,use_identity,fail,soybeans/united_states 1990/91 base: |1839.0 - 1744| > 1.5,1839.0,1744.0
+wasde-1992-08-12,us_soybeans,use_identity,fail,soybeans/united_states 1991/92 base: |2035.0 - 1940| > 1.5,2035.0,1940.0
+wasde-1992-08-12,us_soybeans,use_identity,fail,soybeans/united_states 1992/93 Aug: |2049.0 - 1955| > 1.5,2049.0,1955.0
+wasde-1992-08-12,us_soybeans,use_identity,fail,soybeans/united_states 1992/93 Jul: |2005.0 - 1910| > 1.5,2005.0,1910.0
+wasde-1994-01-12,us_soybeans,use_identity,fail,soybeans/united_states 1991/92 base: |2041.0 - 1309| > 1.5,2041.0,1309.0
+wasde-1994-01-12,us_soybeans,use_identity,fail,soybeans/united_states 1992/93 base: |2176.0 - 1343| > 1.5,2176.0,1343.0
+wasde-1994-01-12,us_soybeans,use_identity,fail,soybeans/united_states 1993/94 Dec: |1966.0 - 1295| > 1.5,1966.0,1295.0
+wasde-1994-01-12,us_soybeans,use_identity,fail,soybeans/united_states 1993/94 Jan: |1956.0 - 1295| > 1.5,1956.0,1295.0
+wasde-1994-07-12,us_soybeans,use_identity,fail,soybeans/united_states 1992/93 base: |2176.0 - 1343| > 1.5,2176.0,1343.0
+wasde-1994-07-12,us_soybeans,use_identity,fail,soybeans/united_states 1993/94 base: |1936.0 - 1326| > 1.5,1936.0,1326.0
+wasde-1994-07-12,us_soybeans,use_identity,fail,soybeans/united_states 1994/95 Jul: |2030.0 - 1363| > 1.5,2030.0,1363.0
+wasde-1994-07-12,us_soybeans,use_identity,fail,soybeans/united_states 1994/95 Jun: |2000.0 - 1348| > 1.5,2000.0,1348.0
+wasde-1994-10-12,us_soybeans,use_identity,fail,soybeans/united_states 1992/93 base: |2176.0 - 1343| > 1.5,2176.0,1343.0
+wasde-1994-10-12,us_soybeans,use_identity,fail,soybeans/united_states 1993/94 base: |1958.0 - 1339| > 1.5,1958.0,1339.0
+wasde-1994-10-12,us_soybeans,use_identity,fail,soybeans/united_states 1994/95 Oct: |2207.0 - 1414| > 1.5,2207.0,1414.0
+wasde-1994-10-12,us_soybeans,use_identity,fail,soybeans/united_states 1994/95 Sep: |2101.0 - 1378| > 1.5,2101.0,1378.0
+wasde-1995-07-12,us_soybeans,supply_identity,whitelisted,soybean_meal/united_states 1995/96 Jul: |33235.0 - 3.3e+04| > 2,33235.0,33000.0
+wasde-1981-12-11,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 ending_stocks prior-col(Nov),395.0,405.0
+wasde-1981-12-11,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 production prior-col(Nov),9096.4,245.7
+wasde-1981-12-11,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 use_total prior-col(Nov),7500.0,227.7
+wasde-1981-12-11,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 use_total prior-col(Nov),2002.0,1992.0
+wasde-1981-11-13,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 supply_total prior-col(Oct),280.1,282.90000000000003
+wasde-1981-11-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 beginning_stocks prior-col(Oct),320.0,1725.0
+wasde-1981-11-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 exports prior-col(Oct),840.0,2250.0
+wasde-1981-11-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 supply_total prior-col(Oct),2427.0,13495.0
+wasde-1981-11-13,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 use_total prior-col(Oct),230.3,233.10000000000002
+wasde-1981-11-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 imports prior-col(Oct),-0.0,9663.0
+wasde-1981-10-23,us_corn,mom_continuity,warn,corn/united_states 1981/82 ending_stocks prior-col(Sep),1503.0,1432.0
+wasde-1981-10-23,us_corn,mom_continuity,warn,corn/united_states 1981/82 supply_total prior-col(Sep),9078.0,8957.0
+wasde-1981-10-23,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 beginning_stocks prior-col(Sep),32.3,32.8
+wasde-1981-10-23,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 ending_stocks prior-col(Sep),47.8,45.6
+wasde-1981-10-23,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 exports prior-col(Sep),74.1,72.8
+wasde-1981-10-23,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 imports prior-col(Sep),0.3,3.0
+wasde-1981-10-23,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 production prior-col(Sep),245.3,241.4
+wasde-1981-10-23,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 beginning_stocks prior-col(Sep),1925.0,345.0
+wasde-1981-10-23,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 exports prior-col(Sep),2000.0,830.0
+wasde-1981-10-23,us_corn,mom_continuity,warn,corn/united_states 1981/82 use_total prior-col(Sep),7575.0,7525.0
+wasde-1981-10-23,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 supply_total prior-col(Sep),277.90000000000003,274.5
+wasde-1981-10-23,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 use_total prior-col(Sep),230.10000000000002,228.89999999999998
+wasde-1981-09-14,us_corn,mom_continuity,warn,corn/united_states 1981/82 area_planted prior-col(Aug),843.0,84.3
+wasde-1981-09-14,us_corn,mom_continuity,warn,corn/united_states 1981/82 imports prior-col(Aug),1.0,4.0
+wasde-1981-09-14,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 imports prior-col(Aug),3.0,-3.0
+wasde-1981-09-14,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1981/82 use_total prior-col(Aug),25230.0,230.0
+wasde-1981-09-14,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 use_total prior-col(Aug),300.0,-250.0
+wasde-1981-09-14,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 production prior-col(Aug),2017.0,-100.0
+wasde-1981-09-14,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1981/82 supply_total prior-col(Aug),25480.0,480.0
+wasde-1981-09-14,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 ending_stocks prior-col(Aug),13180.0,-250.0
+wasde-1981-08-13,us_corn,mom_continuity,warn,corn/united_states 1981/82 imports prior-col(Jul),4.0,1.0
+wasde-1981-08-13,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 imports prior-col(Jul),-2.0,12.0
+wasde-1981-08-13,us_corn,mom_continuity,warn,corn/united_states 1981/82 production prior-col(Jul),7113.0,7116.0
+wasde-1981-07-13,us_corn,mom_continuity,warn,corn/united_states 1981/82 use_total prior-col(Jun),7440.0,-500.0
+wasde-1981-07-13,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 domestic_total prior-col(Jun),152.2,-10.0
+wasde-1981-07-13,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 exports prior-col(Jun),71.7,-6.0
+wasde-1981-07-13,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 supply_total prior-col(Jun),256.7,-21.0
+wasde-1981-07-13,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1981/82 ending_stocks prior-col(Jun),260.0,-50.0
+wasde-1981-07-13,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 domestic_total prior-col(Jun),300.0,-300.0
+wasde-1981-07-13,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 production prior-col(Jun),11770.0,-700.0
+wasde-1981-07-13,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 supply_total prior-col(Jun),13970.0,-700.0
+wasde-1981-07-13,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 use_total prior-col(Jun),300.0,-350.0
+wasde-1981-07-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 exports prior-col(Jun),825.0,-60.0
+wasde-1981-07-13,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 ending_stocks prior-col(Jun),13670.0,-350.0
+wasde-1981-06-30,us_corn,mom_continuity,warn,corn/united_states 1981/82 area_harvested prior-col(May),73.5,75.0
+wasde-1981-06-30,us_corn,mom_continuity,warn,corn/united_states 1981/82 use_total prior-col(May),7440.0,7490.0
+wasde-1981-06-30,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 beginning_stocks prior-col(May),28.4,30.7
+wasde-1981-06-30,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 exports prior-col(May),71.7,72.9
+wasde-1981-06-30,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 imports prior-col(May),3.0,0.2
+wasde-1981-06-30,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1981/82 beginning_stocks prior-col(May),260.0,270.0
+wasde-1981-06-30,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1981/82 domestic_total prior-col(May),18350.0,18600.0
+wasde-1981-06-30,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1981/82 use_total prior-col(May),25700.0,25950.0
+wasde-1981-06-30,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 beginning_stocks prior-col(May),2200.0,1910.0
+wasde-1981-06-30,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 domestic_total prior-col(May),9300.0,9500.0
+wasde-1981-06-30,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 ending_stocks prior-col(May),2670.0,2290.0
+wasde-1981-06-30,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 production prior-col(May),11770.0,11880.0
+wasde-1981-06-30,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 supply_total prior-col(May),13970.0,13790.0
+wasde-1981-06-30,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 use_total prior-col(May),11300.0,11500.0
+wasde-1981-06-30,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 beginning_stocks prior-col(May),295.0,275.0
+wasde-1981-06-30,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 supply_total prior-col(May),2300.0,2280.0
+wasde-1981-06-30,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 use_total prior-col(May),1995.0,2005.0
+wasde-1981-06-30,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1981/82 supply_total prior-col(May),25960.0,26210.0
+wasde-1981-06-30,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 ending_stocks prior-col(May),305.0,275.0
+wasde-1981-04-24,us_corn,mom_continuity,warn,corn/united_states 1980/81 feed_and_residual prior-col(Mar),4100.0,-300.0
+wasde-1981-04-24,us_corn,mom_continuity,warn,feed_grains/united_states 1980/81 domestic_total prior-col(Mar),147.3,-9.0
+wasde-1981-04-24,us_corn,mom_continuity,warn,feed_grains/united_states 1980/81 exports prior-col(Mar),72.9,-3.0
+wasde-1981-04-24,us_corn,mom_continuity,warn,feed_grains/united_states 1980/81 feed_and_residual prior-col(Mar),123.2,-9.0
+wasde-1981-04-24,us_corn,mom_continuity,warn,feed_grains/united_states 1980/81 use_total prior-col(Mar),220.2,-11.0
+wasde-1981-04-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1980/81 ending_stocks prior-col(Mar),270.0,-50.0
+wasde-1981-04-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1980/81 exports prior-col(Mar),6700.0,-300.0
+wasde-1981-04-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1980/81 production prior-col(Mar),25094.0,-750.0
+wasde-1981-04-24,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1980/81 production prior-col(Mar),11550.0,-350.0
+wasde-1981-04-24,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1980/81 supply_total prior-col(Mar),12760.0,-350.0
+wasde-1981-04-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1980/81 ending_stocks prior-col(Mar),275.0,-50.0
+wasde-1981-04-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1980/81 exports prior-col(Mar),760.0,-30.0
+wasde-1981-04-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1980/81 use_total prior-col(Mar),1901.0,-50.0
+wasde-1981-04-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1980/81 use_total prior-col(Mar),7050.0,-500.0
+wasde-1981-01-15,us_corn,mom_continuity,warn,corn/united_states 1980/81 ending_stocks prior-col(Dec),546.0,315.0
+wasde-1981-01-15,us_corn,mom_continuity,warn,corn/united_states 1980/81 feed_and_residual prior-col(Dec),564.0,-300.0
+wasde-1981-01-15,us_corn,mom_continuity,warn,corn/united_states 1980/81 supply_total prior-col(Dec),8246.0,-135.0
+wasde-1981-01-15,us_corn,mom_continuity,warn,feed_grains/united_states 1980/81 domestic_total prior-col(Dec),155.3,-9.0
+wasde-1981-01-15,us_corn,mom_continuity,warn,feed_grains/united_states 1980/81 feed_and_residual prior-col(Dec),131.2,-9.0
+wasde-1981-01-15,us_corn,mom_continuity,warn,feed_grains/united_states 1980/81 supply_total prior-col(Dec),250.5,-3.0
+wasde-1981-01-15,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1980/81 ending_stocks prior-col(Dec),320.0,-50.0
+wasde-1981-01-15,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1980/81 exports prior-col(Dec),6700.0,-400.0
+wasde-1981-01-15,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1980/81 production prior-col(Dec),25694.0,-1200.0
+wasde-1981-01-15,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1980/81 supply_total prior-col(Dec),25920.0,-1200.0
+wasde-1981-01-15,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1980/81 ending_stocks prior-col(Dec),1480.0,-200.0
+wasde-1981-01-15,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1980/81 supply_total prior-col(Dec),12930.0,-550.0
+wasde-1981-01-15,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1980/81 use_total prior-col(Dec),11450.0,-500.0
+wasde-1981-01-15,us_soybeans,mom_continuity,warn,soybeans/united_states 1980/81 crush prior-col(Dec),1075.0,-50.0
+wasde-1981-01-15,us_soybeans,mom_continuity,warn,soybeans/united_states 1980/81 ending_stocks prior-col(Dec),210.0,-50.0
+wasde-1981-01-15,us_soybeans,mom_continuity,warn,soybeans/united_states 1980/81 exports prior-col(Dec),800.0,-50.0
+wasde-1981-01-15,us_soybeans,mom_continuity,warn,soybeans/united_states 1980/81 supply_total prior-col(Dec),2176.0,-50.0
+wasde-1981-01-15,us_soybeans,mom_continuity,warn,soybeans/united_states 1980/81 use_total prior-col(Dec),1966.0,-75.0
+wasde-1981-01-15,us_corn,mom_continuity,warn,corn/united_states 1980/81 production prior-col(Dec),6648.0,-135.0
+wasde-1981-01-15,us_corn,mom_continuity,warn,corn/united_states 1980/81 use_total prior-col(Dec),7700.0,-450.0
+wasde-1981-01-15,us_corn,mom_continuity,warn,feed_grains/united_states 1980/81 production prior-col(Dec),195.6,-3.0
+wasde-1981-01-15,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1980/81 domestic_total prior-col(Dec),18900.0,-1000.0
+wasde-1988-04-11,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1987/88 production prior-col(Mar),12880.0,30.0
+wasde-1987-11-09,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1987/88 domestic_total prior-col(Oct),21060.0,21040.0
+wasde-1987-11-09,us_soybeans,mom_continuity,warn,soybeans/united_states 1987/88 production prior-col(Oct),1948.0,1968.0
+wasde-1987-10-08,us_soybeans,mom_continuity,warn,soybeans/united_states 1987/88 use_total prior-col(Sep),1957.0,1937.0
+wasde-1987-09-10,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1987/88 production prior-col(Aug),28360.0,28369.0
+wasde-1987-09-10,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1987/88 supply_total prior-col(Aug),284350.0,28450.0
+wasde-1987-09-10,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1987/88 domestic_total prior-col(Aug),11159.0,11150.0
+wasde-1987-09-10,us_soybeans,mom_continuity,warn,soybeans/united_states 1987/88 beginning_stocks prior-col(Aug),305.0,505.0
+wasde-1987-09-10,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1987/88 production prior-col(Aug),12991.0,13000.0
+wasde-1987-08-11,us_corn,mom_continuity,warn,corn/united_states 1987/88 exports prior-col(Jul),1600.0,1400.0
+wasde-1986-10-10,us_corn,mom_continuity,warn,corn/united_states 1986/87 exports prior-col(Sep),1550.0,1950.0
+wasde-1986-10-10,us_corn,mom_continuity,warn,feed_grains/united_states 1986/87 area_planted prior-col(Sep),119.6,119.4
+wasde-1986-09-11,us_corn,mom_continuity,warn,corn/united_states 1986/87 imports prior-col(Aug),3.0,1.0
+wasde-1986-09-11,us_corn,mom_continuity,warn,corn/united_states 1986/87 production prior-col(Aug),8314.0,8316.0
+wasde-1986-09-11,us_corn,mom_continuity,warn,corn/united_states 1986/87 use_total prior-col(Aug),6750.0,6950.0
+wasde-1986-09-11,us_corn,mom_continuity,warn,feed_grains/united_states 1986/87 use_total prior-col(Aug),216.4,216.6
+wasde-1986-09-11,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1986/87 supply_total prior-col(Aug),25250.0,25299.0
+wasde-1986-09-11,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1986/87 use_total prior-col(Aug),24700.0,24900.0
+wasde-1986-09-11,us_soybeans,mom_continuity,warn,soybeans/united_states 1986/87 ending_stocks prior-col(Aug),600.0,1510.0
+wasde-1986-09-11,us_soybeans,mom_continuity,warn,soybeans/united_states 1986/87 production prior-col(Aug),1979.0,11605.0
+wasde-1986-09-11,us_soybeans,mom_continuity,warn,soybeans/united_states 1986/87 supply_total prior-col(Aug),2504.0,12810.0
+wasde-1986-09-11,us_soybeans,mom_continuity,warn,soybeans/united_states 1986/87 use_total prior-col(Aug),1904.0,11300.0
+wasde-1986-09-11,us_corn,mom_continuity,warn,corn/united_states 1986/87 supply_total prior-col(Aug),12130.0,12330.0
+wasde-1986-09-11,us_corn,mom_continuity,warn,corn/united_states 1986/87 beginning_stocks prior-col(Aug),3813.0,4013.0
+wasde-1986-09-11,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1986/87 imports prior-col(Aug),-0.0,49.0
+wasde-1986-09-11,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1986/87 ending_stocks prior-col(Aug),550.0,399.0
+wasde-1986-03-10,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 ending_stocks prior-col(Feb),112.7,109.5
+wasde-1986-02-10,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1985/86 exports prior-col(Jan),5600.0,5400.0
+wasde-1986-01-10,us_corn,mom_continuity,warn,corn/united_states 1985/86 ending_stocks prior-col(Dec),3052.0,3952.0
+wasde-1986-01-10,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1985/86 exports prior-col(Dec),3500.0,5500.0
+wasde-1986-01-10,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1985/86 use_total prior-col(Dec),25300.0,25390.0
+wasde-1986-01-10,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1985/86 domestic_total prior-col(Dec),9930.0,9950.0
+wasde-1986-01-10,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1985/86 supply_total prior-col(Dec),12293.0,12295.0
+wasde-1986-01-10,us_soybeans,mom_continuity,warn,soybeans/united_states 1985/86 area_harvested prior-col(Dec),42.2,62.2
+wasde-1986-01-10,us_soybeans,mom_continuity,warn,soybeans/united_states 1985/86 exports prior-col(Dec),673.0,675.0
+wasde-1986-01-10,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1985/86 ending_stocks prior-col(Dec),893.0,895.0
+wasde-1985-12-10,us_corn,mom_continuity,warn,corn/united_states 1985/86 use_total prior-col(Nov),7045.0,7945.0
+wasde-1985-12-10,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 domestic_total prior-col(Nov),169.7,1469.7
+wasde-1985-12-10,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 ending_stocks prior-col(Nov),102.6,192.6
+wasde-1985-12-10,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 exports prior-col(Nov),406.1,4.0
+wasde-1985-12-10,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1985/86 exports prior-col(Nov),3000.0,5500.0
+wasde-1985-12-10,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1985/86 production prior-col(Nov),25313.0,253513.0
+wasde-1985-12-10,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1985/86 use_total prior-col(Nov),253500.0,25300.0
+wasde-1985-12-10,us_soybeans,mom_continuity,warn,soybeans/united_states 1985/86 exports prior-col(Nov),675.0,673.0
+wasde-1985-12-10,us_soybeans,mom_continuity,warn,soybeans/united_states 1985/86 seed prior-col(Nov),60.0,62.0
+wasde-1985-11-12,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 area_harvested prior-col(Oct),111.5,111.35
+wasde-1985-11-12,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 domestic_total prior-col(Oct),170.3,1790.3
+wasde-1985-11-12,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 exports prior-col(Oct),49.1,49.6
+wasde-1985-11-12,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 feed_and_residual prior-col(Oct),136.95,136.5
+wasde-1985-11-12,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 imports prior-col(Oct),0.9,0.5
+wasde-1985-11-12,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1985/86 ending_stocks prior-col(Oct),410.0,210.0
+wasde-1985-11-12,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1985/86 ending_stocks prior-col(Oct),8460.0,840.0
+wasde-1985-11-12,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1985/86 production prior-col(Oct),11410.0,11610.0
+wasde-1985-11-12,us_soybeans,mom_continuity,warn,soybeans/united_states 1985/86 use_total prior-col(Oct),1824.0,1826.0
+wasde-1985-11-12,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1985/86 supply_total prior-col(Oct),19910.0,12290.0
+wasde-1985-11-12,us_soybeans,mom_continuity,warn,soybeans/united_states 1985/86 supply_total prior-col(Oct),2424.0,2426.0
+wasde-1985-10-10,us_corn,mom_continuity,warn,corn/united_states 1985/86 area_harvested prior-col(Sep),74.8,749.0
+wasde-1985-10-10,us_corn,mom_continuity,warn,corn/united_states 1985/86 production prior-col(Sep),449.0,4469.0
+wasde-1985-10-10,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 exports prior-col(Sep),49.6,4.0
+wasde-1985-10-10,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 use_total prior-col(Sep),219.9,174.3
+wasde-1985-10-10,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1985/86 beginning_stocks prior-col(Sep),530.0,330.0
+wasde-1985-10-10,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1985/86 supply_total prior-col(Sep),25580.0,29980.0
+wasde-1985-10-10,us_soybeans,mom_continuity,warn,soybeans/united_states 1985/86 ending_stocks prior-col(Sep),555.0,5355.0
+wasde-1985-10-10,us_soybeans,mom_continuity,warn,soybeans/united_states 1985/86 exports prior-col(Sep),475.0,675.0
+wasde-1985-10-10,us_soybeans,mom_continuity,warn,soybeans/united_states 1985/86 residual prior-col(Sep),21.0,2.0
+wasde-1985-10-10,us_corn,mom_continuity,warn,corn/united_states 1985/86 use_total prior-col(Sep),7070.0,5070.0
+wasde-1985-10-10,us_corn,mom_continuity,warn,corn/united_states 1985/86 exports prior-col(Sep),3625.0,1625.0
+wasde-1985-10-10,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 imports prior-col(Sep),0.5,45.0
+wasde-1985-09-11,us_corn,mom_continuity,warn,corn/united_states 1985/86 beginning_stocks prior-col(Aug),1217.0,1242.0
+wasde-1985-09-11,us_corn,mom_continuity,warn,corn/united_states 1985/86 domestic_total prior-col(Aug),445.0,34445.0
+wasde-1985-09-11,us_corn,mom_continuity,warn,corn/united_states 1985/86 feed_and_residual prior-col(Aug),4.0,4325.0
+wasde-1985-09-11,us_corn,mom_continuity,warn,corn/united_states 1985/86 production prior-col(Aug),8246.0,8264.0
+wasde-1985-09-11,us_corn,mom_continuity,warn,corn/united_states 1985/86 use_total prior-col(Aug),7079.0,7148.0
+wasde-1985-09-11,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 domestic_total prior-col(Aug),17038.0,9.0
+wasde-1985-09-11,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 exports prior-col(Aug),49.6,6.0
+wasde-1985-09-11,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 feed_and_residual prior-col(Aug),126.5,136.5
+wasde-1985-09-11,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 imports prior-col(Aug),0.5,9.5
+wasde-1985-09-11,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 supply_total prior-col(Aug),314.2,304.8
+wasde-1985-08-12,us_corn,mom_continuity,warn,corn/united_states 1985/86 domestic_total prior-col(Jul),3410.0,5419.0
+wasde-1985-08-12,us_corn,mom_continuity,warn,corn/united_states 1985/86 exports prior-col(Jul),1700.0,1790.0
+wasde-1985-08-12,us_corn,mom_continuity,warn,corn/united_states 1985/86 feed_and_residual prior-col(Jul),4300.0,4309.0
+wasde-1985-08-12,us_corn,mom_continuity,warn,corn/united_states 1985/86 supply_total prior-col(Jul),9308.0,9508.0
+wasde-1985-08-12,us_corn,mom_continuity,warn,corn/united_states 1985/86 use_total prior-col(Jul),7119.0,7110.0
+wasde-1985-08-12,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 domestic_total prior-col(Jul),179.3,2850.9
+wasde-1985-08-12,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 ending_stocks prior-col(Jul),75.9,73.9
+wasde-1985-08-12,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 production prior-col(Jul),249.0,24909.0
+wasde-1985-08-12,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 supply_total prior-col(Jul),294.4,2976.4
+wasde-1985-08-12,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 use_total prior-col(Jul),229.4,2902.5
+wasde-1985-08-12,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 beginning_stocks prior-col(Jul),44.49999999999997,46.8
+wasde-1985-07-10,us_corn,mom_continuity,warn,corn/united_states 1985/86 exports prior-col(Jun),1700.0,11700.0
+wasde-1985-07-10,us_corn,mom_continuity,warn,corn/united_states 1985/86 use_total prior-col(Jun),7110.0,7119.0
+wasde-1985-07-10,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 exports prior-col(Jun),31.8,54.19999999999999
+wasde-1985-07-10,us_corn,mom_continuity,warn,feed_grains/united_states 1985/86 domestic_total prior-col(Jun),188.79999999999998,166.4
+wasde-1985-06-10,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1985/86 domestic_total prior-col(May),19700.0,9850.0
+wasde-1985-06-10,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1985/86 ending_stocks prior-col(May),700.0,680.0
+wasde-1985-06-10,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1985/86 exports prior-col(May),4500.0,1450.0
+wasde-1985-06-10,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1985/86 production prior-col(May),24230.0,11335.0
+wasde-1985-06-10,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1985/86 supply_total prior-col(May),247900.0,11980.0
+wasde-1985-06-10,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1985/86 use_total prior-col(May),11200.0,11300.0
+wasde-1985-06-10,us_soybeans,mom_continuity,warn,soybeans/united_states 1985/86 beginning_stocks prior-col(May),275.0,265.0
+wasde-1985-06-10,us_soybeans,mom_continuity,warn,soybeans/united_states 1985/86 crush prior-col(May),1920.0,1035.0
+wasde-1985-06-10,us_soybeans,mom_continuity,warn,soybeans/united_states 1985/86 ending_stocks prior-col(May),420.0,370.0
+wasde-1985-06-10,us_soybeans,mom_continuity,warn,soybeans/united_states 1985/86 supply_total prior-col(May),2200.0,2190.0
+wasde-1985-06-10,us_soybeans,mom_continuity,warn,soybeans/united_states 1985/86 use_total prior-col(May),1780.0,1820.0
+wasde-1985-06-10,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1985/86 imports prior-col(May),223025.0,-0.0
+wasde-1984-11-13,us_corn,mom_continuity,warn,corn/united_states 1984/85 area_harvested prior-col(Oct),711.0,71.1
+wasde-1984-11-13,us_corn,mom_continuity,warn,corn/united_states 1984/85 domestic_total prior-col(Oct),5050.0,3050.0
+wasde-1984-11-13,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 exports prior-col(Oct),62.5,-6.0
+wasde-1984-11-13,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 domestic_total prior-col(Oct),156.8,225.3
+wasde-1984-10-24,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 area_harvested prior-col(Sep),104.4,71.1
+wasde-1984-10-24,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 area_planted prior-col(Sep),120.2,1202.0
+wasde-1984-10-24,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 beginning_stocks prior-col(Sep),33.6,713.0
+wasde-1984-10-24,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 ending_stocks prior-col(Sep),45.9,43.7
+wasde-1984-10-24,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 exports prior-col(Sep),62.3,2100.0
+wasde-1984-10-24,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 feed_and_residual prior-col(Sep),124.8,127.3
+wasde-1984-10-24,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 production prior-col(Sep),231.0,232.6
+wasde-1984-10-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1984/85 beginning_stocks prior-col(Sep),204.0,400.0
+wasde-1984-10-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1984/85 domestic_total prior-col(Sep),16401.0,18200.0
+wasde-1984-10-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1984/85 ending_stocks prior-col(Sep),354.0,470.0
+wasde-1984-10-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1984/85 exports prior-col(Sep),53080.0,5550.0
+wasde-1984-10-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1984/85 supply_total prior-col(Sep),22036.0,24220.0
+wasde-1984-10-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1984/85 use_total prior-col(Sep),21682.0,23750.0
+wasde-1984-10-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 area_harvested prior-col(Sep),27.0,66.8
+wasde-1984-10-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 beginning_stocks prior-col(Sep),4.8,790.0
+wasde-1984-10-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 crush prior-col(Sep),27.2,990.0
+wasde-1984-10-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 ending_stocks prior-col(Sep),6.8,260.0
+wasde-1984-10-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 exports prior-col(Sep),22.0,1456.0
+wasde-1984-10-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 production prior-col(Sep),53.7,2028.0
+wasde-1984-10-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 supply_total prior-col(Sep),38.4,11850.0
+wasde-1984-10-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 use_total prior-col(Sep),51.6,11150.0
+wasde-1984-10-24,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 domestic_total prior-col(Sep),156.89999999999998,5150.0
+wasde-1984-09-13,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 beginning_stocks prior-col(Aug),587.0,27.5
+wasde-1984-09-13,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 domestic_total prior-col(Aug),5150.0,159.2
+wasde-1984-09-13,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 exports prior-col(Aug),2050.0,60.6
+wasde-1984-09-13,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 production prior-col(Aug),7668.0,235.3
+wasde-1984-09-13,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1984/85 domestic_total prior-col(Aug),18200.0,18290.0
+wasde-1984-09-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 beginning_stocks prior-col(Aug),735.0,95.0
+wasde-1984-09-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 ending_stocks prior-col(Aug),250.0,740.0
+wasde-1984-09-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 production prior-col(Aug),2035.0,11205.0
+wasde-1984-09-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 supply_total prior-col(Aug),11940.0,11740.0
+wasde-1984-09-13,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1984/85 exports prior-col(Aug),5550.0,5460.0
+wasde-1984-09-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 imports prior-col(Aug),9170.0,440.0
+wasde-1984-08-13,us_corn,mom_continuity,warn,corn/united_states 1984/85 beginning_stocks prior-col(Jul),512.0,912.0
+wasde-1984-08-13,us_corn,mom_continuity,warn,corn/united_states 1984/85 domestic_total prior-col(Jul),3175.0,9175.0
+wasde-1984-08-13,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 beginning_stocks prior-col(Jul),26.2,262.0
+wasde-1984-08-13,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 exports prior-col(Jul),54.8,36.8
+wasde-1984-08-13,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 imports prior-col(Jul),0.7,7.0
+wasde-1984-08-13,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 supply_total prior-col(Jul),264.8,506.9
+wasde-1984-08-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 ending_stocks prior-col(Jul),780.0,225.0
+wasde-1984-08-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 exports prior-col(Jul),1450.0,825.0
+wasde-1984-08-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 production prior-col(Jul),11205.0,2925.0
+wasde-1984-08-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 supply_total prior-col(Jul),119730.0,2130.0
+wasde-1984-08-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 use_total prior-col(Jul),11150.0,1905.0
+wasde-1984-08-13,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1984/85 exports prior-col(Jul),5300.0,9790.0
+wasde-1984-08-13,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1984/85 ending_stocks prior-col(Jul),635.0,435.0
+wasde-1984-08-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1984/85 seed prior-col(Jul),8690.0,70.0
+wasde-1984-07-11,us_corn,mom_continuity,warn,corn/united_states 1984/85 beginning_stocks prior-col(Jun),312.0,9112.0
+wasde-1984-07-11,us_corn,mom_continuity,warn,corn/united_states 1984/85 domestic_total prior-col(Jun),9175.0,4275.0
+wasde-1984-07-11,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 exports prior-col(Jun),98.1,-6.0
+wasde-1984-07-11,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 supply_total prior-col(Jun),2635.1,265.1
+wasde-1984-07-11,us_corn,mom_continuity,warn,feed_grains/united_states 1984/85 use_total prior-col(Jun),216.8,216.6
+wasde-1984-04-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 area_planted prior-col(Mar),60.2,102.9
+wasde-1984-04-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 beginning_stocks prior-col(Mar),3140.0,981.0
+wasde-1984-04-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 domestic_total prior-col(Mar),4925.0,156.1
+wasde-1984-04-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 ending_stocks prior-col(Mar),520.0,23.5
+wasde-1984-04-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 exports prior-col(Mar),1700.0,56.2
+wasde-1984-04-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 feed_and_residual prior-col(Mar),3975.0,126.8
+wasde-1984-04-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 production prior-col(Mar),4204.0,137.3
+wasde-1984-04-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 supply_total prior-col(Mar),7345.0,235.9
+wasde-1984-04-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 use_total prior-col(Mar),6625.0,212.4
+wasde-1984-02-13,us_corn,mom_continuity,warn,corn/united_states 1983/84 beginning_stocks prior-col(Jan),3140.0,140.0
+wasde-1984-02-13,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 beginning_stocks prior-col(Jan),474.0,430.0
+wasde-1984-02-13,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 ending_stocks prior-col(Jan),345.0,314.0
+wasde-1984-02-13,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 supply_total prior-col(Jan),23945.0,23914.0
+wasde-1984-02-13,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1983/84 production prior-col(Jan),10879.0,4935.0
+wasde-1984-02-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 area_harvested prior-col(Jan),62.2,25.2
+wasde-1984-02-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 area_planted prior-col(Jan),63.5,25.6
+wasde-1984-02-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 beginning_stocks prior-col(Jan),383.0,10.4
+wasde-1984-02-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 ending_stocks prior-col(Jan),150.0,44.0
+wasde-1984-02-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 exports prior-col(Jan),725.0,19.7
+wasde-1984-02-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 production prior-col(Jan),1595.0,43.4
+wasde-1984-02-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 supply_total prior-col(Jan),1978.0,53.8
+wasde-1984-02-13,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 imports prior-col(Jan),-0.0,13.0
+wasde-1984-02-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 use_total prior-col(Jan),1828.0,-0.7
+wasde-1984-01-24,us_corn,mom_continuity,warn,corn/united_states 1983/84 area_harvested prior-col(Dec),51.5,51.2
+wasde-1984-01-24,us_corn,mom_continuity,warn,corn/united_states 1983/84 ending_stocks prior-col(Dec),595.0,512.0
+wasde-1984-01-24,us_corn,mom_continuity,warn,corn/united_states 1983/84 production prior-col(Dec),4204.0,4121.0
+wasde-1984-01-24,us_corn,mom_continuity,warn,corn/united_states 1983/84 supply_total prior-col(Dec),7345.0,7262.0
+wasde-1984-01-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 area_planted prior-col(Dec),102.9,102.5
+wasde-1984-01-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 ending_stocks prior-col(Dec),25.0,22.4
+wasde-1984-01-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 imports prior-col(Dec),0.4,4.0
+wasde-1984-01-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 production prior-col(Dec),137.3,131.70000000000002
+wasde-1984-01-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 supply_total prior-col(Dec),235.8,233.8
+wasde-1984-01-24,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 use_total prior-col(Dec),210.8,211.4
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 beginning_stocks prior-col(Dec),430.0,474.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 ending_stocks prior-col(Dec),314.0,185.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 production prior-col(Dec),23471.0,23111.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 supply_total prior-col(Dec),23945.0,23585.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 use_total prior-col(Dec),23600.0,23400.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1983/84 ending_stocks prior-col(Dec),427.0,870.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1983/84 production prior-col(Dec),4935.0,10709.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1983/84 supply_total prior-col(Dec),5507.0,11970.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1983/84 use_total prior-col(Dec),11200.0,11100.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 area_planted prior-col(Dec),25.6,63.3
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 beginning_stocks prior-col(Dec),10.5,387.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 crush prior-col(Dec),26.8,975.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 ending_stocks prior-col(Dec),5.0,150.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 exports prior-col(Dec),19.7,710.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 production prior-col(Dec),43.4,1537.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 residual prior-col(Dec),12.0,16.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 supply_total prior-col(Dec),53.9,1924.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 use_total prior-col(Dec),49.8,1774.0
+wasde-1984-01-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 imports prior-col(Dec),44.0,-0.0
+wasde-1983-12-13,us_corn,mom_continuity,warn,corn/united_states 1983/84 beginning_stocks prior-col(Nov),3140.0,140.0
+wasde-1983-12-13,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 imports prior-col(Nov),4.0,0.3
+wasde-1983-12-13,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 production prior-col(Nov),131.8,135.4
+wasde-1983-11-14,us_corn,mom_continuity,warn,corn/united_states 1983/84 beginning_stocks prior-col(Oct),140.0,3140.0
+wasde-1983-11-14,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 area_harvested prior-col(Oct),80.5,80.7
+wasde-1983-11-14,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 feed_and_residual prior-col(Oct),125.5,125.3
+wasde-1983-11-14,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 imports prior-col(Oct),23.0,3.0
+wasde-1983-11-14,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 beginning_stocks prior-col(Oct),375.0,340.0
+wasde-1983-11-14,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 ending_stocks prior-col(Oct),180.0,163.0
+wasde-1983-11-14,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 exports prior-col(Oct),5700.0,3524.0
+wasde-1983-11-14,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 production prior-col(Oct),23255.0,21097.0
+wasde-1983-11-14,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 use_total prior-col(Oct),23450.0,21274.0
+wasde-1983-11-14,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1983/84 production prior-col(Oct),10625.0,4820.0
+wasde-1983-11-14,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1983/84 supply_total prior-col(Oct),11995.0,441.0
+wasde-1983-11-14,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 ending_stocks prior-col(Oct),120.0,3.3
+wasde-1983-11-14,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 residual prior-col(Oct),16.0,4.0
+wasde-1983-11-14,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 exports prior-col(Oct),55.30000000000001,55.6
+wasde-1983-11-14,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 imports prior-col(Oct),-0.0,2193.0
+wasde-1983-10-25,us_corn,mom_continuity,warn,corn/united_states 1983/84 area_harvested prior-col(Sep),51.4,51.6
+wasde-1983-10-25,us_corn,mom_continuity,warn,corn/united_states 1983/84 domestic_total prior-col(Sep),4950.0,5000.0
+wasde-1983-10-25,us_corn,mom_continuity,warn,corn/united_states 1983/84 ending_stocks prior-col(Sep),819.0,900.0
+wasde-1983-10-25,us_corn,mom_continuity,warn,corn/united_states 1983/84 feed_and_residual prior-col(Sep),4000.0,4050.0
+wasde-1983-10-25,us_corn,mom_continuity,warn,corn/united_states 1983/84 production prior-col(Sep),4259.0,4390.0
+wasde-1983-10-25,us_corn,mom_continuity,warn,corn/united_states 1983/84 supply_total prior-col(Sep),7694.0,7825.0
+wasde-1983-10-25,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 domestic_total prior-col(Sep),155.1,156.4
+wasde-1983-10-25,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 ending_stocks prior-col(Sep),33.8,36.1
+wasde-1983-10-25,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 exports prior-col(Sep),56.9,56.7
+wasde-1983-10-25,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 feed_and_residual prior-col(Sep),125.5,126.8
+wasde-1983-10-25,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 imports prior-col(Sep),23.0,0.3
+wasde-1983-10-25,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 production prior-col(Sep),138.9,142.1
+wasde-1983-10-25,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 supply_total prior-col(Sep),246.0,249.2
+wasde-1983-10-25,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 use_total prior-col(Sep),212.0,213.10000000000002
+wasde-1983-10-25,us_corn,mom_continuity,warn,corn/united_states 1983/84 use_total prior-col(Sep),6875.0,6925.0
+wasde-1983-06-23,us_corn,mom_continuity,warn,corn/united_states 1983/84 domestic_total prior-col(May),5270.0,5150.0
+wasde-1983-06-23,us_corn,mom_continuity,warn,corn/united_states 1983/84 ending_stocks prior-col(May),2115.0,1775.0
+wasde-1983-06-23,us_corn,mom_continuity,warn,corn/united_states 1983/84 feed_and_residual prior-col(May),4300.0,4200.0
+wasde-1983-06-23,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 beginning_stocks prior-col(May),108.2,106.5
+wasde-1983-06-23,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 ending_stocks prior-col(May),72.9,64.9
+wasde-1983-06-23,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 supply_total prior-col(May),296.8,285.5
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 beginning_stocks prior-col(May),227.0,260.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 domestic_total prior-col(May),19800.0,19100.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 ending_stocks prior-col(May),218.0,280.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 exports prior-col(May),74.0,7950.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 production prior-col(May),24666.0,27070.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 supply_total prior-col(May),893.0,27330.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1983/84 use_total prior-col(May),220.0,27050.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1983/84 ending_stocks prior-col(May),1125.0,1365.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1983/84 production prior-col(May),5636.0,12370.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1983/84 supply_total prior-col(May),6158.0,13615.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1983/84 use_total prior-col(May),5648.0,12250.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 beginning_stocks prior-col(May),12.0,375.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 crush prior-col(May),-70.0,1135.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 ending_stocks prior-col(May),9.7,280.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 exports prior-col(May),25.3,970.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 production prior-col(May),2075.0,2100.0
+wasde-1983-06-23,us_soybeans,mom_continuity,warn,soybeans/united_states 1983/84 residual prior-col(May),5.0,20.0
+wasde-1983-06-23,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 production prior-col(May),188.3,178.7
+wasde-1983-06-23,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 use_total prior-col(May),223.9,220.6
+wasde-1983-06-23,us_corn,mom_continuity,warn,feed_grains/united_states 1983/84 domestic_total prior-col(May),162.8,159.5
+wasde-1983-04-22,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 domestic_total prior-col(Mar),156.9,-11.0
+wasde-1983-04-22,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 ending_stocks prior-col(Mar),72.4,-15.0
+wasde-1983-04-22,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 exports prior-col(Mar),61.1,-7.0
+wasde-1983-04-22,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 feed_and_residual prior-col(Mar),127.5,-11.0
+wasde-1983-04-22,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 ending_stocks prior-col(Mar),280.0,45.0
+wasde-1983-04-22,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 supply_total prior-col(Mar),27330.0,27.0
+wasde-1983-04-22,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 crush prior-col(Mar),1135.0,-70.0
+wasde-1983-04-22,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 exports prior-col(Mar),970.0,-70.0
+wasde-1983-04-22,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 use_total prior-col(Mar),218.0,-15.0
+wasde-1983-04-22,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 supply_total prior-col(Mar),290.4,-17.0
+wasde-1983-03-23,us_corn,mom_continuity,warn,corn/united_states 1982/83 beginning_stocks prior-col(Feb),3434.0,2286.0
+wasde-1983-03-23,us_corn,mom_continuity,warn,corn/united_states 1982/83 production prior-col(Feb),5640.0,8397.0
+wasde-1983-03-23,us_corn,mom_continuity,warn,corn/united_states 1982/83 supply_total prior-col(Feb),9075.0,10684.0
+wasde-1983-03-23,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 beginning_stocks prior-col(Feb),110.1,71.1
+wasde-1983-03-23,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 domestic_total prior-col(Feb),156.9,179.60000000000002
+wasde-1983-03-23,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 ending_stocks prior-col(Feb),71.1,110.1
+wasde-1983-03-23,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 exports prior-col(Feb),61.1,59.4
+wasde-1983-03-23,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 imports prior-col(Feb),0.3,23.0
+wasde-1983-03-23,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 supply_total prior-col(Feb),289.1,349.1
+wasde-1983-03-23,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 use_total prior-col(Feb),218.0,239.00000000000003
+wasde-1983-03-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 ending_stocks prior-col(Feb),258.0,260.0
+wasde-1983-03-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 production prior-col(Feb),24558.0,635.0
+wasde-1983-03-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 supply_total prior-col(Feb),24797.0,870.0
+wasde-1983-03-23,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1982/83 beginning_stocks prior-col(Feb),598.0,1103.0
+wasde-1983-03-23,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1982/83 production prior-col(Feb),5611.0,11990.0
+wasde-1983-03-23,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 beginning_stocks prior-col(Feb),10.3,266.0
+wasde-1983-03-23,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 crush prior-col(Feb),30.9,1115.0
+wasde-1983-03-23,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 ending_stocks prior-col(Feb),7.8,390.0
+wasde-1983-03-23,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 exports prior-col(Feb),26.4,950.0
+wasde-1983-03-23,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 production prior-col(Feb),178.70000000000005,255.0
+wasde-1983-02-14,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 beginning_stocks prior-col(Jan),71.1,711.0
+wasde-1983-02-14,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 exports prior-col(Jan),61.3,-6.0
+wasde-1983-02-14,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 production prior-col(Jan),26.0,26635.0
+wasde-1983-02-14,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 supply_total prior-col(Jan),2610.0,26810.0
+wasde-1983-02-14,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 area_planted prior-col(Jan),183.0,72.2
+wasde-1983-02-14,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 crush prior-col(Jan),1415.0,1115.0
+wasde-1983-02-14,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 exports prior-col(Jan),950.0,-25.0
+wasde-1983-02-14,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 use_total prior-col(Jan),2350.0,26550.0
+wasde-1983-01-24,us_corn,mom_continuity,warn,corn/united_states 1982/83 area_harvested prior-col(Dec),73.2,72.8
+wasde-1983-01-24,us_corn,mom_continuity,warn,corn/united_states 1982/83 ending_stocks prior-col(Dec),3564.0,3497.0
+wasde-1983-01-24,us_corn,mom_continuity,warn,corn/united_states 1982/83 production prior-col(Dec),8397.0,8330.0
+wasde-1983-01-24,us_corn,mom_continuity,warn,corn/united_states 1982/83 supply_total prior-col(Dec),10764.0,10697.0
+wasde-1983-01-24,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 area_harvested prior-col(Dec),107.1,106.2
+wasde-1983-01-24,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 domestic_total prior-col(Dec),155.4,156.3
+wasde-1983-01-24,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 ending_stocks prior-col(Dec),111.5,108.2
+wasde-1983-01-24,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 feed_and_residual prior-col(Dec),127.3,128.2
+wasde-1983-01-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 production prior-col(Dec),26635.0,26235.0
+wasde-1983-01-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 supply_total prior-col(Dec),26810.0,26410.0
+wasde-1983-01-24,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 use_total prior-col(Dec),26550.0,26150.0
+wasde-1983-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 area_planted prior-col(Dec),712.2,72.3
+wasde-1983-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 crush prior-col(Dec),1115.0,1100.0
+wasde-1983-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 ending_stocks prior-col(Dec),390.0,430.0
+wasde-1983-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 residual prior-col(Dec),20.0,18.0
+wasde-1983-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 supply_total prior-col(Dec),2545.0,2568.0
+wasde-1983-01-24,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 use_total prior-col(Dec),2155.0,2138.0
+wasde-1983-01-24,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 use_total prior-col(Dec),216.7,217.6
+wasde-1982-12-13,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 ending_stocks prior-col(Nov),295.0,225.0
+wasde-1982-12-13,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 supply_total prior-col(Nov),326.40000000000003,325.8
+wasde-1982-12-13,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 use_total prior-col(Nov),25880.0,25950.0
+wasde-1982-11-12,us_corn,mom_continuity,warn,corn/united_states 1982/83 production prior-col(Oct),8315.0,10315.0
+wasde-1982-10-22,us_corn,mom_continuity,warn,corn/united_states 1982/83 beginning_stocks prior-col(Sep),2171.0,2151.0
+wasde-1982-10-22,us_corn,mom_continuity,warn,corn/united_states 1982/83 ending_stocks prior-col(Sep),2987.0,2871.0
+wasde-1982-10-22,us_corn,mom_continuity,warn,corn/united_states 1982/83 exports prior-col(Sep),2250.0,2350.0
+wasde-1982-10-22,us_corn,mom_continuity,warn,corn/united_states 1982/83 supply_total prior-col(Sep),10487.0,10471.0
+wasde-1982-10-22,us_corn,mom_continuity,warn,corn/united_states 1982/83 use_total prior-col(Sep),7500.0,7600.0
+wasde-1982-10-22,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 area_harvested prior-col(Sep),106.2,106.4
+wasde-1982-10-22,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 beginning_stocks prior-col(Sep),68.5,67.7
+wasde-1982-10-22,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 ending_stocks prior-col(Sep),94.0,90.7
+wasde-1982-10-22,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 exports prior-col(Sep),65.9,68.5
+wasde-1982-10-22,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 imports prior-col(Sep),0.3,23.0
+wasde-1982-10-22,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 use_total prior-col(Sep),226.8,229.3
+wasde-1982-10-22,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 ending_stocks prior-col(Sep),430.0,-55.0
+wasde-1982-10-22,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 residual prior-col(Sep),18.0,24.0
+wasde-1982-10-22,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 use_total prior-col(Sep),2138.0,2144.0
+wasde-1982-10-22,us_corn,mom_continuity,warn,corn/united_states 1982/83 production prior-col(Sep),8315.0,8319.0
+wasde-1982-10-22,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 supply_total prior-col(Sep),2568.0,2089.0
+wasde-1982-09-13,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 use_total prior-col(Aug),26210.0,600.0
+wasde-1982-09-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 ending_stocks prior-col(Aug),420.0,7.0
+wasde-1982-09-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 residual prior-col(Aug),23.0,3.0
+wasde-1982-08-12,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 use_total prior-col(Jul),4662.0,25600.0
+wasde-1982-08-12,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 beginning_stocks prior-col(Jul),70.0,270.0
+wasde-1982-08-12,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 ending_stocks prior-col(Jul),1350.0,345.0
+wasde-1982-07-13,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 ending_stocks prior-col(Jun),270.0,-50.0
+wasde-1982-07-13,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 exports prior-col(Jun),915.0,-60.0
+wasde-1982-06-23,us_corn,mom_continuity,warn,corn/united_states 1982/83 beginning_stocks prior-col(May),1926.0,1976.0
+wasde-1982-06-23,us_corn,mom_continuity,warn,corn/united_states 1982/83 domestic_total prior-col(May),5215.0,5165.0
+wasde-1982-06-23,us_corn,mom_continuity,warn,corn/united_states 1982/83 ending_stocks prior-col(May),2097.0,2197.0
+wasde-1982-06-23,us_corn,mom_continuity,warn,corn/united_states 1982/83 supply_total prior-col(May),9612.0,9662.0
+wasde-1982-06-23,us_corn,mom_continuity,warn,corn/united_states 1982/83 use_total prior-col(May),7515.0,7465.0
+wasde-1982-06-23,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 domestic_total prior-col(May),159.7,157.7
+wasde-1982-06-23,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 ending_stocks prior-col(May),66.2,69.4
+wasde-1982-06-23,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 feed_and_residual prior-col(May),133.8,131.8
+wasde-1982-06-23,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 supply_total prior-col(May),293.1,294.3
+wasde-1982-06-23,us_corn,mom_continuity,warn,feed_grains/united_states 1982/83 use_total prior-col(May),226.9,224.9
+wasde-1982-06-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 domestic_total prior-col(May),18100.0,18400.0
+wasde-1982-06-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 ending_stocks prior-col(May),270.0,240.0
+wasde-1982-06-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 exports prior-col(May),7500.0,7350.0
+wasde-1982-06-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 supply_total prior-col(May),25870.0,25990.0
+wasde-1982-06-23,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1982/83 use_total prior-col(May),25600.0,25750.0
+wasde-1982-06-23,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1982/83 ending_stocks prior-col(May),1195.0,13200.0
+wasde-1982-06-23,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1982/83 exports prior-col(May),2200.0,2250.0
+wasde-1982-06-23,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1982/83 production prior-col(May),11720.0,11775.0
+wasde-1982-06-23,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1982/83 supply_total prior-col(May),13245.0,13300.0
+wasde-1982-06-23,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1982/83 use_total prior-col(May),12050.0,100.0
+wasde-1982-06-23,us_soybeans,mom_continuity,warn,soybeans/united_states 1982/83 ending_stocks prior-col(May),325.0,330.0
+wasde-1982-04-23,us_corn,mom_continuity,warn,corn/united_states 1981/82 ending_stocks prior-col(Mar),2026.0,2076.0
+wasde-1982-04-23,us_corn,mom_continuity,warn,corn/united_states 1981/82 use_total prior-col(Mar),7210.0,160.0
+wasde-1982-04-23,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 ending_stocks prior-col(Mar),64.0,65.3
+wasde-1982-04-23,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 exports prior-col(Mar),65.4,64.1
+wasde-1982-04-23,us_corn,mom_continuity,warn,corn/united_states 1981/82 supply_total prior-col(Mar),9236.0,2236.0
+wasde-1982-04-23,us_corn,mom_continuity,warn,corn/united_states 1981/82 production prior-col(Mar),8201.0,1201.0
+wasde-1982-04-23,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 use_total prior-col(Mar),219.3,218.0
+wasde-1982-03-11,us_corn,mom_continuity,warn,corn/united_states 1981/82 feed_and_residual prior-col(Feb),250.0,4250.0
+wasde-1982-03-11,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 imports prior-col(Feb),-3.0,0.3
+wasde-1982-02-11,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 ending_stocks prior-col(Jan),62.9,43.45
+wasde-1982-02-11,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 exports prior-col(Jan),66.5,85.95000000000002
+wasde-1982-02-11,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 imports prior-col(Jan),0.3,3.0
+wasde-1982-02-11,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1981/82 production prior-col(Jan),407.0,25407.0
+wasde-1982-01-26,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 domestic_total prior-col(Dec),151.3,5050.0
+wasde-1982-01-26,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 ending_stocks prior-col(Dec),65.5,1707.0
+wasde-1982-01-26,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 feed_and_residual prior-col(Dec),126.2,130.0
+wasde-1982-01-26,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 supply_total prior-col(Dec),283.3,9132.0
+wasde-1982-01-26,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1981/82 use_total prior-col(Dec),300.0,25500.0
+wasde-1982-01-26,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 ending_stocks prior-col(Dec),1640.0,1810.0
+wasde-1982-01-26,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 production prior-col(Dec),17554.0,11724.0
+wasde-1982-01-26,us_soybeans,mom_continuity,warn,soybean_oil/united_states 1981/82 supply_total prior-col(Dec),13290.0,13460.0
+wasde-1982-01-26,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 area_harvested prior-col(Dec),66.7,66.9
+wasde-1982-01-26,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 production prior-col(Dec),2030.0,2077.0
+wasde-1982-01-26,us_soybeans,mom_continuity,warn,soybeans/united_states 1981/82 residual prior-col(Dec),20.0,17.0
+wasde-1982-01-26,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 production prior-col(Dec),248.4,9096.4
+wasde-1982-01-26,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 use_total prior-col(Dec),217.8,7425.0
+wasde-1982-01-26,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 exports prior-col(Dec),66.5,2375.0
+wasde-1981-12-11,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 ending_stocks prior-col(Nov),1632.0,52.8
+wasde-1981-12-11,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 imports prior-col(Nov),1.0,3.0
+wasde-1981-12-11,us_corn,mom_continuity,warn,feed_grains/united_states 1981/82 supply_total prior-col(Nov),9132.0,280.5
+wasde-1996-02-09,us_soybeans,mom_continuity,warn,soybeans/united_states 1995/96 yield_per_harvested_acre prior-col(Jan),35.4,34.9
+wasde-1996-02-09,us_soybeans,mom_continuity,warn,soybeans/united_states 1995/96 farm_price prior-col(Jan),7.05,6.925
+wasde-1996-02-09,world_soybeans,mom_continuity,warn,soybeans/world 1995/96 domestic_total prior-col(Jan),129.67,129.71
+wasde-1996-02-09,world_soybeans,mom_continuity,warn,soybeans/united_states 1995/96 domestic_total prior-col(Jan),40.87,40.91
+wasde-1998-05-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_importers 1997/98 beginning_stocks prior-col(Apr),1.82,1.46
+wasde-1998-05-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_importers 1997/98 production prior-col(Apr),17.29,15.35
+wasde-1998-05-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_importers 1997/98 imports prior-col(Apr),28.6,23.79
+wasde-1998-05-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_importers 1997/98 crush prior-col(Apr),33.44,29.15
+wasde-1998-05-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_importers 1997/98 domestic_total prior-col(Apr),45.39,38.65
+wasde-1998-05-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_importers 1997/98 exports prior-col(Apr),0.49,0.47
+wasde-1998-05-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_importers 1997/98 ending_stocks prior-col(Apr),1.83,1.47
+wasde-1998-05-12,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_importers 1997/98 beginning_stocks prior-col(Apr),1.3,1.08
+wasde-1998-05-12,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_importers 1997/98 production prior-col(Apr),21.3,20.89
+wasde-1998-05-12,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_importers 1997/98 imports prior-col(Apr),24.58,22.18
+wasde-1998-05-12,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_importers 1997/98 domestic_total prior-col(Apr),41.84,38.94
+wasde-1998-05-12,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_importers 1997/98 ending_stocks prior-col(Apr),1.26,1.13
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,feed_grains/united_states 2008/09 area_planted prior-col(Sep),109.1,101.9
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,feed_grains/united_states 2008/09 area_harvested prior-col(Sep),98.4,90.8
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,feed_grains/united_states 2008/09 beginning_stocks prior-col(Sep),36.2,43.8
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,feed_grains/united_states 2008/09 production prior-col(Sep),350.9,323.5
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,feed_grains/united_states 2008/09 imports prior-col(Sep),3.3,2.7
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,feed_grains/united_states 2008/09 supply_total prior-col(Sep),390.3,370.0
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,feed_grains/united_states 2008/09 feed_and_residual prior-col(Sep),159.6,140.5
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,feed_grains/united_states 2008/09 food_seed_industrial prior-col(Sep),115.8,144.7
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,feed_grains/united_states 2008/09 domestic_total prior-col(Sep),275.4,285.2
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,feed_grains/united_states 2008/09 exports prior-col(Sep),69.9,54.7
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,feed_grains/united_states 2008/09 use_total prior-col(Sep),345.2,339.9
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,feed_grains/united_states 2008/09 ending_stocks prior-col(Sep),45.1,30.2
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 area_planted prior-col(Sep),93.6,87.0
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 area_harvested prior-col(Sep),86.5,79.3
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 yield_per_harvested_acre prior-col(Sep),151.1,152.3
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 beginning_stocks prior-col(Sep),1304.0,1576.0
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 production prior-col(Sep),13074.0,12072.0
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 imports prior-col(Sep),18.0,15.0
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 supply_total prior-col(Sep),14396.0,13663.0
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 feed_and_residual prior-col(Sep),5999.0,5200.0
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 food_seed_industrial prior-col(Sep),4338.0,5445.0
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 ethanol_for_fuel prior-col(Sep),3000.0,4100.0
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 domestic_total prior-col(Sep),10336.0,10645.0
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 exports prior-col(Sep),2435.0,2000.0
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 use_total prior-col(Sep),12771.0,12645.0
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 ending_stocks prior-col(Sep),1624.0,1018.0
+wasde-2008-10-28,us_corn,mom_continuity,whitelisted,corn/united_states 2008/09 farm_price prior-col(Sep),4.2,5.5
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybeans/united_states 2008/09 area_planted prior-col(Sep),64.7,74.8
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybeans/united_states 2008/09 area_harvested prior-col(Sep),64.1,73.3
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybeans/united_states 2008/09 yield_per_harvested_acre prior-col(Sep),41.7,40.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybeans/united_states 2008/09 beginning_stocks prior-col(Sep),574.0,140.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybeans/united_states 2008/09 production prior-col(Sep),2676.0,2934.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybeans/united_states 2008/09 supply_total prior-col(Sep),3260.0,3084.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybeans/united_states 2008/09 crush prior-col(Sep),1801.0,1785.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybeans/united_states 2008/09 exports prior-col(Sep),1160.0,1000.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybeans/united_states 2008/09 seed prior-col(Sep),93.0,90.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybeans/united_states 2008/09 residual prior-col(Sep),0.0,74.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybeans/united_states 2008/09 use_total prior-col(Sep),3055.0,2949.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybeans/united_states 2008/09 ending_stocks prior-col(Sep),205.0,135.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybeans/united_states 2008/09 farm_price prior-col(Sep),10.1,12.35
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_oil/united_states 2008/09 beginning_stocks prior-col(Sep),3085.0,2635.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_oil/united_states 2008/09 production prior-col(Sep),20630.0,20350.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_oil/united_states 2008/09 imports prior-col(Sep),60.0,50.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_oil/united_states 2008/09 supply_total prior-col(Sep),23775.0,23035.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_oil/united_states 2008/09 domestic_total prior-col(Sep),18400.0,18350.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_oil/united_states 2008/09 biofuel prior-col(Sep),3050.0,3100.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_oil/united_states 2008/09 exports prior-col(Sep),3000.0,2350.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_oil/united_states 2008/09 use_total prior-col(Sep),21400.0,20700.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_oil/united_states 2008/09 ending_stocks prior-col(Sep),2375.0,2335.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_oil/united_states 2008/09 farm_price prior-col(Sep),52.03,54.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_meal/united_states 2008/09 beginning_stocks prior-col(Sep),346.0,300.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_meal/united_states 2008/09 production prior-col(Sep),42314.0,42435.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_meal/united_states 2008/09 imports prior-col(Sep),140.0,165.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_meal/united_states 2008/09 supply_total prior-col(Sep),42800.0,42900.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_meal/united_states 2008/09 domestic_total prior-col(Sep),33200.0,34000.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_meal/united_states 2008/09 exports prior-col(Sep),9300.0,8600.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_meal/united_states 2008/09 use_total prior-col(Sep),42500.0,42600.0
+wasde-2008-10-28,us_soybeans,mom_continuity,whitelisted,soybean_meal/united_states 2008/09 farm_price prior-col(Sep),335.94,360.0
+wasde-1995-08-14,us_soybeans,mom_continuity,whitelisted,soybean_meal/united_states 1995/96 production prior-col(Jul),32920.0,32685.0
+wasde-1995-08-14,world_wheat,mom_continuity,whitelisted,wheat/world 1995/96 beginning_stocks prior-col(Jul),114.12,113.97
+wasde-1995-08-14,world_wheat,mom_continuity,whitelisted,wheat/total_foreign 1995/96 beginning_stocks prior-col(Jul),100.23,100.09
+wasde-1995-08-14,world_soybeans,mom_continuity,whitelisted,soybeans/world 1995/96 beginning_stocks prior-col(Jul),22.18,23.91
+wasde-1995-08-14,world_soybeans,mom_continuity,whitelisted,soybeans/world 1995/96 domestic_total prior-col(Jul),128.38,130.12
+wasde-1995-08-14,world_soybeans,mom_continuity,whitelisted,soybeans/total_foreign 1995/96 beginning_stocks prior-col(Jul),11.7,13.44
+wasde-1995-08-14,world_soybeans,mom_continuity,whitelisted,soybeans/total_foreign 1995/96 domestic_total prior-col(Jul),87.42,89.16
+wasde-1995-08-14,world_soybeans,mom_continuity,whitelisted,soybeans/major_exporters 1995/96 beginning_stocks prior-col(Jul),9.27,11.01
+wasde-1995-08-14,world_soybeans,mom_continuity,whitelisted,soybeans/major_exporters 1995/96 domestic_total prior-col(Jul),30.27,32.01
+wasde-1995-08-14,world_soybeans,mom_continuity,whitelisted,soybeans/argentina 1995/96 beginning_stocks prior-col(Jul),3.65,3.69
+wasde-1995-08-14,world_soybeans,mom_continuity,whitelisted,soybeans/argentina 1995/96 domestic_total prior-col(Jul),9.64,9.68
+wasde-1995-08-14,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/world 1995/96 beginning_stocks prior-col(Jul),3.56,3.51
+wasde-1995-08-14,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/total_foreign 1995/96 beginning_stocks prior-col(Jul),3.34,3.28
+wasde-1995-08-14,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_exporters 1995/96 beginning_stocks prior-col(Jul),1.07,1.02
+wasde-1995-08-14,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/argentina 1995/96 beginning_stocks prior-col(Jul),0.38,0.24
+wasde-1995-08-14,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/brazil 1995/96 beginning_stocks prior-col(Jul),0.69,0.78
+wasde-1995-08-14,world_soybean_oil,mom_continuity,whitelisted,soybean_oil/world 1995/96 beginning_stocks prior-col(Jul),1.65,1.63
+wasde-1995-08-14,world_soybean_oil,mom_continuity,whitelisted,soybean_oil/total_foreign 1995/96 beginning_stocks prior-col(Jul),1.15,1.13
+wasde-1995-08-14,world_soybean_oil,mom_continuity,whitelisted,soybean_oil/major_exporters 1995/96 beginning_stocks prior-col(Jul),0.69,0.66
+wasde-1995-08-14,world_soybean_oil,mom_continuity,whitelisted,soybean_oil/argentina 1995/96 beginning_stocks prior-col(Jul),0.16,0.14
+wasde-1994-10-12,us_soybeans,mom_continuity,warn,soybean_meal/united_states 1994/95 production prior-col(Sep),32075.0,31275.0
+wasde-1989-11-09,us_corn,mom_continuity,warn,feed_grains/united_states 1989/90 area_harvested prior-col(Oct),65.1,90.8
+wasde-1989-11-09,us_corn,mom_continuity,warn,feed_grains/united_states 1989/90 area_planted prior-col(Oct),72.3,105.6
+wasde-1989-11-09,us_corn,mom_continuity,warn,feed_grains/united_states 1989/90 beginning_stocks prior-col(Oct),1930.0,65.9
+wasde-1989-11-09,us_corn,mom_continuity,warn,feed_grains/united_states 1989/90 domestic_total prior-col(Oct),5500.0,166.8
+wasde-1989-11-09,us_corn,mom_continuity,warn,feed_grains/united_states 1989/90 ending_stocks prior-col(Oct),1882.0,61.9
+wasde-1989-11-09,us_corn,mom_continuity,warn,feed_grains/united_states 1989/90 exports prior-col(Oct),2000.0,58.5
+wasde-1989-11-09,us_corn,mom_continuity,warn,feed_grains/united_states 1989/90 feed_and_residual prior-col(Oct),4200.0,127.9
+wasde-1989-11-09,us_corn,mom_continuity,warn,feed_grains/united_states 1989/90 imports prior-col(Oct),3.0,1.2
+wasde-1989-11-09,us_corn,mom_continuity,warn,feed_grains/united_states 1989/90 production prior-col(Oct),7449.0,220.1
+wasde-1989-11-09,us_corn,mom_continuity,warn,feed_grains/united_states 1989/90 supply_total prior-col(Oct),9382.0,287.2
+wasde-1989-11-09,us_corn,mom_continuity,warn,feed_grains/united_states 1989/90 use_total prior-col(Oct),7500.0,225.3
+wasde-2001-09-14,us_soybeans,mom_continuity,warn,soybeans/united_states 2001/02 area_planted prior-col(Aug),75.4,75.2
+wasde-2003-11-12,us_corn,mom_continuity,warn,feed_grains/united_states 2003/04 area_planted prior-col(Oct),98.5,98.7
+wasde-1995-05-11,world_soybean_meal,mom_continuity,warn,soybean_meal/world 1994/95 beginning_stocks prior-col(Apr),3.45,3.29
+wasde-1995-05-11,world_soybean_meal,mom_continuity,warn,soybean_meal/total_foreign 1994/95 beginning_stocks prior-col(Apr),3.32,3.15
+wasde-1995-05-11,world_soybean_oil,mom_continuity,warn,soybean_oil/world 1994/95 beginning_stocks prior-col(Apr),1.6,1.48
+wasde-1995-05-11,world_soybean_oil,mom_continuity,warn,soybean_oil/total_foreign 1994/95 beginning_stocks prior-col(Apr),1.1,0.98
+wasde-1995-05-11,world_soybean_oil,mom_continuity,whitelisted,soybean_oil/major_exporters 1994/95 beginning_stocks prior-col(Apr),0.68,0.55
+wasde-1995-06-12,world_soybeans,mom_continuity,warn,soybeans/world 1994/95 beginning_stocks prior-col(May),17.62,17.5
+wasde-1995-06-12,world_soybeans,mom_continuity,warn,soybeans/world 1994/95 domestic_total prior-col(May),130.52,130.4
+wasde-1995-06-12,world_soybeans,mom_continuity,warn,soybeans/total_foreign 1994/95 beginning_stocks prior-col(May),11.93,11.81
+wasde-1995-06-12,world_soybeans,mom_continuity,warn,soybeans/total_foreign 1994/95 domestic_total prior-col(May),88.33,88.2
+wasde-1995-06-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_exporters 1994/95 beginning_stocks prior-col(May),9.4,9.27
+wasde-1995-06-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_exporters 1994/95 domestic_total prior-col(May),30.89,30.76
+wasde-1995-06-12,world_soybean_meal,mom_continuity,warn,soybean_meal/world 1994/95 beginning_stocks prior-col(May),3.51,3.29
+wasde-1995-06-12,world_soybean_meal,mom_continuity,warn,soybean_meal/total_foreign 1994/95 beginning_stocks prior-col(May),3.37,3.15
+wasde-1995-06-12,world_soybean_oil,mom_continuity,warn,soybean_oil/world 1994/95 beginning_stocks prior-col(May),1.64,1.47
+wasde-1995-06-12,world_soybean_oil,mom_continuity,warn,soybean_oil/total_foreign 1994/95 beginning_stocks prior-col(May),1.14,0.97
+wasde-1995-06-12,world_soybean_oil,mom_continuity,whitelisted,soybean_oil/major_exporters 1994/95 beginning_stocks prior-col(May),0.72,0.55
+wasde-1995-11-09,world_soybeans,mom_continuity,warn,soybeans/world 1995/96 domestic_total prior-col(Oct),129.99,130.1
+wasde-1995-11-09,world_soybeans,mom_continuity,warn,soybeans/united_states 1995/96 domestic_total prior-col(Oct),41.12,41.23
+wasde-2014-10-10,us_wheat,mom_continuity,warn,wheat/united_states 2014/15 ccc_inventory prior-col(Sep),,0.0
+wasde-2014-10-10,us_wheat,mom_continuity,warn,wheat/united_states 2014/15 free_stocks prior-col(Sep),,698.0
+wasde-2014-10-10,us_wheat,mom_continuity,warn,wheat/united_states 2014/15 outstanding_loans prior-col(Sep),,0.0
+wasde-1997-09-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_exporters 1997/98 exports prior-col(Aug),10.53,10.43
+wasde-1997-09-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_exporters 1997/98 ending_stocks prior-col(Aug),8.47,8.57
+wasde-1997-09-12,world_soybeans,mom_continuity,warn,soybeans/brazil 1997/98 exports prior-col(Aug),7.35,7.25
+wasde-2000-09-12,us_corn,mom_continuity,warn,feed_grains/united_states 2000/01 area_planted prior-col(Aug),98.8,98.6
+wasde-2005-03-10,us_wheat,mom_continuity,warn,wheat/united_states 2004/05 outstanding_loans prior-col(Feb),54.0,60.0
+wasde-2009-06-10,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_importers 2009/10 production prior-col(May),45.61,45.34
+wasde-2009-06-10,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_importers 2009/10 imports prior-col(May),30.7,30.03
+wasde-2009-06-10,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_importers 2009/10 domestic_total prior-col(May),75.37,74.5
+wasde-2009-06-10,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_importers 2009/10 exports prior-col(May),0.92,0.89
+wasde-2009-06-10,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_importers 2009/10 ending_stocks prior-col(May),0.56,0.52
+wasde-1997-05-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_importers 1996/97 production prior-col(Apr),14.2,1.2
+wasde-1997-05-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_importers 1996/97 imports prior-col(Apr),21.46,19.56
+wasde-1997-05-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_importers 1996/97 crush prior-col(Apr),25.9,17.6
+wasde-1997-05-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_importers 1996/97 domestic_total prior-col(Apr),35.17,20.47
+wasde-1997-05-12,world_soybeans,mom_continuity,whitelisted,soybeans/major_importers 1996/97 exports prior-col(Apr),0.52,0.32
+wasde-1997-05-12,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_exporters 1996/97 production prior-col(Apr),27.71,24.9
+wasde-1997-05-12,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_exporters 1996/97 domestic_total prior-col(Apr),6.3,5.68
+wasde-1997-05-12,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_exporters 1996/97 exports prior-col(Apr),21.5,19.3
+wasde-1997-05-12,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_importers 1996/97 production prior-col(Apr),18.56,11.84
+wasde-1997-05-12,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_importers 1996/97 imports prior-col(Apr),19.6,17.3
+wasde-1997-05-12,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_importers 1996/97 domestic_total prior-col(Apr),34.48,25.56
+wasde-1997-05-12,world_soybean_meal,mom_continuity,whitelisted,soybean_meal/major_importers 1996/97 exports prior-col(Apr),3.67,3.57
+wasde-1998-06-12,world_corn,mom_continuity,whitelisted,corn/major_importers 1998/99 beginning_stocks prior-col(May),14.54,13.51
+wasde-1998-06-12,world_corn,mom_continuity,whitelisted,corn/major_importers 1998/99 production prior-col(May),93.69,79.54
+wasde-1998-06-12,world_corn,mom_continuity,whitelisted,corn/major_importers 1998/99 imports prior-col(May),45.18,42.38
+wasde-1998-06-12,world_corn,mom_continuity,whitelisted,corn/major_importers 1998/99 domestic_feed prior-col(May),92.14,81.09
+wasde-1998-06-12,world_corn,mom_continuity,whitelisted,corn/major_importers 1998/99 domestic_total prior-col(May),130.86,114.21
+wasde-1998-06-12,world_corn,mom_continuity,whitelisted,corn/major_importers 1998/99 exports prior-col(May),11.11,10.81
+wasde-1998-06-12,world_corn,mom_continuity,whitelisted,corn/major_importers 1998/99 ending_stocks prior-col(May),11.44,10.4
+wasde-2002-03-08,world_soybeans,mom_continuity,warn,soybeans/world 2001/02 ending_stocks prior-col(Feb),28.84,28.96
+wasde-2002-03-08,world_soybeans,mom_continuity,warn,soybeans/united_states 2001/02 domestic_total prior-col(Feb),50.44,50.31
+wasde-2002-03-08,world_soybeans,mom_continuity,warn,soybeans/united_states 2001/02 ending_stocks prior-col(Feb),7.35,7.48
+wasde-2010-12-15,,coverage,whitelisted,txt release has no observations,,
+wasde-1995-01-31,,coverage,whitelisted,txt release has no observations,,
+wasde-2008-05-07,,coverage,whitelisted,txt release has no observations,,
+wasde-2001-09-11,,coverage,whitelisted,txt release has no observations,,
+wasde-2009-09-14,,coverage,whitelisted,txt release has no observations,,
+wasde-1995-09-11,,coverage,whitelisted,no priority-table observations,,
+wasde-1995-06-09,,coverage,whitelisted,no priority-table observations,,
+wasde-1995-05-10,,coverage,whitelisted,no priority-table observations,,
+wasde-1996-02-08,,coverage,whitelisted,no priority-table observations,,
+wasde-1995-04-10,,coverage,whitelisted,no priority-table observations,,
+wasde-1996-03-11,,coverage,whitelisted,no priority-table observations,,
+wasde-1995-08-10,,coverage,whitelisted,no priority-table observations,,
+wasde-1995-11-08,,coverage,whitelisted,no priority-table observations,,
+wasde-1995-03-12,,coverage,whitelisted,no priority-table observations,,
+wasde-1996-04-10,,coverage,whitelisted,no priority-table observations,,
+wasde-1995-07-11,,coverage,whitelisted,no priority-table observations,,
+wasde-1995-10-10,,coverage,whitelisted,no priority-table observations,,
+wasde-1995-12-11,,coverage,whitelisted,no priority-table observations,,
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1998/99,348.0,352.2640000000001
+(final),us_soybeans,cross_source_agmanager,warn,soybeans exports 2004/05,1097.0,1103.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1989/90,239.0,243.0
+(final),us_corn,cross_source_agmanager,warn,corn supply_total 1984/85,8484.0,8680.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans seed 1984/85,8847.0,61.0
+(final),us_corn,cross_source_agmanager,warn,corn use_total 1982/83,7290.0,7249.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1981/82,7.2,255.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans supply_total 1981/82,63.1,2303.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans exports 1980/81,929.0,724.0
+(final),us_corn,cross_source_agmanager,warn,corn use_total 1978/79,7076.0,6995.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1994/95,335.0,338.1410000000001
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1988/89,182.0,185.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans area_harvested 1987/88,57.2,52.2
+(final),us_corn,cross_source_agmanager,warn,corn production 1981/82,8202.0,8119.0
+(final),us_corn,cross_source_agmanager,warn,corn beginning_stocks 1980/81,1034.0,2035.0
+(final),us_corn,cross_source_agmanager,warn,corn supply_total 1980/81,9237.0,8675.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans use_total 1980/81,2052.0,1843.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans seed 1980/81,70.0,66.0
+(final),us_corn,cross_source_agmanager,warn,corn imports 1994/95,10.0,9.56
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1997/98,200.0,202.25
+(final),us_corn,cross_source_agmanager,warn,corn ethanol_for_fuel 2007/08,3049.0,3026.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1983/84,176.0,177.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans crush 1981/82,28.0,1030.0
+(final),us_corn,cross_source_agmanager,warn,corn exports 1980/81,1967.0,2391.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans beginning_stocks 1998/99,200.0,202.25
+(final),us_corn,cross_source_agmanager,warn,corn imports 1999/00,15.0,14.5
+(final),us_soybeans,cross_source_agmanager,warn,soybeans seed 2007/08,89.0,95.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans beginning_stocks 1989/90,182.0,185.0
+(final),us_corn,cross_source_agmanager,warn,corn feed_and_residual 1988/89,3987.0,3941.0
+(final),us_corn,cross_source_agmanager,warn,corn beginning_stocks 1982/83,2174.0,2537.0
+(final),us_corn,cross_source_agmanager,warn,corn supply_total 1982/83,10410.0,10773.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans seed 1982/83,57.0,61.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans beginning_stocks 1981/82,8.7,314.0
+(final),us_corn,cross_source_agmanager,warn,corn ending_stocks 1981/82,2182.0,2537.0
+(final),us_corn,cross_source_agmanager,warn,corn feed_and_residual 1979/80,4519.0,4563.0
+(final),us_corn,cross_source_agmanager,warn,corn supply_total 1978/79,8380.0,8705.0
+(final),us_corn,cross_source_agmanager,warn,corn beginning_stocks 1978/79,1111.0,1436.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans beginning_stocks 1992/93,278.0,283.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans exports 2005/06,940.0,947.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1990/91,329.0,334.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans imports 1987/88,-0.0,1.0
+(final),us_corn,cross_source_agmanager,warn,corn feed_and_residual 1983/84,3736.0,3876.0
+(final),us_corn,cross_source_agmanager,warn,corn exports 1982/83,3870.0,1821.0
+(final),us_corn,cross_source_agmanager,warn,corn domestic_total 1981/82,88.0,4978.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans production 1980/81,2000.0,1798.0
+(final),us_corn,cross_source_agmanager,warn,corn exports 1978/79,2133.0,2113.0
+(final),us_corn,cross_source_agmanager,warn,corn feed_and_residual 2008/09,5182.0,5246.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans beginning_stocks 1997/98,132.0,134.80000000000018
+(final),us_corn,cross_source_agmanager,warn,corn feed_and_residual 1986/87,4714.0,4669.0
+(final),us_corn,cross_source_agmanager,warn,corn imports 1985/86,11.0,10.0
+(final),us_corn,cross_source_agmanager,warn,corn ending_stocks 1983/84,723.0,1007.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans area_planted 1982/83,709.0,70.9
+(final),us_soybeans,cross_source_agmanager,warn,soybeans beginning_stocks 1994/95,209.0,212.27199999999993
+(final),us_soybeans,cross_source_agmanager,warn,soybeans imports 1993/94,6.0,6.2
+(final),us_corn,cross_source_agmanager,warn,corn exports 2005/06,2134.0,2147.0
+(final),us_corn,cross_source_agmanager,warn,corn feed_and_residual 1989/90,4455.0,4389.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans beginning_stocks 1988/89,302.0,304.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans seed 1987/88,56.0,60.0
+(final),us_corn,cross_source_agmanager,warn,corn domestic_total 1983/84,4709.0,4806.0
+(final),us_corn,cross_source_agmanager,warn,corn feed_and_residual 1981/82,4634.0,4245.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans area_harvested 1980/81,66.4,67.8
+(final),us_corn,cross_source_agmanager,warn,corn use_total 1980/81,6951.0,7282.0
+(final),us_corn,cross_source_agmanager,warn,corn ending_stocks 1979/80,1617.0,2034.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans beginning_stocks 1979/80,174.0,177.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans beginning_stocks 1991/92,329.0,334.0
+(final),us_corn,cross_source_agmanager,warn,corn imports 1987/88,4.0,3.0
+(final),us_corn,cross_source_agmanager,warn,corn exports 1985/86,1241.0,1227.0
+(final),us_corn,cross_source_agmanager,warn,corn use_total 1983/84,6574.0,6692.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans production 1981/82,54.4,1989.0
+(final),us_corn,cross_source_agmanager,warn,corn domestic_total 1980/81,4984.0,4891.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1993/94,209.0,212.27199999999993
+(final),us_soybeans,cross_source_agmanager,warn,soybeans seed 1990/91,55.0,57.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1996/97,132.0,134.80000000000018
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1992/93,292.0,296.3539999999998
+(final),us_soybeans,cross_source_agmanager,warn,soybeans beginning_stocks 1990/91,239.0,243.0
+(final),us_corn,cross_source_agmanager,warn,corn exports 1984/85,1865.0,1850.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans area_planted 1980/81,67.8,69.9
+(final),us_corn,cross_source_agmanager,warn,corn area_harvested 1980/81,74.7,73.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans beginning_stocks 1984/85,176.0,177.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans area_harvested 1981/82,26.9,66.2
+(final),us_corn,cross_source_agmanager,warn,corn use_total 1981/82,7055.0,6975.0
+(final),us_corn,cross_source_agmanager,warn,corn feed_and_residual 1980/81,4173.0,4232.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1978/79,174.0,177.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans beginning_stocks 1993/94,292.0,296.3539999999998
+(final),us_soybeans,cross_source_agmanager,warn,soybeans seed 2006/07,80.0,78.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans seed 1986/87,57.0,56.0
+(final),us_corn,cross_source_agmanager,warn,corn imports 1984/85,4.0,2.0
+(final),us_corn,cross_source_agmanager,warn,corn domestic_total 1982/83,3420.0,5428.0
+(final),us_corn,cross_source_agmanager,warn,corn exports 1981/82,1967.0,1997.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans crush 1980/81,1030.0,1020.0
+(final),us_corn,cross_source_agmanager,warn,corn domestic_total 1978/79,4943.0,4882.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans exports 1998/99,805.0,800.5
+(final),us_soybeans,cross_source_agmanager,warn,soybeans imports 1996/97,9.0,9.45
+(final),us_corn,cross_source_agmanager,warn,corn feed_and_residual 2021/22,5671.0,5726.0
+(final),us_corn,cross_source_agmanager,warn,corn exports 1983/84,1865.0,1886.0
+(final),us_corn,cross_source_agmanager,warn,corn feed_and_residual 1982/83,4522.0,4573.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans exports 1981/82,25.3,929.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1980/81,266.0,314.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans supply_total 1980/81,2318.0,2157.0
+(final),us_corn,cross_source_agmanager,warn,corn beginning_stocks 1979/80,1304.0,1710.0
+(final),us_corn,cross_source_agmanager,warn,corn supply_total 1979/80,9244.0,9639.0
+(final),us_corn,cross_source_agmanager,warn,corn feed_and_residual 1978/79,4368.0,4274.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans imports 1990/91,3.0,4.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1987/88,302.0,304.0
+(final),us_corn,cross_source_agmanager,warn,corn feed_and_residual 1984/85,4079.0,4115.0
+(final),us_corn,cross_source_agmanager,warn,corn ending_stocks 1980/81,2286.0,1393.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans beginning_stocks 1980/81,318.0,359.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans imports 1998/99,3.0,4.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans ending_stocks 1991/92,278.0,283.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans seed 1983/84,66.0,65.0
+(final),us_corn,cross_source_agmanager,warn,corn beginning_stocks 1983/84,3120.0,3523.0
+(final),us_corn,cross_source_agmanager,warn,corn supply_total 1983/84,7297.0,7699.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans area_planted 1981/82,27.4,67.5
+(final),us_corn,cross_source_agmanager,warn,corn exports 1979/80,2433.0,2402.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans seed 1998/99,88.0,89.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans imports 1997/98,5.0,4.6
+(final),us_corn,cross_source_agmanager,warn,corn ending_stocks 2007/08,1624.0,1685.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans seed 1989/90,57.0,56.0
+(final),us_corn,cross_source_agmanager,warn,corn exports 1986/87,1504.0,1492.0
+(final),us_corn,cross_source_agmanager,warn,corn area_harvested 1983/84,91.5,51.5
+(final),us_corn,cross_source_agmanager,warn,corn ending_stocks 1982/83,3120.0,3524.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans use_total 1981/82,55.8,2048.0
+(final),us_corn,cross_source_agmanager,warn,corn area_planted 1981/82,81.8,84.1
+(final),us_corn,cross_source_agmanager,warn,corn beginning_stocks 1981/82,1034.0,1392.0
+(final),us_corn,cross_source_agmanager,warn,corn supply_total 1981/82,9237.0,9512.0
+(final),us_corn,cross_source_agmanager,warn,corn production 1980/81,8202.0,6639.0
+(final),us_soybeans,cross_source_agmanager,warn,soybeans beginning_stocks 1978/79,161.0,162.0
+(final),us_corn,cross_source_agmanager,warn,corn ending_stocks 1978/79,1304.0,1710.0
