@@ -124,7 +124,7 @@ def phase_ingest(cfg, manifest_path: Path) -> None:
                     for (_, _, _, a), v in g.value.items()}
             corrected, quarantined = repair_group(vals, commodity)
             id_members = set().union(*identities_for(commodity))
-            for attr in vals:
+            for attr in list(vals):
                 key = (commodity, my, fm, attr)
                 if key not in obs.index:
                     continue
