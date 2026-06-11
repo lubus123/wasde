@@ -84,6 +84,45 @@ def repair_group(vals: dict, commodity: str) -> tuple[set[str], set[str]]:
     return corrected, quarantined
 
 
+def localize_single_bad(vals: dict, commodity: str,
+                        candidates: set[str] | None = None) -> tuple[str, float] | None:
+    """Hypothesis sweep: is there a UNIQUE member whose re-derivation makes the
+    whole identity system pass?
+
+    A single identity can never localize its own bad member (any member can
+    absorb the residual), so this only succeeds for cells constrained by two
+    identities (supply_total, use_total) — or when `candidates` narrows the
+    sweep, e.g. to the cells two OCR readers disagree on.
+    """
+    pool = candidates if candidates is not None else \
+        {m for m in vals if vals.get(m) is not None}
+    hits = []
+    for m in pool:
+        if vals.get(m) is None:
+            continue
+        trial = dict(vals)
+        trial[m] = None
+        derived = None
+        for identity in identities_for(commodity):
+            if m not in identity:
+                continue
+            others = {k: trial.get(k) for k in identity if k != m}
+            if any(v is None for v in others.values()):
+                continue
+            derived = -sum(c * others[k] for k, c in identity.items() if k != m) \
+                / identity[m]
+            break
+        if derived is None or not _plausible(derived, {k: v for k, v in vals.items()
+                                                       if k != m}):
+            continue
+        trial[m] = derived
+        if identities_pass(trial, commodity):
+            hits.append((m, derived))
+    if len(hits) == 1:
+        return hits[0]
+    return None
+
+
 def identities_pass(vals: dict, commodity: str) -> bool:
     """True when every testable identity holds without any repair."""
     for identity in identities_for(commodity):

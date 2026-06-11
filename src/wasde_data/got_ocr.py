@@ -17,6 +17,9 @@ from pathlib import Path
 from PIL import Image
 
 _MODEL_NAME = "stepfun-ai/GOT-OCR-2.0-hf"
+# the HF hub chunked downloader stalls on this network; weights are fetched by
+# plain curl into data/models/ instead (docs/DECISIONS.md)
+_LOCAL_DIR = Path(__file__).resolve().parents[2] / "data" / "models" / "GOT-OCR-2.0-hf"
 _state: dict = {}
 
 
@@ -25,9 +28,11 @@ def _load():
         return _state["processor"], _state["model"]
     import torch
     from transformers import AutoModelForImageTextToText, AutoProcessor
-    processor = AutoProcessor.from_pretrained(_MODEL_NAME)
+    source = str(_LOCAL_DIR) if (_LOCAL_DIR / "model.safetensors").exists() \
+        else _MODEL_NAME
+    processor = AutoProcessor.from_pretrained(source)
     model = AutoModelForImageTextToText.from_pretrained(
-        _MODEL_NAME, dtype=torch.float32, device_map="cpu")
+        source, dtype=torch.float32, device_map="cpu")
     model.eval()
     _state.update(processor=processor, model=model)
     return processor, model

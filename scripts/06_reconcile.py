@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from itertools import product
 from pathlib import Path
 
 import pandas as pd
@@ -30,6 +31,60 @@ from wasde_data.parsers.ocr_parser import OcrPage, locate_pages, parse_page
 from wasde_data.registry import Registry
 
 AGREE_TOL = 0.051
+MAX_DISPUTED = 8  # exhaustive reader-choice search bound (2^8 combos)
+
+
+def arbitrate_group(t_vals: dict, g_vals: dict,
+                    commodity: str) -> dict[str, tuple[float | None, str]]:
+    """Per-cell resolution for one column group: {attr: (value, qa_status)}.
+
+    Agreed cells anchor the group. For disputed cells (readers differ, or only
+    one read the cell), every combination of reader choices is tested against
+    the identity system; a UNIQUE passing combination decides every disputed
+    cell at once. Ambiguity or no passing combination -> quarantine.
+    """
+    attrs = sorted(set(t_vals) | set(g_vals))
+    agreed, disputed = {}, []
+    for attr in attrs:
+        t, v = t_vals.get(attr), g_vals.get(attr)
+        if t is not None and v is not None and abs(t - v) <= AGREE_TOL:
+            agreed[attr] = t
+        elif t is None and v is None:
+            continue
+        else:
+            disputed.append(attr)
+
+    out = {a: (val, "ok") for a, val in agreed.items()}
+    if not disputed:
+        return out
+    winners = _winning_combos(agreed, disputed, t_vals, g_vals, commodity) \
+        if len(disputed) <= MAX_DISPUTED else []
+    if len(winners) == 1:
+        for attr, pick in zip(disputed, winners[0], strict=True):
+            chosen = (t_vals.get(attr), g_vals.get(attr))[pick]
+            changed = (attr not in t_vals
+                       or t_vals.get(attr) is None
+                       or abs((t_vals.get(attr) or 0) - chosen) > AGREE_TOL)
+            out[attr] = (chosen, "corrected" if changed else "ok")
+    else:
+        for attr in disputed:
+            keep = t_vals.get(attr) if t_vals.get(attr) is not None \
+                else g_vals.get(attr)
+            out[attr] = (keep, "quarantined")
+    return out
+
+
+def _winning_combos(agreed, disputed, t_vals, g_vals, commodity):
+    winners = []
+    for combo in product((0, 1), repeat=len(disputed)):
+        trial = dict(agreed)
+        for attr, pick in zip(disputed, combo, strict=True):
+            trial[attr] = (t_vals.get(attr), g_vals.get(attr))[pick]
+        if any(trial.get(a) is None for a in disputed):
+            continue  # a combination that leaves a hole can't be verified
+        if identities_pass(trial, commodity):
+            winners.append(combo)
+    return winners
 
 
 def got_cells_for_release(release_id, report_month, pdf_path, registry, cfg):
@@ -72,49 +127,32 @@ def reconcile_release(con, release_id, report_month, got_groups, worklist):
         t_vals = {r.attribute: (None if pd.isna(r.value) else float(r.value))
                   for r in g.itertuples()}
         g_vals = got_groups.get((slug, commodity, my, fm), {})
-        t_ok = identities_pass(t_vals, commodity)
-        g_ok = identities_pass(g_vals, commodity) if g_vals else False
         template = g.iloc[0]
 
-        for attr in sorted(set(t_vals) | set(g_vals)):
-            t, v = t_vals.get(attr), g_vals.get(attr)
-            if t is not None and v is not None and abs(t - v) <= AGREE_TOL:
-                updates.append((t, "ok", release_id, slug, commodity, my, fm, attr))
-                stats["ok"] += 1
-                continue
-            if t is None and v is None:
-                continue
-            if v is not None and g_ok and not t_ok:
-                if attr in t_vals:
-                    updates.append((v, "corrected",
-                                    release_id, slug, commodity, my, fm, attr))
-                else:
-                    inserts.append(dict(
-                        release_id=release_id, report_month=str(report_month),
-                        table_slug=slug, region=template.region,
-                        commodity=commodity, attribute=attr, marketing_year=my,
-                        year_status=template.year_status, forecast_month=fm,
-                        value=v, unit=template.unit,
-                        raw_attribute="(GOT-OCR, identity-verified)",
-                        raw_commodity="", source_format="ocr",
-                        qa_status="corrected", parsed_at=pd.Timestamp.now()))
-                    stats["inserted"] += 1
-                stats["corrected"] += 1
-                continue
-            if t is not None and t_ok and not g_ok:
-                updates.append((t, "ok", release_id, slug, commodity, my, fm, attr))
-                stats["ok"] += 1
-                continue
-            # conflict with no identity arbiter (or two self-consistent readings)
-            keep = t if t is not None else v
-            updates.append((keep, "quarantined",
-                            release_id, slug, commodity, my, fm, attr))
-            stats["quarantined"] += 1
-            worklist.append(dict(release_id=release_id, table_slug=slug,
-                                 commodity=commodity, marketing_year=my,
-                                 forecast_month=fm, attribute=attr,
-                                 tesseract=t, got_ocr=v,
-                                 tesseract_group_ok=t_ok, got_group_ok=g_ok))
+        resolution = arbitrate_group(t_vals, g_vals, commodity)
+        for attr, (value, status) in resolution.items():
+            if attr in t_vals:
+                updates.append((value, status,
+                                release_id, slug, commodity, my, fm, attr))
+            elif value is not None and status != "quarantined":
+                inserts.append(dict(
+                    release_id=release_id, report_month=str(report_month),
+                    table_slug=slug, region=template.region,
+                    commodity=commodity, attribute=attr, marketing_year=my,
+                    year_status=template.year_status, forecast_month=fm,
+                    value=value, unit=template.unit,
+                    raw_attribute="(GOT-OCR, identity-verified)",
+                    raw_commodity="", source_format="ocr",
+                    qa_status=status, parsed_at=pd.Timestamp.now()))
+                stats["inserted"] += 1
+            stats["ok" if status == "ok" else
+                  "corrected" if status == "corrected" else "quarantined"] += 1
+            if status == "quarantined":
+                worklist.append(dict(release_id=release_id, table_slug=slug,
+                                     commodity=commodity, marketing_year=my,
+                                     forecast_month=fm, attribute=attr,
+                                     tesseract=t_vals.get(attr),
+                                     got_ocr=g_vals.get(attr)))
 
     for value, status, *key in updates:
         con.execute("""

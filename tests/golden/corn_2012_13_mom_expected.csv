@@ -1,0 +1,33 @@
+# Hand-verified month-over-month chain for US corn ending_stocks, marketing year 2012/13.
+# Source: data/exports/observations.parquet rows printed and eyeballed on 2026-06-11
+# (drought-year lifecycle: first print May-2012, shutdown gap Oct-2013, final actual 821).
+# value/value_prev are the report's headline numbers; method records how prev was found.
+report_month,value,value_prev,delta,method,is_first_print,year_status
+2012-05-01,1881,,,within_report,True,projection
+2012-06-01,1881,1881,0,within_report,False,projection
+2012-07-01,1183,1881,-698,within_report,False,projection
+2012-08-01,650,1183,-533,within_report,False,projection
+2012-09-01,733,650,83,within_report,False,projection
+2012-10-01,619,733,-114,within_report,False,projection
+2012-11-01,647,619,28,within_report,False,projection
+2012-12-01,647,647,0,within_report,False,projection
+2013-01-01,602,647,-45,within_report,False,projection
+2013-02-01,632,602,30,within_report,False,projection
+2013-03-01,632,632,0,within_report,False,projection
+2013-04-01,757,632,125,within_report,False,projection
+2013-05-01,759,757,2,cross_release,False,estimate
+2013-06-01,769,759,10,cross_release,False,estimate
+2013-07-01,729,769,-40,cross_release,False,estimate
+2013-08-01,719,729,-10,cross_release,False,estimate
+2013-09-01,661,719,-58,cross_release,False,estimate
+2013-11-01,824,661,163,cross_release,False,estimate
+2013-12-01,824,824,0,cross_release,False,estimate
+2014-01-01,821,824,-3,cross_release,False,estimate
+2014-02-01,821,821,0,cross_release,False,estimate
+2014-03-01,821,821,0,cross_release,False,estimate
+2014-04-01,821,821,0,cross_release,False,estimate
+2014-05-01,821,821,0,cross_release,False,actual
+2014-06-01,821,821,0,cross_release,False,actual
+2014-07-01,821,821,0,cross_release,False,actual
+2014-08-01,821,821,0,cross_release,False,actual
+2014-09-01,821,821,0,cross_release,False,actual
