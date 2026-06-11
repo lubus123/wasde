@@ -60,24 +60,40 @@ def arbitrate_group(t_vals: dict, g_vals: dict,
     winners = _winning_combos(agreed, disputed, t_vals, g_vals, commodity) \
         if len(disputed) <= MAX_DISPUTED else []
     if len(winners) == 1:
+        trial = dict(agreed)
         for attr, pick in zip(disputed, winners[0], strict=True):
-            chosen = (t_vals.get(attr), g_vals.get(attr))[pick]
+            trial[attr] = (t_vals.get(attr), g_vals.get(attr))[pick]
+        for attr, pick in zip(disputed, winners[0], strict=True):
+            chosen = trial[attr]
+            if not _identity_backed(attr, trial, commodity):
+                # the combo 'won' vacuously for this cell — it sits outside
+                # every testable identity, so the win proves nothing about it
+                out[attr] = _unverified(attr, t_vals, g_vals)
+                continue
             changed = (attr not in t_vals
                        or t_vals.get(attr) is None
                        or abs((t_vals.get(attr) or 0) - chosen) > AGREE_TOL)
             out[attr] = (chosen, "corrected" if changed else "ok")
     else:
         for attr in disputed:
-            t, v = t_vals.get(attr), g_vals.get(attr)
-            if t is not None and v is not None:
-                # true conflict with no identity arbiter
-                out[attr] = (t, "quarantined")
-            else:
-                # one reader only, nothing to test against: keep it visible as
-                # unverified rather than degrading it to quarantine (sub-stock
-                # rows, prices, area/yield sit outside every identity)
-                out[attr] = (t if t is not None else v, "warn")
+            out[attr] = _unverified(attr, t_vals, g_vals)
     return out
+
+
+def _identity_backed(attr: str, trial: dict, commodity: str) -> bool:
+    from wasde_data.identity import identities_for
+    return any(attr in identity
+               and all(trial.get(m) is not None for m in identity)
+               for identity in identities_for(commodity))
+
+
+def _unverified(attr: str, t_vals: dict, g_vals: dict) -> tuple[float | None, str]:
+    t, v = t_vals.get(attr), g_vals.get(attr)
+    if t is not None and v is not None:
+        return (t, "quarantined")  # true conflict, no arbiter
+    # one reader only, nothing to test against: keep visible as unverified
+    # (sub-stock rows, prices, area/yield sit outside every identity)
+    return (t if t is not None else v, "warn")
 
 
 def _winning_combos(agreed, disputed, t_vals, g_vals, commodity):
