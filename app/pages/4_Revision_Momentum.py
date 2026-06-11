@@ -98,6 +98,7 @@ g = g[g["n"] >= 8]
 z = (g.pivot(index="pair", columns="attribute", values="agree") - 0.5) * 100
 z = z.reindex(index=[p for p in pair_order if p in z.index],
               columns=[a for a in attrs_df["attribute"] if a in z.columns])
+z = z.dropna(axis=1, how="all")  # attributes with no bucket ≥ 8 pairs
 if z.empty:
     st.info("Not enough pairs per bucket — lower the revision filter.")
 else:

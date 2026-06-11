@@ -65,6 +65,16 @@ def test_untestable_group_quarantines_disputes():
     assert out["farm_price"][1] == "quarantined"
 
 
+def test_single_reader_cell_outside_identities_is_warn_not_quarantine():
+    """Sub-stock rows (CCC etc.) sit outside every identity; if only one
+    reader captured them there is nothing to test — keep visible as 'warn'."""
+    tess = dict(TRUE, ccc_inventory=201.0)
+    got = dict(TRUE)  # Paddle didn't read the CCC row
+    out = reconcile.arbitrate_group(tess, got, "corn")
+    assert out["ccc_inventory"] == (201.0, "warn")
+    assert out["ending_stocks"] == (723.0, "ok")  # agreed cells unaffected
+
+
 def test_isolated_agreement_is_ok_even_without_identities():
     out = reconcile.arbitrate_group(dict(farm_price=3.25), dict(farm_price=3.25),
                                     "corn")

@@ -74,9 +74,12 @@ left.plotly_chart(
              "Mean error by calendar report month"),
     width="stretch",
 )
-horizons = sorted(errors["horizon_months"].unique())
+H_LABELS = ["1–3", "4–6", "7–9", "10–12", "13–18", "19–24", "25+"]
+errors["horizon_bucket"] = pd.cut(
+    errors["horizon_months"], bins=[0, 3, 6, 9, 12, 18, 24, 999], labels=H_LABELS
+)
 right.plotly_chart(
-    _surface("horizon_months", horizons, [str(h) for h in horizons],
+    _surface("horizon_bucket", H_LABELS, H_LABELS,
              "Mean error by months before final print"),
     width="stretch",
 )

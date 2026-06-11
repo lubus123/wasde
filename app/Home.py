@@ -7,6 +7,7 @@ from lib import (
     PALETTE,
     analytics,
     apply_layout,
+    attributes,
     diverging,
     fetch_series,
     page_header,
@@ -32,6 +33,7 @@ st.caption(
 )
 
 CARD_ATTRS = ["production", "exports", "ending_stocks", "stocks_to_use", "farm_price"]
+attrs_meta = attributes(slug, commodity, region)
 obs = fetch_series(slug, commodity, region, CARD_ATTRS)
 mom = analytics.mom_changes(obs)
 latest_month = mom["report_month"].max()
@@ -43,7 +45,8 @@ lm = lm[lm["marketing_year"] == target_my]
 
 st.subheader(f"{latest_month:%B %Y} report — {target_my}")
 cards = st.columns(len(CARD_ATTRS))
-units = obs.groupby("attribute")["unit"].last()
+# Latest-era display unit per attribute (TXT-era unit labels are unreliable upstream).
+units = dict(zip(attrs_meta["attribute"], attrs_meta["unit"], strict=True))
 for col, attr in zip(cards, CARD_ATTRS, strict=True):
     row = lm[lm["attribute"] == attr]
     if row.empty:
@@ -51,12 +54,14 @@ for col, attr in zip(cards, CARD_ATTRS, strict=True):
         continue
     r = row.iloc[0]
     fmt = "{:,.3f}" if attr == "stocks_to_use" else "{:,.2f}"
-    delta = None if pd.isna(r["delta"]) else fmt.format(r["delta"])
+    dfmt = "{:+,.4f}" if attr == "stocks_to_use" else "{:+,.2f}"
+    delta = None if pd.isna(r["delta"]) or r["delta"] == 0 else dfmt.format(r["delta"])
     col.metric(
         f"{pretty(attr)} ({unit_label(units.get(attr))})",
         fmt.format(r["value"]),
         delta=delta,
-        help=f"vs previous print ({r['method'].replace('_', ' ')})",
+        help=f"vs previous print ({r['method'].replace('_', ' ')}); "
+             "no arrow = unchanged",
     )
 
 # -------------------------------------------------------------------- waterfall

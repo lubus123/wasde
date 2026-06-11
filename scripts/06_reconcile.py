@@ -68,9 +68,15 @@ def arbitrate_group(t_vals: dict, g_vals: dict,
             out[attr] = (chosen, "corrected" if changed else "ok")
     else:
         for attr in disputed:
-            keep = t_vals.get(attr) if t_vals.get(attr) is not None \
-                else g_vals.get(attr)
-            out[attr] = (keep, "quarantined")
+            t, v = t_vals.get(attr), g_vals.get(attr)
+            if t is not None and v is not None:
+                # true conflict with no identity arbiter
+                out[attr] = (t, "quarantined")
+            else:
+                # one reader only, nothing to test against: keep it visible as
+                # unverified rather than degrading it to quarantine (sub-stock
+                # rows, prices, area/yield sit outside every identity)
+                out[attr] = (t if t is not None else v, "warn")
     return out
 
 
@@ -118,9 +124,9 @@ def reconcile_release(con, release_id, report_month, got_groups, worklist):
         FROM observations WHERE release_id = ? AND source_format = 'ocr'
     """, [release_id]).fetchdf()
     if tess.empty:
-        return dict(ok=0, corrected=0, quarantined=0, inserted=0)
+        return dict(ok=0, corrected=0, warn=0, quarantined=0, inserted=0)
 
-    stats = dict(ok=0, corrected=0, quarantined=0, inserted=0)
+    stats = dict(ok=0, corrected=0, warn=0, quarantined=0, inserted=0)
     updates, inserts = [], []
     for (slug, commodity, my, fm), g in tess.groupby(
             ["table_slug", "commodity", "marketing_year", "forecast_month"]):
@@ -145,8 +151,7 @@ def reconcile_release(con, release_id, report_month, got_groups, worklist):
                     raw_commodity="", source_format="ocr",
                     qa_status=status, parsed_at=pd.Timestamp.now()))
                 stats["inserted"] += 1
-            stats["ok" if status == "ok" else
-                  "corrected" if status == "corrected" else "quarantined"] += 1
+            stats[status] += 1
             if status == "quarantined":
                 worklist.append(dict(release_id=release_id, table_slug=slug,
                                      commodity=commodity, marketing_year=my,
@@ -188,7 +193,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.limit:
         todo = todo[:args.limit]
 
-    totals = dict(ok=0, corrected=0, quarantined=0, inserted=0, releases=0)
+    totals = dict(ok=0, corrected=0, warn=0, quarantined=0, inserted=0, releases=0)
     worklist: list[dict] = []
     for i, (release_id, report_month, local_path) in enumerate(todo, 1):
         got_groups = got_cells_for_release(release_id, report_month, local_path,

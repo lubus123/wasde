@@ -50,7 +50,10 @@ if mom.empty:
     st.info("No revisions to rank for this selection.")
     st.stop()
 
-top = mom.reindex(mom["score"].abs().sort_values(ascending=False).index).head(25)
+# Sub-0.5% moves can carry huge z (revisions of long-settled years are almost
+# always zero, so their std is tiny) — not tradeable surprises; keep them out.
+ranked = mom[mom["pct"].abs() >= 0.5]
+top = ranked.reindex(ranked["score"].abs().sort_values(ascending=False).index).head(25)
 top = top.iloc[::-1]
 labels = [
     f"{r.report_month:%b %Y} · {pretty(r.attribute)} · {r.marketing_year}"
@@ -60,12 +63,14 @@ texts = [f"{r.pct:+.1f}% (z {r.z:+.1f})" for r in top.itertuples()]
 lfig = go.Figure(go.Bar(
     x=top["score"], y=labels, orientation="h",
     marker_color=[PALETTE["raise"] if s > 0 else PALETTE["cut"] for s in top["score"]],
-    text=texts, textposition="outside",
+    text=texts, textposition="auto", insidetextanchor="middle",
 ))
 apply_layout(lfig, height=70 + 26 * len(top),
              xaxis_title="z-score" if norm.startswith("z") else "% change")
 lfig.update_layout(margin=dict(l=10, r=80))
 st.plotly_chart(lfig, width="stretch")
+st.caption("Revisions smaller than ±0.5% are excluded — late tweaks to settled "
+           "years carry inflated z-scores but no tradeable information.")
 
 # ---------------------------------------------------------------- shock gallery
 st.divider()
