@@ -2,6 +2,45 @@
 
 Machine-searchable record of why things are the way they are. Newest first.
 
+## 2026-06-11 — M5 OCR design (1973-94 scan era)
+
+- **Two print eras inside the scan era.** ~1985-1994 (27-32 pages): per-commodity
+  balance sheets in the layout the TXT era inherited — handled by
+  parsers/ocr_parser.py. 1973-~1984 (4-17 pages): compact all-commodity summary
+  tables — DEFERRED (separate parser needed; releases stay visible as
+  no-observation rows in coverage). Era boundary is detected naturally: page
+  titles like 'U.S. Feed Grains and Corn' don't exist before ~1985.
+- **Column years are derived from the report date, not OCRed.** Fax-era OCR
+  reads '1983/84' as '1983/64'; WASDE's column convention is fixed
+  ([base-2 actual, base-1 est, base proj x prior+current month], base rolls in
+  May, May prints a single first-projection column), so years are derived and
+  the noisy header is ignored.
+- **Raw OCR is never trusted; identities repair, then quarantine.** Signed
+  balance identities (supply = beg+prod+imports; use = dom+exports or soy
+  components; ending = supply-use) run per column group: a single missing or
+  uniquely-repairable member is derived (qa_status='corrected', including rows
+  whose printed line was unreadable - raw_attribute='(derived from identity)');
+  ambiguous groups quarantine wholesale. Observed 1985 sample: ~45% of cells
+  quarantine on the first pass - the next accuracy lever is the cross-report
+  reconciliation pass (each number is printed in two consecutive reports; two
+  independent OCR reads agreeing is strong evidence), then AgManager finals
+  for actual columns, then data/manual/ocr_overrides.csv for the remainder.
+- **Title regexes tolerate OCR confusions** ('U.5.', 'C0rn'); numeric tokens
+  get a digit-confusion translation (i/l/I->1, o/O->0, S->5, B->8...) applied
+  only to numeric-ish tokens; '1.181'-style three-decimal artifacts are
+  thousands separators.
+
+### M5 remaining work (for the next session)
+
+1. Cross-report reconciliation pass (06-style script): match report N's
+   quarantined cells against report N+1's prior-month column and N-1's
+   next-month reprint; agreement -> corrected, disagreement -> stays
+   quarantined. Add AgManager check for 'actual' columns.
+2. Manual override workflow for the residue (data/manual/ocr_overrides.csv,
+   applied last, qa_status='corrected').
+3. Pre-1985 compact-table parser (commodity rows x year columns, 4-17 pages).
+4. Goal unchanged: zero quarantined corn/soy cells 1973-94.
+
 ## 2026-06-11 — QA interpretation notes
 
 - **cross_source_agmanager warns are the vintage-vs-final gap, not errors.**
