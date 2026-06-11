@@ -2,6 +2,42 @@
 
 Machine-searchable record of why things are the way they are. Newest first.
 
+## 2026-06-11 — Vintage Explorer app (app/, Streamlit + Plotly)
+
+- **App reads `data/exports/*.parquet`, never `data/wasde.duckdb`.** The OCR backfill
+  writes the DuckDB file; parquet snapshots are immutable, lock-free, and the app's
+  cache busts on export mtime — regenerating via `scripts/12_export.py` is the only
+  refresh step. OCR-era rows appear in the app automatically once exports regenerate.
+- **Series key is `(table_slug, commodity, region, attribute)`** — slugs are not
+  single-commodity (us_corn also carries feed_grains; us_wheat carries 5 by-class
+  commodities). Unit is NOT part of the key: verified no cell is ever printed twice
+  in different units within one release; multi-unit attributes are purely the
+  TXT-era mislabel (e.g. farm_price tagged `million_bushels` through 2010-06 —
+  upstream registry bug, display uses the latest-era unit via `arg_max`).
+- **MoM change, two regimes** (`wasde_data.analytics.mom_changes`): projections diff
+  within-report against the other printed column (derived from data, not month
+  arithmetic — the Nov-2013 report's prev column is Sep because of the shutdown);
+  estimate/actual rows and single-column sub-tables (us_wheat by-class) diff
+  cross-release against the previous *available* report. First prints (NaN prev
+  placeholder) are flagged and excluded from stats. `reprint_revision` cross-checks
+  reprinted columns and surfaces unflagged revisions.
+- **"Final" = the last value WASDE ever printed** for a (marketing_year, attribute)
+  cell, with `final_year_status` exposed so unfinalized years are excluded from bias
+  stats. Caveat shown in-app: last WASDE print ≠ today's NASS/ERS-revised number.
+- **Bias horizon = months until the final print** (commodity-agnostic; sidesteps
+  per-commodity marketing-year conventions). Wilcoxon signed-rank vs zero median,
+  NaN below 5 non-zero errors; multiple-comparisons warning shown in-app.
+- **Plotly heatmaps don't emit Streamlit selection events** — drill-down uses explicit
+  selectboxes (defaulting to the matrix's biggest |z| cell), not on_select clicks.
+- Golden fixture: `tests/fixtures/app/us_corn_2012_vintage.parquet` +
+  `tests/golden/corn_2012_13_mom_expected.csv` (hand-verified drought-year chain:
+  May-12 first print 1,881; Jul −698; Aug −533; estimate transition +2; final 821).
+- Known data quirk handled: 2010-H2 world tables print `actual` rows with
+  forecast_month labels (~12k rows) — headline dedupe prefers the unlabelled row.
+- Coverage note: repo gate is 85% on `src/wasde_data`; `analytics.py` is 100% but the
+  in-flight M5 OCR modules (got_ocr, vlm_ocr, paddle_ocr, ocr_parser) hold the total
+  at ~79% — pre-existing shortfall owned by the OCR milestone, not weakened here.
+
 ## 2026-06-11 — M5 tesseract pass results (full scan era)
 
 - 137 releases parsed, 17,045 cells: 12,898 ok / 2,372 identity-corrected /
@@ -78,6 +114,19 @@ Machine-searchable record of why things are the way they are. Newest first.
   get a digit-confusion translation (i/l/I->1, o/O->0, S->5, B->8...) applied
   only to numeric-ish tokens; '1.181'-style three-decimal artifacts are
   thousands separators.
+
+### Compact-era (1973-79) format, scoped via 1976-06 Paddle probe
+
+Pages 1-2 are narrative; balance tables start ~page 3. Structure per commodity
+section ('CORN:' etc.): familiar row labels (Planted/Harvested/Yield/Beginning
+stocks/.../Ending stocks) but DUAL-UNIT columns — 3 marketing years in imperial
+(Million acres / Bushels / Million bushels) followed by the same 3 years in
+metric (Million hectares / Metric tons / MMT), each block with a trailing
++/- tolerance column. Parser = ocr_parser variant: derive 3 year columns
+(no May/Jun pairs), split value rows at the imperial/metric boundary (first
+half), reuse row-label table + identity repair. Dual printing of every number
+in two unit systems is itself a within-report cross-check (bushels x 0.0254 =
+MMT for corn).
 
 ### M5 remaining work (for the next session)
 

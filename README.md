@@ -14,10 +14,12 @@ of 2008?" as well as "what changed between May and June 2026?".
 python3 -m venv .venv
 .venv/bin/pip install -e ".[dev]"          # core + test tooling
 .venv/bin/pip install -e ".[ocr]"          # only for the 1973-94 scan era
+.venv/bin/pip install -e ".[app]"          # Vintage Explorer dashboard
 sudo apt install tesseract-ocr             # only for the 1973-94 scan era
 
 .venv/bin/python -m pytest                 # all tests (no network)
 .venv/bin/python -m pytest -m integration  # live ESMIS smoke tests
+.venv/bin/streamlit run app/Home.py        # Vintage Explorer (reads data/exports/)
 ```
 
 ## Pipeline
@@ -64,6 +66,26 @@ SELECT attribute, forecast_month, value FROM observations
 WHERE release_id='wasde-2026-06-11' AND table_slug='us_corn'
   AND marketing_year='2026/27';
 ```
+
+## Vintage Explorer (app/)
+
+Streamlit + Plotly dashboard over the parquet exports (`data/exports/`, refreshed by
+`scripts/12_export.py` — the app never opens the live DuckDB, so it stays lock-free
+while the OCR backfill runs). Launch: `.venv/bin/streamlit run app/Home.py`.
+
+| Page | Question it answers |
+|---|---|
+| Home | What did the latest report change, across every US table? |
+| Vintage Progression | How did belief about one crop year form, and is this year converging normally (IQR cone)? |
+| Report Month Matrix | **Every year's e.g. September report at once** — % MoM revision per attribute, colour-coded, plus bias of that month's print vs the final number |
+| Bias Explorer | Where is USDA systematically wrong, by calendar month and by months-to-resolution? |
+| Revision Momentum | Does a cut predict another cut? (lag-1 autocorrelation, follow-vs-fade) |
+| Surprise Leaderboard | Biggest prints in 30 years (z-scored within calendar month); how unusual is today? |
+| Coverage & QA | Which attributes exist in which era; QA status, nothing hidden |
+
+Pure analytics live in `src/wasde_data/analytics.py` (100% covered, golden-tested
+against the hand-verified corn 2012/13 drought-year chain); pages are thin Plotly
+glue. Smoke tests: `tests/test_app_smoke.py` renders every page headlessly.
 
 ## Accuracy contract
 
