@@ -38,6 +38,7 @@ def candidates_from_parquet(cfg) -> list[tuple[str, str, str]]:
     with no observations — computed from the parquet exports so phase A can
     run while another process holds the DuckDB lock."""
     releases = pd.read_parquet(cfg.paths.exports / "releases.parquet")
+    releases["report_month"] = pd.to_datetime(releases["report_month"])
     obs = pd.read_parquet(cfg.paths.exports / "observations.parquet",
                           columns=["release_id"])
     have = set(obs.release_id.unique())
