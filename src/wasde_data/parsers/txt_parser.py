@@ -105,6 +105,10 @@ def parse_txt(content: bytes, registry: Registry, report_month: str) -> TxtParse
         if header is None:
             i += 1
             continue
+        nonspace = [c for c in title if not c.isspace()]
+        if title and (title.startswith("=")
+                      or sum(c.isdigit() for c in nonspace) > len(nonspace) * 0.4):
+            title = ""              # stray separator inside a data block
         spec = registry.resolve_table(title) if title and ":" not in title else None
         if spec is None:
             if title and ":" not in title and _looks_like_table_header(header):
@@ -215,27 +219,56 @@ class _UsTable:
         self.cols = _us_columns(header)
         self.spec, self.registry = spec, registry
         self.cells: list[ParsedCell] = []
-        self.commodity = spec.commodity
+        self.commodity = spec.txt_initial_commodity or spec.commodity
         self.unit: str | None = None
         self.pending_label = ""
         self.open_ranges: dict[int, tuple[str, ParsedCell]] = {}
 
-    def _col_idx(self, zone_start: int, m: re.Match) -> int:
-        center = zone_start + (m.start() + m.end()) // 2
-        return min(range(len(self.cols)), key=lambda k: abs(self.cols[k].center - center))
+    def _assign(self, zone_start: int, values: list[re.Match]) -> list[int]:
+        """Column index per value. Full rows zip positionally — header year
+        tokens sit left of the right-aligned numbers in narrow-layout files,
+        which defeats nearest-anchor matching. Short rows (CCC inventory etc.)
+        use nearest-anchor with order-preserving uniqueness."""
+        if len(values) == len(self.cols):
+            return list(range(len(self.cols)))
+        out, prev = [], -1
+        for m in values:
+            center = zone_start + (m.start() + m.end()) // 2
+            candidates = [k for k in range(len(self.cols)) if k > prev]
+            if not candidates:
+                candidates = [len(self.cols) - 1]
+            idx = min(candidates, key=lambda k: abs(self.cols[k].center - center))
+            out.append(idx)
+            prev = idx
+        return out
+
+    def _drop_footnote_tokens(self, values: list[re.Match]) -> list[re.Match]:
+        """'15,613 3   15,695' / '93 _3/  93_3/': bare 1-2 digit tokens glued to
+        the previous value are printed footnote refs, not values. Only dropped
+        while they explain an excess over the column count."""
+        while len(values) > len(self.cols):
+            for i in range(1, len(values)):
+                tok = values[i].group(0)
+                gap = values[i].start() - values[i - 1].end()
+                if re.fullmatch(r"\d{1,2}", tok) and gap <= 2:
+                    values = values[:i] + values[i + 1:]
+                    break
+            else:
+                return values
+        return values
 
     def _flush_open(self) -> None:
         self.cells.extend(cell for _, cell in self.open_ranges.values())
         self.open_ranges = {}
 
-    def _complete_ranges(self, zone_start: int, values: list[re.Match]) -> None:
-        """Continuation line ('6.10   6.25') completing wrapped ranges."""
-        for m in values:
-            idx = self._col_idx(zone_start, m)
-            if idx in self.open_ranges:
-                first, cell = self.open_ranges.pop(idx)
-                raw = f"{first} - {m.group(0).strip()}"
-                self.cells.append(replace(cell, value=clean_number(raw), raw_value=raw))
+    def _complete_ranges(self, values: list[re.Match]) -> None:
+        """Continuation line ('7.25   7.30') completing wrapped ranges: pair
+        k-th value with k-th pending open range, in column order."""
+        pending = sorted(self.open_ranges.items())
+        for (idx, (first, cell)), m in zip(pending, values, strict=False):
+            raw = f"{first} - {m.group(0).strip()}"
+            self.cells.append(replace(cell, value=clean_number(raw), raw_value=raw))
+            del self.open_ranges[idx]
         self._flush_open()
 
     def _no_value_line(self, label: str, zone: str) -> None:
@@ -269,8 +302,8 @@ class _UsTable:
             self.pending_label = ""
         if not label_text:
             return
-        for m in values:
-            idx = self._col_idx(zone_start, m)
+        values = self._drop_footnote_tokens(values)
+        for m, idx in zip(values, self._assign(zone_start, values), strict=True):
             col = self.cols[idx]
             cell = ParsedCell(
                 table_slug=self.spec.slug, region=self.spec.region,
@@ -292,7 +325,7 @@ class _UsTable:
         zone = ln[zone_start:]
         values = list(_VALUE_RE.finditer(zone))
         if self.open_ranges and not _clean_ws(label) and values:
-            self._complete_ranges(zone_start, values)
+            self._complete_ranges(values)
             return
         self._flush_open()
         if values:
@@ -312,7 +345,8 @@ def _parse_us(body: list[str], header: list[str], spec: TableSpec,
 
 # --- world-style ------------------------------------------------------------
 
-_WORLD_KEYWORDS = ("Beginning", "Exports")
+# prefix forms: July/Aug-1995 headers truncate words ('Beginni', 'Expor')
+_WORLD_KEYWORDS = ("Beginni", "Expor")
 
 
 def _world_row_label(label: str, month: str, status: str,
@@ -335,7 +369,7 @@ def _parse_world(body: list[str], header: list[str], spec: TableSpec,
     # leaf delimiter line: the header line with the most colons
     leaf = max(header, key=lambda ln: ln.count(":"))
     n_leaf = leaf.count(":") - 1  # between-colon columns
-    has_trailing = any(ln.rstrip()[-1:] not in (":", "") and "stocks" in ln.casefold()
+    has_trailing = any(ln.rstrip()[-1:] not in (":", "") and "stock" in ln.casefold()
                        for ln in header)
     n_cols = n_leaf + (1 if has_trailing else 0)
     if n_cols != len(spec.txt_columns):

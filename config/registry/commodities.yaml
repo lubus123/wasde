@@ -11,6 +11,19 @@ commodities:
     aliases: ["Oilseeds", "Total Oilseeds"]
   wheat:
     aliases: ["Wheat", "WHEAT"]
+  wheat_hard_red_winter:
+    aliases: ["Hard Red Winter", "Hard Winter"]
+  wheat_hard_red_spring:
+    aliases: ["Hard Red Spring", "Hard Spring"]
+  wheat_soft_red_winter:
+    aliases: ["Soft Red Winter", "Soft Red"]
+  wheat_white:
+    aliases: ["White"]
+  wheat_durum:
+    aliases: ["Durum"]
+  wheat_all_classes:
+    aliases: ["Total"]   # the by-class matrix's Total column; distinct slug so it
+                         # can never silently overwrite the main wheat rows
   sorghum:
     aliases: ["Sorghum", "SORGHUM", "Grain Sorghum"]
   barley:

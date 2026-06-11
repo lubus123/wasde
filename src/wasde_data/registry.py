@@ -60,6 +60,9 @@ class TableSpec:
         # TXT-era world tables: fixed column order, validated by count+keywords
         self.txt_columns: list[str] = spec.get("txt_columns", [])
         self.txt_skip = bool(spec.get("txt_skip", False))  # shape not yet supported
+        # commodity in effect before any section header (1996 soy tables print
+        # the soybeans block with no 'SOYBEANS:' line)
+        self.txt_initial_commodity: str | None = spec.get("txt_initial_commodity")
         # TXT-era table-local section headers -> commodity slugs
         # (rice: 'TOTAL' / 'LONG GRAIN' / 'MEDIUM & SHORT GRAIN')
         self.txt_sections: dict[str, str] = {

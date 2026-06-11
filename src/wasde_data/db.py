@@ -50,9 +50,11 @@ CREATE TABLE IF NOT EXISTS qa_exceptions (
   PRIMARY KEY (release_id, table_slug, check_name, detail));
 
 CREATE TABLE IF NOT EXISTS agmanager_obs (
-  report_month DATE, commodity TEXT, attribute TEXT, marketing_year TEXT,
-  value DOUBLE, unit TEXT, fetched_at TIMESTAMP,
-  PRIMARY KEY (report_month, commodity, attribute, marketing_year));
+  -- K-State final balance sheets per marketing year (not vintages): validates
+  -- the finalized 'actual' columns of historical reports
+  commodity TEXT, attribute TEXT, marketing_year TEXT,
+  value DOUBLE, unit TEXT, source_note TEXT, fetched_at TIMESTAMP,
+  PRIMARY KEY (commodity, attribute, marketing_year));
 
 CREATE TABLE IF NOT EXISTS unmapped_labels (
   release_id TEXT, table_slug TEXT, raw_label TEXT,
@@ -86,6 +88,21 @@ def connect(path: Path | str) -> duckdb.DuckDBPyConnection:
     con = duckdb.connect(str(path))
     con.execute(SCHEMA)
     return con
+
+
+def recompute_is_latest(con: duckdb.DuckDBPyConnection) -> None:
+    """One winner per report_month: prefer releases that actually parsed into
+    observations (a replacement *notice* must not outrank the report it
+    annotates), then highest version, then newest release_datetime."""
+    con.execute("""
+        UPDATE releases SET is_latest = (release_id = (
+          SELECT r2.release_id FROM releases r2
+          LEFT JOIN (SELECT release_id, count(*) AS n
+                     FROM observations GROUP BY 1) o USING (release_id)
+          WHERE r2.report_month = releases.report_month
+          ORDER BY (coalesce(o.n, 0) > 0) DESC,
+                   r2.version DESC, r2.release_datetime DESC
+          LIMIT 1))""")
 
 
 def upsert(con: duckdb.DuckDBPyConnection, table: str, df: pd.DataFrame,

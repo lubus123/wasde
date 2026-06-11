@@ -60,7 +60,7 @@ def main(argv: list[str] | None = None) -> int:
         file_rows.extend(dict(
             release_id=a.release_id, ext=a.ext, url=a.url,
             local_path=str(a.local_path), sha256=a.sha256, bytes=a.bytes)
-            for a in archived)
+            for a in archived if a.canonical)
         if i % 25 == 0:
             print(f"  {i}/{len(releases)} releases archived "
                   f"(downloaded={downloaded} skipped={skipped})")

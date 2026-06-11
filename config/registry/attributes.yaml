@@ -13,7 +13,9 @@ attributes:
   yield_per_harvested_acre:
     aliases: ["Yield per Harvested Acre", "Yield per harvested acre", "Yield",
               "Yield (pounds)", "Yield (lbs.)", "Yield per harv. unit",
-              "Yield (bushels/acre)", "Yield (pounds/acre)"]
+              "Yield (bushels/acre)", "Yield (pounds/acre)", "Yield per harv. acre"]
+  yield_per_harvested_hectare:
+    aliases: ["Yield / harv. hectare", "Yield per harv. hectare"]
   beginning_stocks:
     aliases: ["Beginning Stocks", "Beginning stocks", "Supply Beg. Stocks 1/",
               "Beginning stocks (mil. cwt)"]
@@ -24,10 +26,13 @@ attributes:
   supply_total:
     aliases: ["Supply, Total", "Supply, total", "Total supply", "Total Supply"]
   feed_and_residual:
-    aliases: ["Feed and Residual", "Feed and residual"]
+    # bare 'Feed' = the same line in mid-90s sorghum/barley/oats sub-tables
+    # (Feed + FSI = Total domestic); world tables never reach alias lookup
+    aliases: ["Feed and Residual", "Feed and residual", "Feed"]
   food_seed_industrial:
     aliases: ["Food, Seed & Industrial", "Food, seed & industrial",
-              "Food, Seed, and Industrial", "Food, seed, and industrial"]
+              "Food, Seed, and Industrial", "Food, seed, and industrial",
+              "Food Seed & Industrial"]
   ethanol_for_fuel:
     aliases: ["Ethanol for fuel", "Ethanol & by-products", "Ethanol and by-products"]
   crush:
@@ -52,7 +57,7 @@ attributes:
     aliases: ["Ending Stocks", "Ending stocks", "Ending stocks, total",
               "Ending Stocks, Total", "Carryover, total", "Total carryover"]
   ccc_inventory:
-    aliases: ["CCC inventory", "CCC Inventory"]
+    aliases: ["CCC inventory", "CCC Inventory", "CCC"]
   free_stocks:
     aliases: ["Free stocks", "Free Stocks"]
   outstanding_loans:
@@ -64,7 +69,11 @@ attributes:
               "Average farm price", "Avg. Farm Price ($/bu)", "Avg. Farm Price ($/cwt)",
               "Avg. Price (c/lb)", "Avg. Price ($/s.t.)", "Avg. price ($/bu)",
               "Average price (c/lb)", "Average price ($/s.t.)", "Avg. price c/lb",
-              "Avg price $/sht ton", "Avg. price ($/cwt)"]
+              "Avg price $/sht ton", "Avg. price ($/cwt)",
+              "Avg. Farm Price ($/s.t.)", "Avg. Farm Price (c/lb)",
+              "Avg. farm price ($/bu.)", "Avg price $/st ton",
+              "Average farm price ($/s.t.)", "Average farm price ($/bu.)",
+              "Avg. price $/s.t.", "Avg. price (cents/lb)"]
   # --- world summary tables (sr08-10) ---
   output:
     aliases: ["Output"]
@@ -74,7 +83,9 @@ attributes:
     aliases: ["Loss", "Loss /2"]
   # --- soy complex extras ---
   biofuel:
-    aliases: ["Biofuel"]
+    # USDA renamed this balance line over the years: 'Methyl Ester' (2010-11),
+    # 'Biodiesel' (2012-21), 'Biofuel' (2022-) -- same line: soybean oil to fuel
+    aliases: ["Biofuel", "Biodiesel", "Methyl Ester", "For Methyl Ester"]
   food_feed_other_industrial:
     aliases: ["Food, Feed & other Industrial", "Food, Feed & Other Industrial"]
   # --- wheat by class / rice ---
@@ -147,3 +158,13 @@ attributes:
     aliases: ["Miscellaneous"]
   stocks_to_use_ratio:
     aliases: ["Stocks to use ratio"]
+  farm_price_california:
+    aliases: ["California"]
+  farm_price_other_states:
+    aliases: ["Other States"]
+  non_program:
+    aliases: ["Non-program"]
+  private_stocks:
+    aliases: ["Private"]
+  sales_domestic_use:
+    aliases: ["Sales for dom. use"]

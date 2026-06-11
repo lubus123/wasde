@@ -2,7 +2,8 @@ units:
   million_acres:
     aliases: ["Million acres", "Million Acres", "Mil. acres"]
   bushels_per_acre:
-    aliases: ["Bushels", "Bushels per acre", "Bu./acre", "Bushels per harvested acre"]
+    aliases: ["Bushels", "Bushels per acre", "Bu./acre", "Bushels per harvested acre",
+              "Bushels/acre"]
   million_bushels:
     aliases: ["Million bushels", "Million Bushels", "Mil. bu."]
   metric_tons_per_acre:
@@ -32,3 +33,6 @@ units:
     aliases: ["Cents per pound", "cents/lb", "Cents/lb."]
   percent:
     aliases: ["Percent", "%"]
+  thousand_short_tons_raw_value:
+    aliases: ["1,000 Short Tons, Raw Value", "1000 Short Tons Raw Value",
+              "Thousand short tons, raw value"]

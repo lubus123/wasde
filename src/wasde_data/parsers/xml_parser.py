@@ -34,10 +34,13 @@ from wasde_data.registry import Registry, TableSpec, normalize_label, slugify_re
 
 _MATRIX_TAG = re.compile(r"^matrix(\d+)$")
 _CTX_KEY = re.compile(r"^(attribute|commodity|region|market_year|forecast_month)\d*$")
+# wheat by-class matrices carry the class on attribute_groupN -> commodity ctx
+_GROUP_KEY = re.compile(r"^attribute_group\d*$")
 _HEADER_KEY = re.compile(r"^(?:region_header|commodity_header)\d*$")
 _UNIT_KEY = re.compile(r"^m\d_unit_descr(\d+)$")
 _VALUE_KEY = re.compile(r"^cell_value\d*$")
-_MY_RE = re.compile(r"^(\d{4}/\d{2})\s*(Est\.?|Proj\.?)?$")
+# marker variants: '2025/26 Est.', '2025/26 (Est.)', '2026/27 Proj.'
+_MY_RE = re.compile(r"^(\d{4}/\d{2})\s*(?:\(?\s*(Est\.?|Proj\.?)\s*\)?)?$")
 
 _MONTHS = {m.casefold(): m[:3] for m in
            ["January", "February", "March", "April", "May", "June", "July",
@@ -93,10 +96,16 @@ def _matrix_children(sr: etree._Element) -> list[etree._Element]:
 
 
 def _unit_rows(matrix: etree._Element) -> dict[int, str]:
-    """Reassemble printed unit header rows from filler cells, in document order."""
+    """Reassemble printed unit header rows, in document order.
+
+    Two encodings exist: unit strings as attributes on filler Cells
+    (m1_unit_descr1="Million Acres") or on dedicated elements named after the
+    attribute (<m2_unit_descr1 m2_unit_descr1="Million">) — scan everything."""
     parts: dict[int, list[str]] = {}
-    for cell in matrix.iter("Cell"):
-        for key, value in cell.attrib.items():
+    for el in matrix.iter():
+        if not isinstance(el.tag, str):
+            continue
+        for key, value in el.attrib.items():
             m = _UNIT_KEY.match(key)
             if m and value.strip():
                 bucket = parts.setdefault(int(m.group(1)), [])
@@ -148,11 +157,20 @@ def _subtitle_unit(sr: etree._Element) -> str | None:
     return sub or None
 
 
+def _strip_namespaces(root: etree._Element) -> etree._Element:
+    """Two releases (2010-07, 2015-01) carry xmlns='wasde'; localize tags so
+    one code path covers both encodings."""
+    for el in root.iter():
+        if isinstance(el.tag, str) and "}" in el.tag:
+            el.tag = el.tag.split("}", 1)[1]
+    return root
+
+
 def parse_xml(content: bytes, registry: Registry) -> XmlParseResult:
-    root = etree.fromstring(content)
+    root = _strip_namespaces(etree.fromstring(content))
     result = XmlParseResult()
     for sr in root.iter("Report"):
-        name = sr.get("Name") or ""
+        name = sr.get("Name") or sr.get("name") or ""
         title = sr.get("sub_report_title")
         if not re.match(r"^sr\d+$", name) or title is None:
             continue
@@ -182,18 +200,52 @@ def _parse_sub_report(sr: etree._Element, spec: TableSpec,
         matrix_commodity = None
         if spec.matrices:
             mcfg = spec.matrices[i]
-            matrix_commodity = mcfg["commodity"]
-            want = mcfg.get("quantity_unit_must_contain")
-            if want:
-                got = units["qty"] or ""
-                if normalize_label(want) not in normalize_label(got):
-                    raise XmlStructureError(
-                        f"{spec.slug} matrix #{i + 1}: expected quantity unit "
-                        f"containing '{want}', found '{got}' — positional "
-                        f"commodity mapping cannot be trusted")
+            matrix_commodity = mcfg.get("commodity")  # None -> per-row context
+            units = _validate_matrix(spec, i, mcfg, matrix, units)
+            if mcfg.get("unit"):  # block prints a unit the page subtitle hides
+                units = {**units, "qty": mcfg["unit"]}
         _walk(matrix, {}, cells, spec, registry, matrix_commodity,
               units, subtitle_unit)
     return cells
+
+
+def _matrix_attributes(matrix: etree._Element) -> set[str]:
+    return {_clean_ws(v) for el in matrix.iter() for k, v in el.attrib.items()
+            if k.startswith("attribute") and v.strip()}
+
+
+def _validate_matrix(spec: TableSpec, i: int, mcfg: dict,
+                     matrix: etree._Element,
+                     units: dict[str, str | None]) -> dict[str, str | None]:
+    """Positional commodity mapping must be PROVEN, not assumed: by the printed
+    quantity-unit row, or — where early-2010 XML repeats the wrong unit rows —
+    by a signature attribute, in which case configured fallback units replace
+    the (buggy) printed ones."""
+    must_attr = mcfg.get("must_contain_attribute")
+    must_not = mcfg.get("must_not_contain_attribute")
+    attrs = _matrix_attributes(matrix) if (must_attr or must_not) else set()
+    if must_not and any(must_not.casefold() in a.casefold() for a in attrs):
+        raise XmlStructureError(
+            f"{spec.slug} matrix #{i + 1}: forbidden attribute '{must_not}' present")
+    attr_ok = bool(must_attr) and any(
+        must_attr.casefold() in a.casefold() for a in attrs)
+    if must_attr and not attr_ok:
+        raise XmlStructureError(
+            f"{spec.slug} matrix #{i + 1}: signature attribute '{must_attr}' absent")
+
+    want = mcfg.get("quantity_unit_must_contain")
+    if want:
+        got = units["qty"] or ""
+        if normalize_label(want) not in normalize_label(got):
+            fallback = mcfg.get("fallback_units")
+            if attr_ok and fallback:
+                return {"area": fallback.get("area"), "yield": fallback.get("yield"),
+                        "qty": fallback.get("qty")}
+            raise XmlStructureError(
+                f"{spec.slug} matrix #{i + 1}: expected quantity unit containing "
+                f"'{want}', found '{got}' — positional commodity mapping cannot "
+                f"be trusted")
+    return units
 
 
 def _context_updates(el: etree._Element) -> dict:
@@ -210,6 +262,8 @@ def _context_updates(el: etree._Element) -> dict:
                 updates["forecast_month"] = _norm_month(value)
             else:
                 updates[base] = value
+        elif _GROUP_KEY.match(key) and value.strip():
+            updates["commodity"] = value
         elif _HEADER_KEY.match(key) and value.strip():
             parsed = parse_market_year(value)
             if parsed:  # sr18-30: one matrix per marketing-year column
@@ -246,7 +300,9 @@ def _emit(ctx: dict, raw_value: str, cells: list[ParsedCell], spec: TableSpec,
     if not raw_attribute:
         return  # filler/header cell
     year_status = ctx.get("year_status", "actual")
-    forecast_month = ctx.get("forecast_month", "") if year_status == "projection" else ""
+    # keep the printed vintage month wherever the document provides one:
+    # May/June reports pair May/Jun columns even on the expiring (Est.) year
+    forecast_month = ctx.get("forecast_month", "")
 
     commodity = matrix_commodity or (None if ctx.get("commodity") else spec.commodity)
     raw_commodity = _clean_ws(ctx.get("commodity", ""))

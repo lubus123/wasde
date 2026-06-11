@@ -95,6 +95,7 @@ def main(argv: list[str] | None = None) -> int:
         if i % 25 == 0:
             print(f"  {i}/{len(todo)} parsed (obs={total_obs} unmapped={total_unmapped})")
 
+    db.recompute_is_latest(con)
     print(f"done: parsed={len(todo) - len(failures)} failed={len(failures)} "
           f"observations={total_obs} unmapped_labels={total_unmapped}")
     if total_unmapped:

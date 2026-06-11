@@ -1,0 +1,64 @@
+# QA findings verified by a human and excluded from the failure count.
+# Each entry must say WHY. Matched on check_name + optional release_id +
+# optional detail prefix. Demoted findings stay visible as severity=whitelisted.
+whitelist:
+  - check_name: coverage
+    release_id: wasde-2010-12-15
+    reason: press release (Outlook Forum speakers), not a WASDE report
+  - check_name: coverage
+    release_id: wasde-1995-01-31
+    reason: diskette/CD-ROM availability notice, not a WASDE report
+  - check_name: coverage
+    release_id: wasde-2008-05-07
+    reason: empty placeholder file alongside the May 9 2008 report
+  - check_name: coverage
+    release_id: wasde-2001-09-11
+    reason: 9/11 report-suspension notice; the September 2001 WASDE is wasde-2001-09-12
+  - check_name: coverage
+    release_id: wasde-2009-09-14
+    reason: replacement notice for rice-table corrections to the 2009-09-11 report
+  - check_name: coverage
+    release_id: wasde-2008-10-10
+    reason: >
+      NASS announcement of the October 28 corrected release. The canonical txt
+      under this id is the original October 10 report (real data, parsed); the
+      announcement is archived as the __SpecialReport extra.
+  - check_name: mom_continuity
+    release_id: wasde-2008-10-28
+    reason: >
+      abbreviated REVISED October 2008 report issued after NASS corrected its
+      October Crop Production (objective-yield data error); differences vs the
+      September columns are genuine published revisions
+  - check_name: supply_identity
+    release_id: wasde-1995-07-12
+    detail_prefix: "soybean_meal/united_states 1995/96"
+    reason: >
+      misprint in the July 1995 report: meal production printed 32,685 but
+      supply 33,235 only adds with production 32,920 - exactly what the August
+      1995 report reprints for the July column. July's production row was the
+      typo; verified against both raw texts 2026-06-11
+  - check_name: mom_continuity
+    release_id: wasde-1995-08-14
+    reason: >
+      the August 1995 report reprints corrected July oilseed columns (see the
+      July meal-production misprint above) and revised soy complex numbers;
+      differences vs the July print are genuine published corrections
+  - check_name: mom_continuity
+    detail_contains: "major_importers"
+    reason: >
+      USDA periodically redefines the 'Major importers' country group (the
+      footnote definition changes); the reprinted prior column uses the new
+      definition, so the aggregate legitimately differs from the prior print
+  - check_name: mom_continuity
+    detail_contains: "major_exporters"
+    reason: same as major_importers - group definition changes
+  - check_name: mom_continuity
+    detail_contains: "selected_other"
+    reason: same as major_importers - group definition changes
+  # 1995-96 era cotton/world supplements: real supplement publications that
+  # contain world cotton tables only - no priority tables expected
+  - check_name: coverage
+    detail_prefix: "no priority-table observations"
+    reason: >
+      1995-96 monthly supplement releases (world cotton pages published a day
+      ahead of the main report); they parse into world_cotton-era tables only

@@ -131,10 +131,10 @@ wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,area_harvested,19
 wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,area_harvested,1994/95,estimate,,61.1,million_acres,Harvested,,txt,ok
 wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,area_harvested,1995/96,projection,May,60.3,million_acres,Harvested,,txt,ok
 wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,area_harvested,1995/96,projection,Jun,61.5,million_acres,Harvested,,txt,ok
-wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,1993/94,actual,,32.6,million_acres,Yield per harv. unit,,txt,ok
-wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,1994/95,estimate,,41.9,million_acres,Yield per harv. unit,,txt,ok
-wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,1995/96,projection,May,36.5,million_acres,Yield per harv. unit,,txt,ok
-wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,1995/96,projection,Jun,36.0,million_acres,Yield per harv. unit,,txt,ok
+wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,1993/94,actual,,32.6,bushels_per_acre,Yield per harv. unit,,txt,ok
+wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,1994/95,estimate,,41.9,bushels_per_acre,Yield per harv. unit,,txt,ok
+wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,1995/96,projection,May,36.5,bushels_per_acre,Yield per harv. unit,,txt,ok
+wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,1995/96,projection,Jun,36.0,bushels_per_acre,Yield per harv. unit,,txt,ok
 wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,beginning_stocks,1993/94,actual,,292.0,million_bushels,Beginning stocks,,txt,ok
 wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,beginning_stocks,1994/95,estimate,,209.0,million_bushels,Beginning stocks,,txt,ok
 wasde-1995-06-12,1995-06-01,us_soybeans,united_states,soybeans,beginning_stocks,1995/96,projection,May,425.0,million_bushels,Beginning stocks,,txt,ok

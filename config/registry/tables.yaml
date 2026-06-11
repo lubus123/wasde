@@ -6,9 +6,18 @@
 # (no commodity attribute exists). quantity_unit_must_contain pins the matrix's
 # printed quantity-unit row so positional drift is a hard error, not bad data.
 tables:
+  world_us_grains_cont:
+    txt_skip: true
+    title_patterns: ["World and U\\.\\s?S\\.? Supply and Use for Grains, Continued"]
+    region: world
+    sr_hint: sr09
+    matrices:
+      - {}                      # foreign grains: commodity from row context
+      - commodity: cotton       # cotton summary block; page subtitle says MMT
+        unit: "Million 480-Pound Bales"
   world_us_grains:
     txt_skip: true
-    title_patterns: ["World and U\\.\\s?S\\. Supply and Use for Grains"]
+    title_patterns: ["World and U\\.\\s?S\\.? Supply and Use for Grains"]
     region: world
     sr_hint: sr08
   world_us_oilseeds:
@@ -20,19 +29,23 @@ tables:
     title_patterns: ["U\\.\\s?S\\. Wheat Supply and Use", "^WHEAT$"]
     commodity: wheat
     sr_hint: sr11
+    default_quantity_unit: "Million Bushels"
     matrices:
       - commodity: wheat
-        quantity_unit_must_contain: "Bushels"
-      - commodity: wheat   # by-class matrix; classes arrive as region groups
-        quantity_unit_must_contain: "Bushels"
+      - {}   # by-class matrix: class arrives as attribute_group context
   us_corn:
     title_patterns: ["U\\.\\s?S\\. Feed Grain and Corn Supply and Use", "^CORN$", "^FEED GRAINS$"]
     sr_hint: sr12
     matrices:
       - commodity: feed_grains
         quantity_unit_must_contain: "Metric Tons"
+        must_not_contain_attribute: "Farm Price"
       - commodity: corn
         quantity_unit_must_contain: "Bushels"
+        # 2010-08/-09 XML repeats the feed-grains unit rows on the corn matrix
+        # (PDF prints bushels); the price attribute proves identity instead
+        must_contain_attribute: "Farm Price ($/bu)"
+        fallback_units: {area: "Million Acres", yield: "Bushels", qty: "Million Bushels"}
   us_feed_coarse:
     title_patterns: ["U\\.\\s?S\\. Sorghum, Barley,? and Oats Supply and Use"]
     sr_hint: sr13
@@ -55,6 +68,7 @@ tables:
       - commodity: rice_long_grain
       - commodity: rice_medium_short_grain
   us_soybeans:
+    txt_initial_commodity: soybeans
     title_patterns: ["U\\.\\s?S\\. Soybeans and Products Supply and Use", "^SOYBEANS AND PRODUCTS$",
                      "^SOYBEANS$"]
     sr_hint: sr15
@@ -157,6 +171,24 @@ tables:
     title_patterns: ["^Oilseeds\\b"]
     region: world
     txt_skip: true
+  us_animal_prices:
+    title_patterns: ["U\\.\\s?S\\. Quarterly Prices for Animal Products"]
+    txt_skip: true
+  us_milk:
+    title_patterns: ["U\\.\\s?S\\. Milk Supply"]
+    commodity: milk
+    txt_skip: true
+  mexico_sugar:
+    title_patterns: ["Mexico Sugar Supply and Use"]
+    region: mexico
+    commodity: sugar
+    txt_skip: true
+  special_boxes:
+    # one-off explanatory tables (China revisions 2004, grain-use boxes)
+    title_patterns: ["China corn supply and use as of", "World Grain Use and Ending Stocks",
+                     "Revisions to China Grain Use"]
+    txt_skip: true
+    skip: true
   reliability:
     # Forecast-reliability statistics, not balance-sheet data: deliberately
     # skipped (docs/DECISIONS.md). Matching them keeps coverage honest.
