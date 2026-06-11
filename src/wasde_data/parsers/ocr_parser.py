@@ -153,6 +153,7 @@ _ROW_LABELS = {  # printed label prefixes -> attribute slug (1985-94 prints)
     "planted": "area_planted",
     "harvested": "area_harvested",
     "yield per harv": "yield_per_harvested_acre",
+    "acre": "yield_per_harvested_acre",  # wrap continuation of 'Yield per harv.'
     "beginning stocks": "beginning_stocks",
     "production": "production",
     "imports": "imports",

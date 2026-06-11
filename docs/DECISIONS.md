@@ -2,6 +2,29 @@
 
 Machine-searchable record of why things are the way they are. Newest first.
 
+## 2026-06-11 — M5 dual-reader pivot (tesseract x GOT-OCR 2.0)
+
+- **Second independent reader instead of tesseract tuning.** Tesseract's and a
+  neural OCR model's error processes are independent — two readers agreeing on
+  a digit is far stronger evidence than either alone, and it collapses the
+  manual worklist versus single-reader quarantining. Acceptance rule
+  (scripts/06_reconcile.py): agree + identities -> ok; disagree -> the reader
+  whose column satisfies the balance identities wins; no arbiter -> worklist.
+- **Reader #2 = GOT-OCR 2.0 (local, free)** per Lubo's call — no API spend.
+  ~580M params, CPU inference on this box, page texts cached under
+  data/raw/got_text/. The model flows through the SAME parse_page machinery as
+  tesseract, so the readers differ only in the OCR engine.
+- **Design validated with a one-page Claude vision probe** (≈$0.02, then
+  stopped): on the hardest sample (June 1985 corn page) the second reader
+  produced columns where EVERY balance identity passed, and the identity
+  algebra adjudicated both tesseract misreads exactly (beginning stocks
+  3,120 not 4,120: 3,120+4,175+2=7,297 = printed supply; production 7,656 not
+  7,636: 723+7,656+2=8,381 = printed supply). VLM hallucination risk is real
+  in general, which is why agreement+identities remains the acceptance rule
+  for ANY reader pair.
+- Identity algebra extracted to src/wasde_data/identity.py (shared by
+  scripts/05 repair and scripts/06 reconcile).
+
 ## 2026-06-11 — M5 OCR design (1973-94 scan era)
 
 - **Two print eras inside the scan era.** ~1985-1994 (27-32 pages): per-commodity
