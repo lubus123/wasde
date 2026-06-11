@@ -26,10 +26,20 @@ Machine-searchable record of why things are the way they are. Newest first.
   manual worklist versus single-reader quarantining. Acceptance rule
   (scripts/06_reconcile.py): agree + identities -> ok; disagree -> the reader
   whose column satisfies the balance identities wins; no arbiter -> worklist.
-- **Reader #2 = GOT-OCR 2.0 (local, free)** per Lubo's call — no API spend.
-  ~580M params, CPU inference on this box, page texts cached under
-  data/raw/got_text/. The model flows through the SAME parse_page machinery as
-  tesseract, so the readers differ only in the OCR engine.
+- **Reader #2 = PaddleOCR (PP-OCRv5 mobile, 250dpi)** — free and local per
+  Lubo's call. GOT-OCR 2.0 was tried first and retired: its autoregressive
+  decoder needs >12 min/page on CPU inside Docker-on-M4 (no GPU passthrough),
+  even int8-quantized. Paddle's CNN det+rec reads the same hard page in 26s
+  with 8/8 ground-truth digits. Page texts cache under data/raw/paddle_text/;
+  output flows through the SAME parse_page machinery as tesseract (colon-
+  optional label split + engine-tolerant label prefixes), so the readers
+  differ only in engine.
+- **Arbitration is per-cell with identity backing** (scripts/06_reconcile.py):
+  agreed cells anchor the group; disputed cells are decided by a unique
+  identity-passing combination of reader choices; a win counts only for cells
+  that participate in a fully-testable identity (no vacuous verification).
+  Single-reader cells outside every identity -> 'warn' (visible, unverified);
+  true conflicts with no arbiter -> 'quarantined' + worklist.
 - **Design validated with a one-page Claude vision probe** (≈$0.02, then
   stopped): on the hardest sample (June 1985 corn page) the second reader
   produced columns where EVERY balance identity passed, and the identity
@@ -142,9 +152,11 @@ Machine-searchable record of why things are the way they are. Newest first.
   single filters on the long table. ~30 sub-reports × per-domain DDL would add schema
   surface with no query benefit. Convenience views (`us_corn_balance`, …) give the
   per-domain ergonomics.
-- **`forecast_month='Est'` sentinel** instead of NULL for finalized-year columns —
-  DuckDB primary keys reject NULLs, and the projection-month column is part of the
-  natural key (a June report carries both May and Jun projection columns).
+- **`forecast_month=''` sentinel** (empty string, not NULL) for finalized-year
+  columns — DuckDB primary keys reject NULLs, and the projection-month column is part
+  of the natural key (a June report carries both May and Jun projection columns).
+  (2026-06-11: this doc previously said `'Est'`; the implementation and data use `''`
+  — corrected to match reality.)
 - **vN revisions are separate releases** (`wasde-2026-05-12-v2`), `is_latest` flag on
   the newest. Both vintages are preserved — a revision IS new information with a
   timestamp, exactly what a vintage dataset must keep.
