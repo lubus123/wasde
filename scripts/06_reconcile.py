@@ -63,7 +63,7 @@ def arbitrate_group(t_vals: dict, g_vals: dict,
         trial = dict(agreed)
         for attr, pick in zip(disputed, winners[0], strict=True):
             trial[attr] = (t_vals.get(attr), g_vals.get(attr))[pick]
-        for attr, pick in zip(disputed, winners[0], strict=True):
+        for attr in disputed:
             chosen = trial[attr]
             if not _identity_backed(attr, trial, commodity):
                 # the combo 'won' vacuously for this cell — it sits outside
