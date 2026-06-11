@@ -212,8 +212,11 @@ def run_all(con, priority_tables: list[str],
             identity_tables: list[str] | None = None) -> pd.DataFrame:
     identity_tables = identity_tables or priority_tables
     slugs = ", ".join(f"'{s}'" for s in identity_tables)
+    # quarantined cells are KNOWN failures, visible via qa_status; re-flagging
+    # their groups here would double-count them as new fails
     obs = con.execute(
-        f"SELECT * FROM observations WHERE table_slug IN ({slugs})").fetchdf()
+        f"SELECT * FROM observations WHERE table_slug IN ({slugs}) "
+        f"AND qa_status != 'quarantined'").fetchdf()
     parts = [
         check_identities(obs),
         check_mom_continuity(con, identity_tables),
