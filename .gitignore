@@ -10,3 +10,5 @@ data/wasde.duckdb
 data/exports/
 data/state.json
 .env
+data/wasde.duckdb.wal
+data/models/
