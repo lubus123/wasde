@@ -59,7 +59,10 @@ _DIGIT_FIX = str.maketrans({"i": "1", "l": "1", "I": "1", "|": "1", "{": "1",
                             "g": "9", "q": "9", "G": "6", "A": "4", "?": "7"})
 _NUMERIC_ISH = re.compile(r"^[\dilIoOQDSsBZzgqGA?{|,.\-]+$")
 _VALUE_TOKEN = re.compile(r"\S+")
-_TOLERANCE_COL = re.compile(r"^[+t]/?-")  # '+/-22' reliability column, dropped
+# the trailing reliability column mutates across eras: '+/-22', '+21/=-21',
+# '+17/ -17', '+300 to -300', misread '422 / -22'. Truncate the row at the
+# first marker token — everything after is tolerance, never data.
+_TOLERANCE_START = re.compile(r"^[+±]|^t/?-|^to$|^/$|/=?-")
 
 
 @dataclass
@@ -133,7 +136,9 @@ def _derive_columns(report_month: str) -> list[dict]:
     """Column layout from WASDE's fixed convention (OCRed year tokens are too
     noisy to trust: '1983/64'): [base-2 actual, base-1 estimate, base proj x
     prior+current month], where base rolls to the new crop year in May. May
-    reports print a single first-projection column."""
+    reports print a single first-projection column — and so does the whole
+    era through July 1981 (the prior/current month pair first appears between
+    the Jun and Sep 1981 prints; verified against cached page text)."""
     year, month = int(report_month[:4]), int(report_month[5:7])
     base = year if month >= 5 else year - 1
     my = [f"{y}/{str(y + 1)[2:]}" for y in (base - 2, base - 1, base)]
@@ -141,7 +146,8 @@ def _derive_columns(report_month: str) -> list[dict]:
             dict(my=my[1], status="estimate", month="")]
     cur = _ABBRS[month - 1]
     prev = _ABBRS[month - 2]
-    if month == 5:
+    single = month == 5 or (year, month) <= (1981, 7)
+    if single:
         cols.append(dict(my=my[2], status="projection", month=cur))
     else:
         cols.append(dict(my=my[2], status="projection", month=prev))
@@ -233,8 +239,11 @@ def parse_page(page: OcrPage, spec_region: str, report_month: str,
             if registry.resolve_unit(low.title()) or "million" in low or "bushel" in low:
                 unit = _guess_unit(low)
             continue
-        toks = [t for t in _VALUE_TOKEN.findall(zone)
-                if not _TOLERANCE_COL.match(t)]
+        toks = []
+        for t in _VALUE_TOKEN.findall(zone):
+            if _TOLERANCE_START.search(t):
+                break  # tolerance column: drop it and everything after
+            toks.append(t)
         values = [_ocr_value(t) for t in toks]
         values = [v for v in values if v is not None]
         # a misread colon shows up as a small leading digit ('Beginning
