@@ -2,6 +2,22 @@
 
 Machine-searchable record of why things are the way they are. Newest first.
 
+## 2026-06-11 — M5 tesseract pass results (full scan era)
+
+- 137 releases parsed, 17,045 cells: 12,898 ok / 2,372 identity-corrected /
+  1,337 quarantined. Quarantine concentrates 1981-87 (fax quality);
+  1989-94 are nearly clean.
+- **The structured per-commodity layout reaches back to ~1980**, not 1985 —
+  the era estimate in the original plan was conservative. The compact-format
+  era is 1973-79 (plus a few 1980 releases).
+- **49 structured-era releases (1985-93 scattered) located ZERO pages** —
+  header-strip OCR too degraded to match the page titles. Not silent: they
+  show as coverage gaps. The GOT pass must also re-attempt page location for
+  these, not just re-read pages tesseract found.
+- 69 residual identity fails on unquarantined groups (mostly soy use-identity
+  with merged 'Seed & residual' era variants) — targets for the dual-reader
+  reconcile.
+
 ## 2026-06-11 — M5 dual-reader pivot (tesseract x GOT-OCR 2.0)
 
 - **Second independent reader instead of tesseract tuning.** Tesseract's and a

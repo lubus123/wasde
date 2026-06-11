@@ -149,14 +149,19 @@ def _derive_columns(report_month: str) -> list[dict]:
     return cols
 
 
-_ROW_LABELS = {  # printed label prefixes -> attribute slug (1985-94 prints)
+_ROW_LABELS = {  # printed label prefixes -> attribute slug (1985-94 prints),
+    # including frequent OCR letter confusions (P->F, m->n, v->y)
     "planted": "area_planted",
+    "flanted": "area_planted",
     "harvested": "area_harvested",
     "yield per harv": "yield_per_harvested_acre",
+    "yield per hary": "yield_per_harvested_acre",
     "acre": "yield_per_harvested_acre",  # wrap continuation of 'Yield per harv.'
     "beginning stocks": "beginning_stocks",
     "production": "production",
+    "froduction": "production",
     "imports": "imports",
+    "inports": "imports",
     "supply, total": "supply_total",
     "supply total": "supply_total",
     "feed and residual": "feed_and_residual",
@@ -166,6 +171,7 @@ _ROW_LABELS = {  # printed label prefixes -> attribute slug (1985-94 prints)
     "crush": "crush",
     "domestic, total": "domestic_total",
     "domestic total": "domestic_total",
+    "donestic": "domestic_total",
     "domestic": "domestic_total",
     "exports": "exports",
     "seed": "seed",
@@ -174,6 +180,24 @@ _ROW_LABELS = {  # printed label prefixes -> attribute slug (1985-94 prints)
     "use total": "use_total",
     "ending stocks": "ending_stocks",
 }
+
+
+_FIRST_NUMBER_RE = re.compile(r"[\d][\d,]*\.?\d*")
+
+
+def _split_label_zone(ln: str) -> tuple[str | None, str]:
+    """(label, value-zone) for one OCR line. Tesseract keeps the printed
+    colons; PaddleOCR's rebuilt lines often lose them, so fall back to
+    splitting at the first numeric token."""
+    if ":" in ln:
+        label, _, zone = ln.partition(":")
+        return label, zone
+    m = _FIRST_NUMBER_RE.search(ln)
+    if m and m.start() > 2:
+        return ln[:m.start()], ln[m.start():]
+    if m is None and ln.strip():
+        return ln, ""  # label-only line (section header / unit row)
+    return None, ""
 
 
 def _row_attribute(label: str) -> str | None:
@@ -200,12 +224,12 @@ def parse_page(page: OcrPage, spec_region: str, report_month: str,
             if pattern.match(stripped):
                 commodity = slug
                 break
-        if ":" not in ln:
+        label, zone = _split_label_zone(ln)
+        if label is None:
             continue
-        label, _, zone = ln.partition(":")
         attr = _row_attribute(label)
         if attr is None:
-            low = normalize_label(zone)
+            low = normalize_label(zone or label)
             if registry.resolve_unit(low.title()) or "million" in low or "bushel" in low:
                 unit = _guess_unit(low)
             continue
@@ -213,12 +237,22 @@ def parse_page(page: OcrPage, spec_region: str, report_month: str,
                 if not _TOLERANCE_COL.match(t)]
         values = [_ocr_value(t) for t in toks]
         values = [v for v in values if v is not None]
+        # a misread colon shows up as a small leading digit ('Beginning
+        # stocks 1 3,120 ...'); drop it when it explains the excess
+        while (len(values) > len(cols) and values[0] is not None
+               and abs(values[0]) < 15 and len(values) > 1
+               and (values[1] or 0) > 100 * max(abs(values[0]), 1)):
+            values.pop(0)
         if len(values) > len(cols):
             values = values[:len(cols)]
         for col, v in zip(cols, values, strict=False):
             cells.append(ParsedCell(
                 table_slug=page.table_slug, region=spec_region,
-                raw_commodity="", raw_attribute=label.strip(),
+                # OCR engines mangle printed labels ('Froduction'); the slug is
+                # resolved here from the engine-tolerant prefix table and
+                # self-resolves through the registry. Print fidelity for the
+                # scan era lives in the cached page texts (data/raw/*_text/).
+                raw_commodity="", raw_attribute=attr,
                 marketing_year=col["my"], year_status=col["status"],
                 forecast_month=col["month"], value=v,
                 raw_value=" ".join(toks)[:60], unit_hint=unit,

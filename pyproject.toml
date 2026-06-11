@@ -36,6 +36,7 @@ app = [
     "streamlit>=1.36",
     "plotly>=5.20",
     "scipy>=1.11",
+    "jinja2>=3.1.5",  # pandas Styler tables in the app (pandas 2.x minimum)
 ]
 
 [tool.hatch.build.targets.wheel]
@@ -61,5 +62,6 @@ ignore = ["PLR0913", "PLR2004"]
 # heavy optional deps (torch/transformers/fitz/anthropic/scipy) load lazily on purpose
 "src/wasde_data/got_ocr.py" = ["PLC0415"]
 "src/wasde_data/vlm_ocr.py" = ["PLC0415"]
+"src/wasde_data/paddle_ocr.py" = ["PLC0415"]
 "src/wasde_data/analytics.py" = ["PLC0415"]
 "scripts/06_reconcile.py" = ["PLC0415"]

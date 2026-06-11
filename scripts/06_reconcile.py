@@ -1,4 +1,4 @@
-"""Dual-reader reconciliation for the scan era (tesseract x GOT-OCR 2.0).
+"""Dual-reader reconciliation for the scan era (tesseract x PaddleOCR).
 
 Per (commodity, marketing_year, column) group, per cell:
   - readers agree            -> qa_status 'ok' (dual-verified)
@@ -8,7 +8,7 @@ Per (commodity, marketing_year, column) group, per cell:
   - GOT-only cells whose group passes identities are inserted ('corrected')
 
 Worklist: data/exports/ocr_worklist.csv (release, cell, both readings).
-Resumable: GOT page texts cache under data/raw/got_text/.
+Resumable: Paddle page texts cache under data/raw/paddle_text/.
 """
 
 from __future__ import annotations
@@ -24,7 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from wasde_data import db
 from wasde_data.config import load_config
-from wasde_data.got_ocr import ocr_page_cached
+from wasde_data.paddle_ocr import ocr_page_cached
 from wasde_data.identity import identities_pass
 from wasde_data.normalize import normalize_cells
 from wasde_data.parsers.ocr_parser import OcrPage, locate_pages, parse_page
@@ -92,7 +92,7 @@ def got_cells_for_release(release_id, report_month, pdf_path, registry, cfg):
     import fitz
     doc = fitz.open(pdf_path)
     tess_cache = cfg.paths.raw / "ocr_text"
-    got_cache = cfg.paths.raw / "got_text"
+    got_cache = cfg.paths.raw / "paddle_text"
     pages = locate_pages(doc, cache_dir=tess_cache, release_id=release_id)
     cells = []
     for page in pages:
