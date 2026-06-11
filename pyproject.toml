@@ -58,7 +58,8 @@ ignore = ["PLR0913", "PLR2004"]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = ["PLC0415"]
-# heavy optional deps (torch/transformers/fitz/anthropic) load lazily on purpose
+# heavy optional deps (torch/transformers/fitz/anthropic/scipy) load lazily on purpose
 "src/wasde_data/got_ocr.py" = ["PLC0415"]
 "src/wasde_data/vlm_ocr.py" = ["PLC0415"]
+"src/wasde_data/analytics.py" = ["PLC0415"]
 "scripts/06_reconcile.py" = ["PLC0415"]
