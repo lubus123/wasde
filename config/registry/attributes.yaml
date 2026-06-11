@@ -1,0 +1,149 @@
+# Canonical attribute slugs <- every printed label variant seen so far.
+# Grown deliberately: unmapped labels surface in the QA report, a human adds
+# the alias here. Never fuzzy-matched. Labels are normalized before matching
+# (casefold, collapse whitespace incl. embedded newlines, strip footnote refs).
+attributes:
+  # --- balance sheet core (US tables) ---
+  area_planted:
+    aliases: ["Area Planted", "Planted", "Area Planted (mil. acres)"]
+  area_harvested:
+    aliases: ["Area Harvested", "Harvested", "Area Harvested (mil. acres)",
+              "Harvested Acres (mil.)", "Area harv. (mil. acres)",
+              "Harvested acres (mil.)"]
+  yield_per_harvested_acre:
+    aliases: ["Yield per Harvested Acre", "Yield per harvested acre", "Yield",
+              "Yield (pounds)", "Yield (lbs.)", "Yield per harv. unit",
+              "Yield (bushels/acre)", "Yield (pounds/acre)"]
+  beginning_stocks:
+    aliases: ["Beginning Stocks", "Beginning stocks", "Supply Beg. Stocks 1/",
+              "Beginning stocks (mil. cwt)"]
+  production:
+    aliases: ["Production"]
+  imports:
+    aliases: ["Imports"]
+  supply_total:
+    aliases: ["Supply, Total", "Supply, total", "Total supply", "Total Supply"]
+  feed_and_residual:
+    aliases: ["Feed and Residual", "Feed and residual"]
+  food_seed_industrial:
+    aliases: ["Food, Seed & Industrial", "Food, seed & industrial",
+              "Food, Seed, and Industrial", "Food, seed, and industrial"]
+  ethanol_for_fuel:
+    aliases: ["Ethanol for fuel", "Ethanol & by-products", "Ethanol and by-products"]
+  crush:
+    aliases: ["Crushings", "Crush", "Domestic Crush"]
+  seed:
+    aliases: ["Seed"]
+  residual:
+    aliases: ["Residual"]
+  seed_and_residual:
+    aliases: ["Seed and residual", "Seed & Residual"]
+  domestic_total:
+    aliases: ["Domestic, Total", "Domestic, total", "Total domestic", "Total Domestic",
+              "Domestic Disappearance", "Domestic disappearance", "Domestic",
+              "Domestic Total", "Total /2 Domestic", "Domestic Use"]
+  domestic_feed:
+    aliases: ["Domestic Feed"]
+  exports:
+    aliases: ["Exports", "Exports, Total"]
+  use_total:
+    aliases: ["Use, Total", "Use, total", "Total use", "Total Use"]
+  ending_stocks:
+    aliases: ["Ending Stocks", "Ending stocks", "Ending stocks, total",
+              "Ending Stocks, Total", "Carryover, total", "Total carryover"]
+  ccc_inventory:
+    aliases: ["CCC inventory", "CCC Inventory"]
+  free_stocks:
+    aliases: ["Free stocks", "Free Stocks"]
+  outstanding_loans:
+    aliases: ["Outstanding loans", "Outstanding Loans"]
+  farmer_owned_reserve:
+    aliases: ["Farmer-owned reserve", "Farmer Owned Reserve"]
+  farm_price:
+    aliases: ["Avg. Farm Price", "Avg. farm price", "Avg. farm price ($/bu)",
+              "Average farm price", "Avg. Farm Price ($/bu)", "Avg. Farm Price ($/cwt)",
+              "Avg. Price (c/lb)", "Avg. Price ($/s.t.)", "Avg. price ($/bu)",
+              "Average price (c/lb)", "Average price ($/s.t.)", "Avg. price c/lb",
+              "Avg price $/sht ton", "Avg. price ($/cwt)"]
+  # --- world summary tables (sr08-10) ---
+  output:
+    aliases: ["Output"]
+  trade:
+    aliases: ["Trade"]
+  loss:
+    aliases: ["Loss", "Loss /2"]
+  # --- soy complex extras ---
+  biofuel:
+    aliases: ["Biofuel"]
+  food_feed_other_industrial:
+    aliases: ["Food, Feed & other Industrial", "Food, Feed & Other Industrial"]
+  # --- wheat by class / rice ---
+  food:
+    aliases: ["Food"]
+  rough_production:
+    aliases: ["Rough"]
+  milled_production:
+    aliases: ["Milled (rough equiv.)", "Milled (rough equiv)"]
+  domestic_and_residual:
+    aliases: ["Domestic & Residual"]
+  # --- meats / eggs (sr32-33) ---
+  per_capita:
+    aliases: ["Per Capita", "Per Capita (number)"]
+  hatching_use:
+    aliases: ["Hatching Use"]
+  disappearance:
+    aliases: ["Disappearance"]
+  marketings:
+    aliases: ["Marketings"]
+  farm_use:
+    aliases: ["Farm Use"]
+  # --- dairy prices (sr34): rows are product prices ---
+  all_milk_price:
+    aliases: ["All Milk"]
+  butter_price:
+    aliases: ["Butter"]
+  cheese_price:
+    aliases: ["Cheese"]
+  class_iii_price:
+    aliases: ["Class III"]
+  class_iv_price:
+    aliases: ["Class IV"]
+  dry_whey_price:
+    aliases: ["Dry Whey"]
+  nonfat_dry_milk_price:
+    aliases: ["Nonfat Dry Milk"]
+  milling_yield:
+    aliases: ["Avg. milling yield (%)"]
+  unaccounted:
+    aliases: ["Unaccounted"]
+  # --- sugar table rows (not priority; aliases keep coverage honest) ---
+  beet_sugar:
+    aliases: ["Beet Sugar", "Beet sugar"]
+  cane_sugar:
+    aliases: ["Cane Sugar", "Cane sugar"]
+  cane_florida:
+    aliases: ["Florida"]
+  cane_hawaii:
+    aliases: ["Hawaii"]
+  cane_louisiana:
+    aliases: ["Louisiana"]
+  cane_texas:
+    aliases: ["Texas"]
+  imports_trq:
+    aliases: ["TRQ", "Under quota"]
+  imports_other_program:
+    aliases: ["Other program"]
+  imports_high_tier:
+    aliases: ["High-tier tariff/other"]
+  mexico:
+    aliases: ["Mexico"]
+  other:
+    aliases: ["Other"]
+  deliveries:
+    aliases: ["Deliveries", "Domestic deliveries"]
+  domestic_food_use:
+    aliases: ["Domestic food use"]
+  miscellaneous:
+    aliases: ["Miscellaneous"]
+  stocks_to_use_ratio:
+    aliases: ["Stocks to use ratio"]

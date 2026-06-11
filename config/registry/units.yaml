@@ -1,0 +1,34 @@
+units:
+  million_acres:
+    aliases: ["Million acres", "Million Acres", "Mil. acres"]
+  bushels_per_acre:
+    aliases: ["Bushels", "Bushels per acre", "Bu./acre", "Bushels per harvested acre"]
+  million_bushels:
+    aliases: ["Million bushels", "Million Bushels", "Mil. bu."]
+  metric_tons_per_acre:
+    aliases: ["Metric Tons"]   # yield row of the feed-grains matrix (per acre)
+  pounds_per_acre:
+    aliases: ["Pounds"]        # yield rows of rice/cotton tables (per acre)
+  million_metric_tons:
+    aliases: ["Million metric tons", "Million Metric Tons", "Mil. metric tons", "MMT"]
+  thousand_metric_tons:
+    aliases: ["Thousand metric tons", "1000 metric tons"]
+  thousand_short_tons:
+    aliases: ["Thousand short tons", "1000 short tons", "Thousand tons"]
+  million_pounds:
+    aliases: ["Million pounds", "Million Pounds", "Mil. lbs."]
+  million_cwt:
+    aliases: ["Million cwt", "Million hundredweight", "Mil. cwt"]
+  million_480lb_bales:
+    aliases: ["Million 480-pound bales", "Million 480 lb. bales", "Million 480-lb. bales",
+              "Million 480 Pound Bales", "Million bales"]
+  usd_per_bushel:
+    aliases: ["$/bu", "Dollars per bushel", "$ per bushel"]
+  usd_per_short_ton:
+    aliases: ["$/ton", "Dollars per short ton", "$ per ton"]
+  usd_per_cwt:
+    aliases: ["$/cwt", "Dollars per cwt"]
+  cents_per_pound:
+    aliases: ["Cents per pound", "cents/lb", "Cents/lb."]
+  percent:
+    aliases: ["Percent", "%"]

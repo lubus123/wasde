@@ -1,0 +1,253 @@
+release_id,report_month,table_slug,region,commodity,attribute,marketing_year,year_status,forecast_month,value,unit,raw_attribute,raw_commodity,source_format,qa_status
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,area_planted,2003/04,actual,,98.0,million_acres,Area Planted,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,area_planted,2004/05,estimate,,97.0,million_acres,Area Planted,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,area_planted,2005/06,projection,May,97.1,million_acres,Area Planted,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,area_planted,2005/06,projection,Jun,97.1,million_acres,Area Planted,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,area_harvested,2003/04,actual,,85.7,million_acres,Harvested,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,area_harvested,2004/05,estimate,,86.0,million_acres,Harvested,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,area_harvested,2005/06,projection,May,86.2,million_acres,Harvested,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,area_harvested,2005/06,projection,Jun,86.2,million_acres,Harvested,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,yield_per_harvested_acre,2003/04,actual,,3.21,metric_tons_per_acre,Yield per harvested acre,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,yield_per_harvested_acre,2004/05,estimate,,3.71,metric_tons_per_acre,Yield per harvested acre,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,yield_per_harvested_acre,2005/06,projection,May,3.44,metric_tons_per_acre,Yield per harvested acre,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,yield_per_harvested_acre,2005/06,projection,Jun,3.44,metric_tons_per_acre,Yield per harvested acre,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,beginning_stocks,2003/04,actual,,30.9,million_metric_tons,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,beginning_stocks,2004/05,estimate,,28.7,million_metric_tons,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,beginning_stocks,2005/06,projection,May,61.7,million_metric_tons,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,beginning_stocks,2005/06,projection,Jun,61.6,million_metric_tons,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,production,2003/04,actual,,274.9,million_metric_tons,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,production,2004/05,estimate,,319.2,million_metric_tons,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,production,2005/06,projection,May,296.1,million_metric_tons,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,production,2005/06,projection,Jun,296.1,million_metric_tons,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,imports,2003/04,actual,,2.4,million_metric_tons,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,imports,2004/05,estimate,,2.0,million_metric_tons,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,imports,2005/06,projection,May,2.0,million_metric_tons,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,imports,2005/06,projection,Jun,2.0,million_metric_tons,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,supply_total,2003/04,actual,,308.2,million_metric_tons,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,supply_total,2004/05,estimate,,350.0,million_metric_tons,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,supply_total,2005/06,projection,May,359.8,million_metric_tons,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,supply_total,2005/06,projection,Jun,359.8,million_metric_tons,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,feed_and_residual,2003/04,actual,,156.0,million_metric_tons,Feed and residual,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,feed_and_residual,2004/05,estimate,,162.1,million_metric_tons,Feed and residual,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,feed_and_residual,2005/06,projection,May,157.2,million_metric_tons,Feed and residual,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,feed_and_residual,2005/06,projection,Jun,157.2,million_metric_tons,Feed and residual,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,food_seed_industrial,2003/04,actual,,69.7,million_metric_tons,"Food, seed & industrial",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,food_seed_industrial,2004/05,estimate,,75.7,million_metric_tons,"Food, seed & industrial",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,food_seed_industrial,2005/06,projection,May,78.4,million_metric_tons,"Food, seed & industrial",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,food_seed_industrial,2005/06,projection,Jun,78.4,million_metric_tons,"Food, seed & industrial",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,domestic_total,2003/04,actual,,225.7,million_metric_tons,"Domestic, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,domestic_total,2004/05,estimate,,237.7,million_metric_tons,"Domestic, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,domestic_total,2005/06,projection,May,235.6,million_metric_tons,"Domestic, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,domestic_total,2005/06,projection,Jun,235.6,million_metric_tons,"Domestic, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,exports,2003/04,actual,,53.7,million_metric_tons,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,exports,2004/05,estimate,,50.7,million_metric_tons,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,exports,2005/06,projection,May,54.5,million_metric_tons,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,exports,2005/06,projection,Jun,54.5,million_metric_tons,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,use_total,2003/04,actual,,279.4,million_metric_tons,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,use_total,2004/05,estimate,,288.4,million_metric_tons,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,use_total,2005/06,projection,May,290.1,million_metric_tons,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,use_total,2005/06,projection,Jun,290.1,million_metric_tons,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,ending_stocks,2003/04,actual,,28.7,million_metric_tons,"Ending stocks, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,ending_stocks,2004/05,estimate,,61.6,million_metric_tons,"Ending stocks, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,ending_stocks,2005/06,projection,May,69.8,million_metric_tons,"Ending stocks, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,ending_stocks,2005/06,projection,Jun,69.7,million_metric_tons,"Ending stocks, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,ccc_inventory,2003/04,actual,,0.0,million_metric_tons,CCC inventory,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,ccc_inventory,2004/05,estimate,,0.0,million_metric_tons,CCC inventory,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,free_stocks,2003/04,actual,,28.7,million_metric_tons,Free stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,free_stocks,2004/05,estimate,,61.6,million_metric_tons,Free stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,outstanding_loans,2003/04,actual,,4.4,million_metric_tons,Outstanding loans,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,feed_grains,outstanding_loans,2004/05,estimate,,7.1,million_metric_tons,Outstanding loans,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,area_planted,2003/04,actual,,78.6,million_acres,Area Planted,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,area_planted,2004/05,estimate,,80.9,million_acres,Area Planted,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,area_planted,2005/06,projection,May,81.4,million_acres,Area Planted,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,area_planted,2005/06,projection,Jun,81.4,million_acres,Area Planted,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,area_harvested,2003/04,actual,,70.9,million_acres,Harvested,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,area_harvested,2004/05,estimate,,73.6,million_acres,Harvested,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,area_harvested,2005/06,projection,May,74.2,million_acres,Harvested,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,area_harvested,2005/06,projection,Jun,74.2,million_acres,Harvested,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,yield_per_harvested_acre,2003/04,actual,,142.2,bushels_per_acre,Yield per harvested acre,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,yield_per_harvested_acre,2004/05,estimate,,160.4,bushels_per_acre,Yield per harvested acre,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,yield_per_harvested_acre,2005/06,projection,May,148.0,bushels_per_acre,Yield per harvested acre,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,yield_per_harvested_acre,2005/06,projection,Jun,148.0,bushels_per_acre,Yield per harvested acre,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,beginning_stocks,2003/04,actual,,1087.0,million_bushels,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,beginning_stocks,2004/05,estimate,,958.0,million_bushels,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,beginning_stocks,2005/06,projection,May,2215.0,million_bushels,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,beginning_stocks,2005/06,projection,Jun,2215.0,million_bushels,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,production,2003/04,actual,,10089.0,million_bushels,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,production,2004/05,estimate,,11807.0,million_bushels,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,production,2005/06,projection,May,10985.0,million_bushels,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,production,2005/06,projection,Jun,10985.0,million_bushels,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,imports,2003/04,actual,,14.0,million_bushels,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,imports,2004/05,estimate,,10.0,million_bushels,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,imports,2005/06,projection,May,10.0,million_bushels,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,imports,2005/06,projection,Jun,10.0,million_bushels,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,supply_total,2003/04,actual,,11190.0,million_bushels,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,supply_total,2004/05,estimate,,12775.0,million_bushels,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,supply_total,2005/06,projection,May,13210.0,million_bushels,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,supply_total,2005/06,projection,Jun,13210.0,million_bushels,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,feed_and_residual,2003/04,actual,,5798.0,million_bushels,Feed and residual,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,feed_and_residual,2004/05,estimate,,6000.0,million_bushels,Feed and residual,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,feed_and_residual,2005/06,projection,May,5850.0,million_bushels,Feed and residual,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,feed_and_residual,2005/06,projection,Jun,5850.0,million_bushels,Feed and residual,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,food_seed_industrial,2003/04,actual,,2537.0,million_bushels,"Food, seed & industrial",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,food_seed_industrial,2004/05,estimate,,2760.0,million_bushels,"Food, seed & industrial",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,food_seed_industrial,2005/06,projection,May,2870.0,million_bushels,"Food, seed & industrial",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,food_seed_industrial,2005/06,projection,Jun,2870.0,million_bushels,"Food, seed & industrial",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,ethanol_for_fuel,2003/04,actual,,1168.0,million_bushels,Ethanol for fuel 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,ethanol_for_fuel,2004/05,estimate,,1400.0,million_bushels,Ethanol for fuel 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,ethanol_for_fuel,2005/06,projection,May,1500.0,million_bushels,Ethanol for fuel 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,ethanol_for_fuel,2005/06,projection,Jun,1500.0,million_bushels,Ethanol for fuel 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,domestic_total,2003/04,actual,,8335.0,million_bushels,"Domestic, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,domestic_total,2004/05,estimate,,8760.0,million_bushels,"Domestic, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,domestic_total,2005/06,projection,May,8720.0,million_bushels,"Domestic, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,domestic_total,2005/06,projection,Jun,8720.0,million_bushels,"Domestic, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,exports,2003/04,actual,,1897.0,million_bushels,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,exports,2004/05,estimate,,1800.0,million_bushels,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,exports,2005/06,projection,May,1950.0,million_bushels,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,exports,2005/06,projection,Jun,1950.0,million_bushels,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,use_total,2003/04,actual,,10232.0,million_bushels,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,use_total,2004/05,estimate,,10560.0,million_bushels,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,use_total,2005/06,projection,May,10670.0,million_bushels,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,use_total,2005/06,projection,Jun,10670.0,million_bushels,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,ending_stocks,2003/04,actual,,958.0,million_bushels,"Ending stocks, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,ending_stocks,2004/05,estimate,,2215.0,million_bushels,"Ending stocks, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,ending_stocks,2005/06,projection,May,2540.0,million_bushels,"Ending stocks, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,ending_stocks,2005/06,projection,Jun,2540.0,million_bushels,"Ending stocks, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,ccc_inventory,2003/04,actual,,0.0,million_bushels,CCC inventory,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,ccc_inventory,2004/05,estimate,,1.0,million_bushels,CCC inventory,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,free_stocks,2003/04,actual,,958.0,million_bushels,Free stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,free_stocks,2004/05,estimate,,2214.0,million_bushels,Free stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,outstanding_loans,2003/04,actual,,164.0,million_bushels,Outstanding loans,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,outstanding_loans,2004/05,estimate,,275.0,million_bushels,Outstanding loans,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,farm_price,2003/04,actual,,2.42,million_bushels,Avg. farm price ($/bu) 3/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,farm_price,2004/05,estimate,,2.05,million_bushels,Avg. farm price ($/bu) 3/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,farm_price,2005/06,projection,May,1.75,million_bushels,Avg. farm price ($/bu) 3/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_corn,united_states,corn,farm_price,2005/06,projection,Jun,1.75,million_bushels,Avg. farm price ($/bu) 3/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,area_planted,2003/04,actual,,73.4,million_acres,Area Planted,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,area_planted,2004/05,estimate,,75.2,million_acres,Area Planted,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,area_planted,2005/06,projection,May,73.9,million_acres,Area Planted,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,area_planted,2005/06,projection,Jun,73.9,million_acres,Area Planted,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,area_harvested,2003/04,actual,,72.5,million_acres,Harvested,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,area_harvested,2004/05,estimate,,74.0,million_acres,Harvested,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,area_harvested,2005/06,projection,May,72.6,million_acres,Harvested,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,area_harvested,2005/06,projection,Jun,72.6,million_acres,Harvested,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,2003/04,actual,,33.9,bushels_per_acre,Yield per harvested acre,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,2004/05,estimate,,42.5,bushels_per_acre,Yield per harvested acre,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,2005/06,projection,May,39.9,bushels_per_acre,Yield per harvested acre,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,2005/06,projection,Jun,39.9,bushels_per_acre,Yield per harvested acre,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,beginning_stocks,2003/04,actual,,178.0,million_bushels,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,beginning_stocks,2004/05,estimate,,112.0,million_bushels,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,beginning_stocks,2005/06,projection,May,355.0,million_bushels,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,beginning_stocks,2005/06,projection,Jun,320.0,million_bushels,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,production,2003/04,actual,,2454.0,million_bushels,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,production,2004/05,estimate,,3141.0,million_bushels,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,production,2005/06,projection,May,2895.0,million_bushels,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,production,2005/06,projection,Jun,2895.0,million_bushels,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,imports,2003/04,actual,,6.0,million_bushels,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,imports,2004/05,estimate,,5.0,million_bushels,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,imports,2005/06,projection,May,3.0,million_bushels,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,imports,2005/06,projection,Jun,3.0,million_bushels,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,supply_total,2003/04,actual,,2638.0,million_bushels,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,supply_total,2004/05,estimate,,3258.0,million_bushels,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,supply_total,2005/06,projection,May,3253.0,million_bushels,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,supply_total,2005/06,projection,Jun,3218.0,million_bushels,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,crush,2003/04,actual,,1530.0,million_bushels,Crushings,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,crush,2004/05,estimate,,1675.0,million_bushels,Crushings,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,crush,2005/06,projection,May,1690.0,million_bushels,Crushings,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,crush,2005/06,projection,Jun,1680.0,million_bushels,Crushings,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,exports,2003/04,actual,,880.0,million_bushels,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,exports,2004/05,estimate,,1110.0,million_bushels,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,exports,2005/06,projection,May,1125.0,million_bushels,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,exports,2005/06,projection,Jun,1135.0,million_bushels,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,seed,2003/04,actual,,92.0,million_bushels,Seed,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,seed,2004/05,estimate,,89.0,million_bushels,Seed,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,seed,2005/06,projection,May,91.0,million_bushels,Seed,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,seed,2005/06,projection,Jun,91.0,million_bushels,Seed,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,residual,2003/04,actual,,24.0,million_bushels,Residual,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,residual,2004/05,estimate,,64.0,million_bushels,Residual,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,residual,2005/06,projection,May,58.0,million_bushels,Residual,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,residual,2005/06,projection,Jun,58.0,million_bushels,Residual,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,use_total,2003/04,actual,,2525.0,million_bushels,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,use_total,2004/05,estimate,,2938.0,million_bushels,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,use_total,2005/06,projection,May,2964.0,million_bushels,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,use_total,2005/06,projection,Jun,2964.0,million_bushels,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,ending_stocks,2003/04,actual,,112.0,million_bushels,Ending stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,ending_stocks,2004/05,estimate,,320.0,million_bushels,Ending stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,ending_stocks,2005/06,projection,May,290.0,million_bushels,Ending stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,ending_stocks,2005/06,projection,Jun,255.0,million_bushels,Ending stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,farm_price,2003/04,actual,,7.34,million_bushels,Avg. farm price ($/bu) 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,farm_price,2004/05,estimate,,5.7,million_bushels,Avg. farm price ($/bu) 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,farm_price,2005/06,projection,May,5.2,million_bushels,Avg. farm price ($/bu) 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybeans,farm_price,2005/06,projection,Jun,5.45,million_bushels,Avg. farm price ($/bu) 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,beginning_stocks,2003/04,actual,,1491.0,million_pounds,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,beginning_stocks,2004/05,estimate,,1076.0,million_pounds,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,beginning_stocks,2005/06,projection,May,1241.0,million_pounds,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,beginning_stocks,2005/06,projection,Jun,1526.0,million_pounds,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,production,2003/04,actual,,17080.0,million_pounds,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,production,2004/05,estimate,,19045.0,million_pounds,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,production,2005/06,projection,May,19065.0,million_pounds,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,production,2005/06,projection,Jun,18950.0,million_pounds,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,imports,2003/04,actual,,306.0,million_pounds,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,imports,2004/05,estimate,,105.0,million_pounds,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,imports,2005/06,projection,May,110.0,million_pounds,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,imports,2005/06,projection,Jun,110.0,million_pounds,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,supply_total,2003/04,actual,,18877.0,million_pounds,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,supply_total,2004/05,estimate,,20226.0,million_pounds,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,supply_total,2005/06,projection,May,20416.0,million_pounds,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,supply_total,2005/06,projection,Jun,20586.0,million_pounds,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,domestic_total,2003/04,actual,,16866.0,million_pounds,Domestic,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,domestic_total,2004/05,estimate,,17300.0,million_pounds,Domestic,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,domestic_total,2005/06,projection,May,17650.0,million_pounds,Domestic,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,domestic_total,2005/06,projection,Jun,17650.0,million_pounds,Domestic,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,exports,2003/04,actual,,935.0,million_pounds,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,exports,2004/05,estimate,,1400.0,million_pounds,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,exports,2005/06,projection,May,1500.0,million_pounds,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,exports,2005/06,projection,Jun,1400.0,million_pounds,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,use_total,2003/04,actual,,17801.0,million_pounds,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,use_total,2004/05,estimate,,18700.0,million_pounds,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,use_total,2005/06,projection,May,19150.0,million_pounds,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,use_total,2005/06,projection,Jun,19050.0,million_pounds,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,ending_stocks,2003/04,actual,,1076.0,million_pounds,Ending stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,ending_stocks,2004/05,estimate,,1526.0,million_pounds,Ending stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,ending_stocks,2005/06,projection,May,1266.0,million_pounds,Ending stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,ending_stocks,2005/06,projection,Jun,1536.0,million_pounds,Ending stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,farm_price,2003/04,actual,,29.97,million_pounds,Average price (c/lb) 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,farm_price,2004/05,estimate,,22.75,million_pounds,Average price (c/lb) 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,farm_price,2005/06,projection,May,21.5,million_pounds,Average price (c/lb) 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_oil,farm_price,2005/06,projection,Jun,22.0,million_pounds,Average price (c/lb) 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,beginning_stocks,2003/04,actual,,220.0,thousand_short_tons,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,beginning_stocks,2004/05,estimate,,211.0,thousand_short_tons,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,beginning_stocks,2005/06,projection,May,250.0,thousand_short_tons,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,beginning_stocks,2005/06,projection,Jun,250.0,thousand_short_tons,Beginning stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,production,2003/04,actual,,36324.0,thousand_short_tons,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,production,2004/05,estimate,,39874.0,thousand_short_tons,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,production,2005/06,projection,May,40235.0,thousand_short_tons,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,production,2005/06,projection,Jun,40035.0,thousand_short_tons,Production,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,imports,2003/04,actual,,270.0,thousand_short_tons,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,imports,2004/05,estimate,,165.0,thousand_short_tons,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,imports,2005/06,projection,May,165.0,thousand_short_tons,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,imports,2005/06,projection,Jun,165.0,thousand_short_tons,Imports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,supply_total,2003/04,actual,,36815.0,thousand_short_tons,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,supply_total,2004/05,estimate,,40250.0,thousand_short_tons,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,supply_total,2005/06,projection,May,40650.0,thousand_short_tons,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,supply_total,2005/06,projection,Jun,40450.0,thousand_short_tons,"Supply, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,domestic_total,2003/04,actual,,32250.0,thousand_short_tons,Domestic,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,domestic_total,2004/05,estimate,,33900.0,thousand_short_tons,Domestic,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,domestic_total,2005/06,projection,May,34000.0,thousand_short_tons,Domestic,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,domestic_total,2005/06,projection,Jun,34400.0,thousand_short_tons,Domestic,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,exports,2003/04,actual,,4354.0,thousand_short_tons,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,exports,2004/05,estimate,,6100.0,thousand_short_tons,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,exports,2005/06,projection,May,6400.0,thousand_short_tons,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,exports,2005/06,projection,Jun,5800.0,thousand_short_tons,Exports,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,use_total,2003/04,actual,,36604.0,thousand_short_tons,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,use_total,2004/05,estimate,,40000.0,thousand_short_tons,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,use_total,2005/06,projection,May,40400.0,thousand_short_tons,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,use_total,2005/06,projection,Jun,40200.0,thousand_short_tons,"Use, total",,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,ending_stocks,2003/04,actual,,211.0,thousand_short_tons,Ending stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,ending_stocks,2004/05,estimate,,250.0,thousand_short_tons,Ending stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,ending_stocks,2005/06,projection,May,250.0,thousand_short_tons,Ending stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,ending_stocks,2005/06,projection,Jun,250.0,thousand_short_tons,Ending stocks,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,farm_price,2003/04,actual,,256.05,thousand_short_tons,Average price ($/s.t.) 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,farm_price,2004/05,estimate,,180.0,thousand_short_tons,Average price ($/s.t.) 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,farm_price,2005/06,projection,May,165.0,thousand_short_tons,Average price ($/s.t.) 2/,,txt,ok
+wasde-2005-06-10,2005-06-01,us_soybeans,united_states,soybean_meal,farm_price,2005/06,projection,Jun,175.0,thousand_short_tons,Average price ($/s.t.) 2/,,txt,ok

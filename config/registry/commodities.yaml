@@ -1,0 +1,53 @@
+commodities:
+  corn:
+    aliases: ["Corn", "CORN"]
+  soybeans:
+    aliases: ["Soybeans", "SOYBEANS"]
+  soybean_meal:
+    aliases: ["Soybean Meal", "SOYBEAN MEAL", "Meal"]
+  soybean_oil:
+    aliases: ["Soybean Oil", "SOYBEAN OIL", "Oil"]
+  oilseeds:
+    aliases: ["Oilseeds", "Total Oilseeds"]
+  wheat:
+    aliases: ["Wheat", "WHEAT"]
+  sorghum:
+    aliases: ["Sorghum", "SORGHUM", "Grain Sorghum"]
+  barley:
+    aliases: ["Barley", "BARLEY"]
+  oats:
+    aliases: ["Oats", "OATS"]
+  feed_grains:
+    aliases: ["Feed Grains", "FEED GRAINS", "Feed Grains 5/"]
+  total_grains:
+    aliases: ["Total Grains", "Total Grains 4/"]
+  coarse_grains:
+    aliases: ["Coarse Grains", "Coarse Grain"]
+  rice:
+    aliases: ["Rice", "RICE", "Rice, milled"]
+  oilmeals:
+    aliases: ["Oilmeals"]
+  vegetable_oils:
+    aliases: ["Vegetable Oils"]
+  red_meat:
+    aliases: ["Red Meat", "Total Red Meat"]
+  poultry:
+    aliases: ["Total Poultry"]
+  red_meat_and_poultry:
+    aliases: ["Red Meat & Poultry"]
+  cotton:
+    aliases: ["Cotton", "COTTON"]
+  sugar:
+    aliases: ["Sugar", "SUGAR"]
+  beef:
+    aliases: ["Beef"]
+  pork:
+    aliases: ["Pork"]
+  broilers:
+    aliases: ["Broilers", "Broiler"]
+  turkeys:
+    aliases: ["Turkeys", "Turkey"]
+  eggs:
+    aliases: ["Eggs", "Egg"]
+  milk:
+    aliases: ["Milk"]

@@ -1,0 +1,165 @@
+# Sub-report titles -> table slugs. XML matches on sub_report_title (srNN as
+# tiebreaker only -- numbering drifts across years); TXT/OCR match on printed
+# section headers. region/commodity are defaults a parser may refine per row.
+#
+# matrices: for multi-matrix US tables the commodity is positional in the XML
+# (no commodity attribute exists). quantity_unit_must_contain pins the matrix's
+# printed quantity-unit row so positional drift is a hard error, not bad data.
+tables:
+  world_us_grains:
+    txt_skip: true
+    title_patterns: ["World and U\\.\\s?S\\. Supply and Use for Grains"]
+    region: world
+    sr_hint: sr08
+  world_us_oilseeds:
+    txt_skip: true
+    title_patterns: ["World and U\\.\\s?S\\. Supply and Use for Oilseeds"]
+    region: world
+    sr_hint: sr10
+  us_wheat:
+    title_patterns: ["U\\.\\s?S\\. Wheat Supply and Use", "^WHEAT$"]
+    commodity: wheat
+    sr_hint: sr11
+    matrices:
+      - commodity: wheat
+        quantity_unit_must_contain: "Bushels"
+      - commodity: wheat   # by-class matrix; classes arrive as region groups
+        quantity_unit_must_contain: "Bushels"
+  us_corn:
+    title_patterns: ["U\\.\\s?S\\. Feed Grain and Corn Supply and Use", "^CORN$", "^FEED GRAINS$"]
+    sr_hint: sr12
+    matrices:
+      - commodity: feed_grains
+        quantity_unit_must_contain: "Metric Tons"
+      - commodity: corn
+        quantity_unit_must_contain: "Bushels"
+  us_feed_coarse:
+    title_patterns: ["U\\.\\s?S\\. Sorghum, Barley,? and Oats Supply and Use"]
+    sr_hint: sr13
+    default_quantity_unit: "Million Bushels"   # sr13 prints no unit rows in XML
+    matrices:
+      - commodity: sorghum
+      - commodity: barley
+      - commodity: oats
+  us_rice:
+    title_patterns: ["U\\.\\s?S\\. Rice Supply and Use", "^RICE$"]
+    commodity: rice
+    txt_sections:
+      "TOTAL": rice
+      "LONG GRAIN": rice_long_grain
+      "MEDIUM & SHORT GRAIN": rice_medium_short_grain
+    sr_hint: sr14
+    default_quantity_unit: "Million Hundredweight"
+    matrices:
+      - commodity: rice
+      - commodity: rice_long_grain
+      - commodity: rice_medium_short_grain
+  us_soybeans:
+    title_patterns: ["U\\.\\s?S\\. Soybeans and Products Supply and Use", "^SOYBEANS AND PRODUCTS$",
+                     "^SOYBEANS$"]
+    sr_hint: sr15
+    matrices:
+      - commodity: soybeans
+        quantity_unit_must_contain: "Bushels"
+      - commodity: soybean_oil
+        quantity_unit_must_contain: "Pounds"
+      - commodity: soybean_meal
+        quantity_unit_must_contain: "Short Tons"
+  us_sugar:
+    title_patterns: ["U\\.\\s?S\\. Sugar Supply and Use", "^SUGAR$"]
+    commodity: sugar
+    sr_hint: sr16
+    default_quantity_unit: "1,000 Short Tons, Raw Value"
+  us_cotton:
+    title_patterns: ["U\\.\\s?S\\. Cotton Supply and Use", "^COTTON$"]
+    commodity: cotton
+    sr_hint: sr17
+    price_unit: "Cents per Pound"   # 'Avg. Farm Price 3/' label omits the unit
+  world_wheat:
+    title_patterns: ["World Wheat Supply and Use"]
+    region: world
+    commodity: wheat
+    sr_hint: sr18
+    txt_columns: [beginning_stocks, production, imports, domestic_feed,
+                  domestic_total, exports, ending_stocks]
+  world_coarse_grains:
+    title_patterns: ["World Coarse Grain Supply and Use"]
+    region: world
+    commodity: coarse_grains
+    sr_hint: sr20
+    txt_columns: [beginning_stocks, production, imports, domestic_feed,
+                  domestic_total, exports, ending_stocks]
+  world_corn:
+    title_patterns: ["World Corn Supply and Use"]
+    region: world
+    commodity: corn
+    sr_hint: sr22
+    txt_columns: [beginning_stocks, production, imports, domestic_feed,
+                  domestic_total, exports, ending_stocks]
+  world_rice:
+    txt_skip: true
+    title_patterns: ["World Rice Supply and Use"]
+    region: world
+    commodity: rice
+    sr_hint: sr24
+  world_cotton:
+    txt_skip: true
+    title_patterns: ["World Cotton Supply and Use"]
+    region: world
+    commodity: cotton
+    sr_hint: sr26
+  world_soybeans:
+    title_patterns: ["World Soybean Supply and Use"]
+    region: world
+    commodity: soybeans
+    sr_hint: sr28
+    txt_columns: [beginning_stocks, production, imports, crush,
+                  domestic_total, exports, ending_stocks]
+  world_soybean_meal:
+    title_patterns: ["World Soybean Meal Supply and Use"]
+    region: world
+    commodity: soybean_meal
+    sr_hint: sr29
+    txt_columns: [beginning_stocks, production, imports,
+                  domestic_total, exports, ending_stocks]
+  world_soybean_oil:
+    title_patterns: ["World Soybean Oil Supply and Use"]
+    region: world
+    commodity: soybean_oil
+    sr_hint: sr30
+    txt_columns: [beginning_stocks, production, imports,
+                  domestic_total, exports, ending_stocks]
+  us_animal_products:
+    txt_skip: true
+    title_patterns: ["U\\.\\s?S\\. Quarterly Animal Product Production"]
+    sr_hint: sr31
+  us_meats:
+    txt_skip: true
+    title_patterns: ["U\\.\\s?S\\. Meats Supply and Use"]
+    sr_hint: sr32
+    default_quantity_unit: "Million Pounds"
+  us_eggs:
+    txt_skip: true
+    title_patterns: ["U\\.\\s?S\\. Egg Supply and Use"]
+    commodity: eggs
+    sr_hint: sr33
+  us_dairy_prices:
+    txt_skip: true
+    title_patterns: ["U\\.\\s?S\\. Dairy Prices"]
+    commodity: milk
+    sr_hint: sr34
+  world_us_cotton:
+    title_patterns: ["World and U\\.\\s?S\\. Supply and Use for Cotton"]
+    region: world
+    commodity: cotton
+    txt_skip: true
+  oilseeds_summary_95:
+    title_patterns: ["^Oilseeds\\b"]
+    region: world
+    txt_skip: true
+  reliability:
+    # Forecast-reliability statistics, not balance-sheet data: deliberately
+    # skipped (docs/DECISIONS.md). Matching them keeps coverage honest.
+    title_patterns: ["Reliability of .* Projections"]
+    sr_hint: sr35
+    skip: true

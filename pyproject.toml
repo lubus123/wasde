@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wasde-data"
+version = "0.1.0"
+description = "Report-vintage archive of every USDA WASDE report (1973-present) with monthly update scraper; US corn/soy balance sheets held to a zero-error bar"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.6",
+    "httpx>=0.27",
+    "tenacity>=8.2",
+    "pandas>=2.1",
+    "pyarrow>=15.0",
+    "duckdb>=1.0",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+    "lxml>=5.0",
+    "openpyxl>=3.1",
+    "xlrd>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+    "respx>=0.21",
+    "ruff>=0.4",
+]
+ocr = [
+    "pymupdf>=1.24",
+    "pytesseract>=0.3.10",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wasde_data"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+    "integration: live API smoke tests (deselect with '-m \"not integration\"')",
+]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "PL"]
+ignore = ["PLR0913", "PLR2004"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["PLC0415"]

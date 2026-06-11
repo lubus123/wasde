@@ -1,0 +1,249 @@
+release_id,report_month,table_slug,region,commodity,attribute,marketing_year,year_status,forecast_month,value,unit,raw_attribute,raw_commodity,source_format,qa_status
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,area_planted,2024/25,actual,,101.8,million_acres,Area Planted,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,area_planted,2025/26,estimate,,110.1,million_acres,Area Planted,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,area_planted,2026/27,projection,May,106.2,million_acres,Area Planted,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,area_planted,2026/27,projection,Jun,106.2,million_acres,Area Planted,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,area_harvested,2024/25,actual,,91.4,million_acres,Area Harvested,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,area_harvested,2025/26,estimate,,100.0,million_acres,Area Harvested,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,area_harvested,2026/27,projection,May,95.4,million_acres,Area Harvested,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,area_harvested,2026/27,projection,Jun,95.4,million_acres,Area Harvested,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,yield_per_harvested_acre,2024/25,actual,,4.28,metric_tons_per_acre,Yield per Harvested Acre,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,yield_per_harvested_acre,2025/26,estimate,,4.48,metric_tons_per_acre,Yield per Harvested Acre,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,yield_per_harvested_acre,2026/27,projection,May,4.4,metric_tons_per_acre,Yield per Harvested Acre,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,yield_per_harvested_acre,2026/27,projection,Jun,4.4,metric_tons_per_acre,Yield per Harvested Acre,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,beginning_stocks,2024/25,actual,,47.9,million_metric_tons,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,beginning_stocks,2025/26,estimate,,42.3,million_metric_tons,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,beginning_stocks,2026/27,projection,May,57.2,million_metric_tons,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,beginning_stocks,2026/27,projection,Jun,57.2,million_metric_tons,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,production,2024/25,actual,,391.1,million_metric_tons,Production,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,production,2025/26,estimate,,447.5,million_metric_tons,Production,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,production,2026/27,projection,May,419.7,million_metric_tons,Production,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,production,2026/27,projection,Jun,419.7,million_metric_tons,Production,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,imports,2024/25,actual,,2.0,million_metric_tons,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,imports,2025/26,estimate,,2.1,million_metric_tons,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,imports,2026/27,projection,May,2.1,million_metric_tons,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,imports,2026/27,projection,Jun,2.1,million_metric_tons,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,supply_total,2024/25,actual,,441.0,million_metric_tons,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,supply_total,2025/26,estimate,,492.0,million_metric_tons,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,supply_total,2026/27,projection,May,478.9,million_metric_tons,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,supply_total,2026/27,projection,Jun,478.9,million_metric_tons,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,feed_and_residual,2024/25,actual,,144.0,million_metric_tons,Feed and Residual,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,feed_and_residual,2025/26,estimate,,161.7,million_metric_tons,Feed and Residual,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,feed_and_residual,2026/27,projection,May,158.2,million_metric_tons,Feed and Residual,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,feed_and_residual,2026/27,projection,Jun,158.2,million_metric_tons,Feed and Residual,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,food_seed_industrial,2024/25,actual,,179.3,million_metric_tons,"Food, Seed & Industrial",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,food_seed_industrial,2025/26,estimate,,182.6,million_metric_tons,"Food, Seed & Industrial",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,food_seed_industrial,2026/27,projection,May,182.8,million_metric_tons,"Food, Seed & Industrial",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,food_seed_industrial,2026/27,projection,Jun,182.8,million_metric_tons,"Food, Seed & Industrial",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,domestic_total,2024/25,actual,,323.3,million_metric_tons,"Domestic, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,domestic_total,2025/26,estimate,,344.3,million_metric_tons,"Domestic, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,domestic_total,2026/27,projection,May,341.0,million_metric_tons,"Domestic, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,domestic_total,2026/27,projection,Jun,341.0,million_metric_tons,"Domestic, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,exports,2024/25,actual,,75.3,million_metric_tons,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,exports,2025/26,estimate,,90.4,million_metric_tons,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,exports,2026/27,projection,May,85.4,million_metric_tons,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,exports,2026/27,projection,Jun,85.4,million_metric_tons,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,use_total,2024/25,actual,,398.6,million_metric_tons,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,use_total,2025/26,estimate,,434.8,million_metric_tons,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,use_total,2026/27,projection,May,426.5,million_metric_tons,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,use_total,2026/27,projection,Jun,426.5,million_metric_tons,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,ending_stocks,2024/25,actual,,42.3,million_metric_tons,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,ending_stocks,2025/26,estimate,,57.2,million_metric_tons,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,ending_stocks,2026/27,projection,May,52.4,million_metric_tons,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,feed_grains,ending_stocks,2026/27,projection,Jun,52.4,million_metric_tons,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,area_planted,2024/25,actual,,90.9,million_acres,Area Planted,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,area_planted,2025/26,estimate,,98.8,million_acres,Area Planted,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,area_planted,2026/27,projection,May,95.3,million_acres,Area Planted,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,area_planted,2026/27,projection,Jun,95.3,million_acres,Area Planted,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,area_harvested,2024/25,actual,,83.0,million_acres,Area Harvested,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,area_harvested,2025/26,estimate,,91.3,million_acres,Area Harvested,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,area_harvested,2026/27,projection,May,87.4,million_acres,Area Harvested,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,area_harvested,2026/27,projection,Jun,87.4,million_acres,Area Harvested,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,yield_per_harvested_acre,2024/25,actual,,179.3,bushels_per_acre,Yield per Harvested Acre,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,yield_per_harvested_acre,2025/26,estimate,,186.5,bushels_per_acre,Yield per Harvested Acre,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,yield_per_harvested_acre,2026/27,projection,May,183.0,bushels_per_acre,Yield per Harvested Acre,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,yield_per_harvested_acre,2026/27,projection,Jun,183.0,bushels_per_acre,Yield per Harvested Acre,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,beginning_stocks,2024/25,actual,,1763.0,million_bushels,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,beginning_stocks,2025/26,estimate,,1551.0,million_bushels,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,beginning_stocks,2026/27,projection,May,2142.0,million_bushels,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,beginning_stocks,2026/27,projection,Jun,2145.0,million_bushels,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,production,2024/25,actual,,14892.0,million_bushels,Production,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,production,2025/26,estimate,,17021.0,million_bushels,Production,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,production,2026/27,projection,May,15995.0,million_bushels,Production,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,production,2026/27,projection,Jun,15995.0,million_bushels,Production,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,imports,2024/25,actual,,22.0,million_bushels,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,imports,2025/26,estimate,,28.0,million_bushels,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,imports,2026/27,projection,May,25.0,million_bushels,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,imports,2026/27,projection,Jun,25.0,million_bushels,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,supply_total,2024/25,actual,,16677.0,million_bushels,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,supply_total,2025/26,estimate,,18600.0,million_bushels,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,supply_total,2026/27,projection,May,18162.0,million_bushels,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,supply_total,2026/27,projection,Jun,18165.0,million_bushels,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,feed_and_residual,2024/25,actual,,5454.0,million_bushels,Feed and Residual,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,feed_and_residual,2025/26,estimate,,6200.0,million_bushels,Feed and Residual,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,feed_and_residual,2026/27,projection,May,6100.0,million_bushels,Feed and Residual,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,feed_and_residual,2026/27,projection,Jun,6100.0,million_bushels,Feed and Residual,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,food_seed_industrial,2024/25,actual,,6814.0,million_bushels,"Food, Seed & Industrial 2/",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,food_seed_industrial,2025/26,estimate,,6930.0,million_bushels,"Food, Seed & Industrial 2/",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,food_seed_industrial,2026/27,projection,May,6955.0,million_bushels,"Food, Seed & Industrial 2/",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,food_seed_industrial,2026/27,projection,Jun,6955.0,million_bushels,"Food, Seed & Industrial 2/",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,ethanol_for_fuel,2024/25,actual,,5436.0,million_bushels,Ethanol & by-products 3/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,ethanol_for_fuel,2025/26,estimate,,5575.0,million_bushels,Ethanol & by-products 3/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,ethanol_for_fuel,2026/27,projection,May,5600.0,million_bushels,Ethanol & by-products 3/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,ethanol_for_fuel,2026/27,projection,Jun,5600.0,million_bushels,Ethanol & by-products 3/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,domestic_total,2024/25,actual,,12267.0,million_bushels,"Domestic, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,domestic_total,2025/26,estimate,,13130.0,million_bushels,"Domestic, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,domestic_total,2026/27,projection,May,13055.0,million_bushels,"Domestic, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,domestic_total,2026/27,projection,Jun,13055.0,million_bushels,"Domestic, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,exports,2024/25,actual,,2858.0,million_bushels,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,exports,2025/26,estimate,,3325.0,million_bushels,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,exports,2026/27,projection,May,3150.0,million_bushels,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,exports,2026/27,projection,Jun,3150.0,million_bushels,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,use_total,2024/25,actual,,15126.0,million_bushels,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,use_total,2025/26,estimate,,16455.0,million_bushels,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,use_total,2026/27,projection,May,16205.0,million_bushels,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,use_total,2026/27,projection,Jun,16205.0,million_bushels,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,ending_stocks,2024/25,actual,,1551.0,million_bushels,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,ending_stocks,2025/26,estimate,,2145.0,million_bushels,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,ending_stocks,2026/27,projection,May,1957.0,million_bushels,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,ending_stocks,2026/27,projection,Jun,1960.0,million_bushels,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,farm_price,2024/25,actual,,4.24,usd_per_bushel,Avg. Farm Price ($/bu) 4/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,farm_price,2025/26,estimate,,4.15,usd_per_bushel,Avg. Farm Price ($/bu) 4/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,farm_price,2026/27,projection,May,4.4,usd_per_bushel,Avg. Farm Price ($/bu) 4/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_corn,united_states,corn,farm_price,2026/27,projection,Jun,4.4,usd_per_bushel,Avg. Farm Price ($/bu) 4/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,area_planted,2024/25,actual,,87.3,million_acres,Area Planted,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,area_planted,2025/26,estimate,,81.2,million_acres,Area Planted,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,area_planted,2026/27,projection,May,84.7,million_acres,Area Planted,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,area_planted,2026/27,projection,Jun,84.7,million_acres,Area Planted,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,area_harvested,2024/25,actual,,86.2,million_acres,Area Harvested,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,area_harvested,2025/26,estimate,,80.4,million_acres,Area Harvested,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,area_harvested,2026/27,projection,May,83.7,million_acres,Area Harvested,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,area_harvested,2026/27,projection,Jun,83.7,million_acres,Area Harvested,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,2024/25,actual,,50.7,bushels_per_acre,Yield per Harvested Acre,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,2025/26,estimate,,53.0,bushels_per_acre,Yield per Harvested Acre,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,2026/27,projection,May,53.0,bushels_per_acre,Yield per Harvested Acre,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,yield_per_harvested_acre,2026/27,projection,Jun,53.0,bushels_per_acre,Yield per Harvested Acre,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,beginning_stocks,2024/25,actual,,342.0,million_bushels,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,beginning_stocks,2025/26,estimate,,325.0,million_bushels,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,beginning_stocks,2026/27,projection,May,340.0,million_bushels,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,beginning_stocks,2026/27,projection,Jun,340.0,million_bushels,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,production,2024/25,actual,,4374.0,million_bushels,Production,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,production,2025/26,estimate,,4262.0,million_bushels,Production,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,production,2026/27,projection,May,4435.0,million_bushels,Production,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,production,2026/27,projection,Jun,4435.0,million_bushels,Production,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,imports,2024/25,actual,,29.0,million_bushels,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,imports,2025/26,estimate,,25.0,million_bushels,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,imports,2026/27,projection,May,25.0,million_bushels,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,imports,2026/27,projection,Jun,25.0,million_bushels,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,supply_total,2024/25,actual,,4746.0,million_bushels,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,supply_total,2025/26,estimate,,4612.0,million_bushels,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,supply_total,2026/27,projection,May,4800.0,million_bushels,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,supply_total,2026/27,projection,Jun,4800.0,million_bushels,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,crush,2024/25,actual,,2445.0,million_bushels,Crushings,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,crush,2025/26,estimate,,2650.0,million_bushels,Crushings,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,crush,2026/27,projection,May,2750.0,million_bushels,Crushings,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,crush,2026/27,projection,Jun,2750.0,million_bushels,Crushings,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,exports,2024/25,actual,,1882.0,million_bushels,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,exports,2025/26,estimate,,1510.0,million_bushels,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,exports,2026/27,projection,May,1630.0,million_bushels,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,exports,2026/27,projection,Jun,1630.0,million_bushels,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,seed,2024/25,actual,,70.0,million_bushels,Seed,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,seed,2025/26,estimate,,73.0,million_bushels,Seed,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,seed,2026/27,projection,May,72.0,million_bushels,Seed,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,seed,2026/27,projection,Jun,72.0,million_bushels,Seed,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,residual,2024/25,actual,,23.0,million_bushels,Residual,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,residual,2025/26,estimate,,39.0,million_bushels,Residual,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,residual,2026/27,projection,May,38.0,million_bushels,Residual,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,residual,2026/27,projection,Jun,38.0,million_bushels,Residual,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,use_total,2024/25,actual,,4421.0,million_bushels,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,use_total,2025/26,estimate,,4272.0,million_bushels,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,use_total,2026/27,projection,May,4490.0,million_bushels,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,use_total,2026/27,projection,Jun,4490.0,million_bushels,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,ending_stocks,2024/25,actual,,325.0,million_bushels,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,ending_stocks,2025/26,estimate,,340.0,million_bushels,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,ending_stocks,2026/27,projection,May,310.0,million_bushels,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,ending_stocks,2026/27,projection,Jun,310.0,million_bushels,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,farm_price,2024/25,actual,,10.0,usd_per_bushel,Avg. Farm Price ($/bu) 2/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,farm_price,2025/26,estimate,,10.4,usd_per_bushel,Avg. Farm Price ($/bu) 2/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,farm_price,2026/27,projection,May,11.4,usd_per_bushel,Avg. Farm Price ($/bu) 2/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybeans,farm_price,2026/27,projection,Jun,11.4,usd_per_bushel,Avg. Farm Price ($/bu) 2/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,beginning_stocks,2024/25,actual,,1551.0,million_pounds,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,beginning_stocks,2025/26,estimate,,1747.0,million_pounds,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,beginning_stocks,2026/27,projection,May,1857.0,million_pounds,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,beginning_stocks,2026/27,projection,Jun,1837.0,million_pounds,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,production,2024/25,actual,,29218.0,million_pounds,Production 4/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,production,2025/26,estimate,,30855.0,million_pounds,Production 4/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,production,2026/27,projection,May,32590.0,million_pounds,Production 4/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,production,2026/27,projection,Jun,32590.0,million_pounds,Production 4/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,imports,2024/25,actual,,362.0,million_pounds,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,imports,2025/26,estimate,,315.0,million_pounds,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,imports,2026/27,projection,May,600.0,million_pounds,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,imports,2026/27,projection,Jun,600.0,million_pounds,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,supply_total,2024/25,actual,,31131.0,million_pounds,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,supply_total,2025/26,estimate,,32917.0,million_pounds,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,supply_total,2026/27,projection,May,35047.0,million_pounds,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,supply_total,2026/27,projection,Jun,35027.0,million_pounds,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,domestic_total,2024/25,actual,,26891.0,million_pounds,Domestic Disappearance,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,domestic_total,2025/26,estimate,,30030.0,million_pounds,Domestic Disappearance,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,domestic_total,2026/27,projection,May,32750.0,million_pounds,Domestic Disappearance,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,domestic_total,2026/27,projection,Jun,32750.0,million_pounds,Domestic Disappearance,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,biofuel,2024/25,actual,,11758.0,million_pounds,Biofuel 3/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,biofuel,2025/26,estimate,,14550.0,million_pounds,Biofuel 3/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,biofuel,2026/27,projection,May,17800.0,million_pounds,Biofuel 3/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,biofuel,2026/27,projection,Jun,17800.0,million_pounds,Biofuel 3/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,food_feed_other_industrial,2024/25,actual,,15133.0,million_pounds,"Food, Feed & other Industrial",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,food_feed_other_industrial,2025/26,estimate,,15480.0,million_pounds,"Food, Feed & other Industrial",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,food_feed_other_industrial,2026/27,projection,May,14950.0,million_pounds,"Food, Feed & other Industrial",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,food_feed_other_industrial,2026/27,projection,Jun,14950.0,million_pounds,"Food, Feed & other Industrial",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,exports,2024/25,actual,,2492.0,million_pounds,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,exports,2025/26,estimate,,1050.0,million_pounds,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,exports,2026/27,projection,May,400.0,million_pounds,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,exports,2026/27,projection,Jun,400.0,million_pounds,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,use_total,2024/25,actual,,29384.0,million_pounds,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,use_total,2025/26,estimate,,31080.0,million_pounds,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,use_total,2026/27,projection,May,33150.0,million_pounds,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,use_total,2026/27,projection,Jun,33150.0,million_pounds,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,ending_stocks,2024/25,actual,,1747.0,million_pounds,Ending stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,ending_stocks,2025/26,estimate,,1837.0,million_pounds,Ending stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,ending_stocks,2026/27,projection,May,1897.0,million_pounds,Ending stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,ending_stocks,2026/27,projection,Jun,1877.0,million_pounds,Ending stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,farm_price,2024/25,actual,,47.59,cents_per_pound,Avg. Price (c/lb) 2/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,farm_price,2025/26,estimate,,64.0,cents_per_pound,Avg. Price (c/lb) 2/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,farm_price,2026/27,projection,May,70.0,cents_per_pound,Avg. Price (c/lb) 2/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_oil,farm_price,2026/27,projection,Jun,70.0,cents_per_pound,Avg. Price (c/lb) 2/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,beginning_stocks,2024/25,actual,,453.0,thousand_short_tons,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,beginning_stocks,2025/26,estimate,,398.0,thousand_short_tons,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,beginning_stocks,2026/27,projection,May,450.0,thousand_short_tons,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,beginning_stocks,2026/27,projection,Jun,450.0,thousand_short_tons,Beginning Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,production,2024/25,actual,,58443.0,thousand_short_tons,Production 4/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,production,2025/26,estimate,,63052.0,thousand_short_tons,Production 4/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,production,2026/27,projection,May,65025.0,thousand_short_tons,Production 4/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,production,2026/27,projection,Jun,65025.0,thousand_short_tons,Production 4/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,imports,2024/25,actual,,807.0,thousand_short_tons,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,imports,2025/26,estimate,,825.0,thousand_short_tons,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,imports,2026/27,projection,May,800.0,thousand_short_tons,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,imports,2026/27,projection,Jun,800.0,thousand_short_tons,Imports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,supply_total,2024/25,actual,,59704.0,thousand_short_tons,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,supply_total,2025/26,estimate,,64275.0,thousand_short_tons,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,supply_total,2026/27,projection,May,66275.0,thousand_short_tons,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,supply_total,2026/27,projection,Jun,66275.0,thousand_short_tons,"Supply, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,domestic_total,2024/25,actual,,41041.0,thousand_short_tons,Domestic Disappearance,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,domestic_total,2025/26,estimate,,43825.0,thousand_short_tons,Domestic Disappearance,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,domestic_total,2026/27,projection,May,44125.0,thousand_short_tons,Domestic Disappearance,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,domestic_total,2026/27,projection,Jun,44125.0,thousand_short_tons,Domestic Disappearance,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,exports,2024/25,actual,,18265.0,thousand_short_tons,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,exports,2025/26,estimate,,20000.0,thousand_short_tons,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,exports,2026/27,projection,May,21700.0,thousand_short_tons,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,exports,2026/27,projection,Jun,21700.0,thousand_short_tons,Exports,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,use_total,2024/25,actual,,59305.0,thousand_short_tons,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,use_total,2025/26,estimate,,63825.0,thousand_short_tons,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,use_total,2026/27,projection,May,65825.0,thousand_short_tons,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,use_total,2026/27,projection,Jun,65825.0,thousand_short_tons,"Use, Total",,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,ending_stocks,2024/25,actual,,398.0,thousand_short_tons,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,ending_stocks,2025/26,estimate,,450.0,thousand_short_tons,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,ending_stocks,2026/27,projection,May,450.0,thousand_short_tons,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,ending_stocks,2026/27,projection,Jun,450.0,thousand_short_tons,Ending Stocks,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,farm_price,2024/25,actual,,299.77,usd_per_short_ton,Avg. Price ($/s.t.) 2/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,farm_price,2025/26,estimate,,315.0,usd_per_short_ton,Avg. Price ($/s.t.) 2/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,farm_price,2026/27,projection,May,310.0,usd_per_short_ton,Avg. Price ($/s.t.) 2/,,xml,ok
+wasde-2026-06-11,2026-06-01,us_soybeans,united_states,soybean_meal,farm_price,2026/27,projection,Jun,310.0,usd_per_short_ton,Avg. Price ($/s.t.) 2/,,xml,ok

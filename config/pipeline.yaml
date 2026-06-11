@@ -1,0 +1,23 @@
+paths:
+  db: data/wasde.duckdb
+  raw: data/raw
+  exports: data/exports
+  manual: data/manual
+
+esmis:
+  base_url: https://esmis.nal.usda.gov
+  identifier: wasde
+  sleep_seconds: 1.0
+
+eras:
+  # release_datetime boundaries between source formats (inclusive starts)
+  xml_start: "2010-07-01"
+  txt_start: "1995-01-01"
+
+# Tables held to the zero-error bar: unmapped labels are hard failures,
+# QA findings block, OCR cells must pass 3-way validation or carry an override.
+priority_tables:
+  - us_corn
+  - us_soybeans
+  - us_soybean_meal
+  - us_soybean_oil

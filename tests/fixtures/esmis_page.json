@@ -1,0 +1,81 @@
+{
+ "filters": [],
+ "pager": {
+  "current_page": 0,
+  "items_per_page": 25,
+  "total_pages": 1,
+  "total_results": 4
+ },
+ "results": [
+  {
+   "id": "795937",
+   "files": [
+    "https://esmis.nal.usda.gov/sites/default/release-files/795937/wasde0626.pdf",
+    "https://esmis.nal.usda.gov/sites/default/release-files/795937/wasde0626.txt",
+    "https://esmis.nal.usda.gov/sites/default/release-files/795937/wasde0626.xls",
+    "https://esmis.nal.usda.gov/sites/default/release-files/795937/wasde0626.xml"
+   ],
+   "title": "World Agricultural Supply and Demand Estimates",
+   "release_datetime": "2026-06-11T12:00:00+0000",
+   "identifier": [
+    "wasde"
+   ],
+   "agency_acronym": "WAOB",
+   "bibliographic_citation": "",
+   "description": "",
+   "equipment_software": "",
+   "temporal_coverage": ""
+  },
+  {
+   "id": "795903",
+   "files": [
+    "https://esmis.nal.usda.gov/sites/default/release-files/795903/wasde0526v2.pdf",
+    "https://esmis.nal.usda.gov/sites/default/release-files/795903/wasde0526v2.txt",
+    "https://esmis.nal.usda.gov/sites/default/release-files/795903/wasde0526v2.xls",
+    "https://esmis.nal.usda.gov/sites/default/release-files/795903/wasde0526v2.xml"
+   ],
+   "title": "World Agricultural Supply and Demand Estimates",
+   "release_datetime": "2026-05-12T12:00:00+0000",
+   "identifier": [
+    "wasde"
+   ],
+   "agency_acronym": "WAOB",
+   "bibliographic_citation": "",
+   "description": "<p><strong>NOTE</strong><span>: On May 13, 2026, the May World Agricultural Supply and Demand Estimates (WASDE) report was reposted to correct an error in the Wheat by-Class table (Table 671-11). The US White wheat imports for the 25/26 marketing year were incorrectly shown as 5 million bushels; the correct value is 7 million bushels. As a result, the total imports for the Wheat by-Class table were also revised to 125 million bushels instead of 123 million bushels. Consequent corrections to total supply and ending stocks are also applied.</span></p>\n",
+   "equipment_software": "",
+   "temporal_coverage": ""
+  },
+  {
+   "id": "95857",
+   "files": [
+    "https://esmis.nal.usda.gov/sites/default/release-files/3t945q76s/wh246s45t/m613mx88c/wasde-06-12-1995.txt"
+   ],
+   "title": "World Agricultural Supply and Demand Estimates",
+   "release_datetime": "1995-06-12T12:00:00+0000",
+   "identifier": [
+    "wasde"
+   ],
+   "agency_acronym": "WAOB",
+   "bibliographic_citation": "",
+   "description": "",
+   "equipment_software": "",
+   "temporal_coverage": ""
+  },
+  {
+   "id": "96138",
+   "files": [
+    "https://esmis.nal.usda.gov/sites/default/release-files/3t945q76s/vq27zn73r/xd07gt003/wasde-06-11-1975.pdf"
+   ],
+   "title": "World Agricultural Supply and Demand Estimates",
+   "release_datetime": "1975-06-11T12:00:00+0000",
+   "identifier": [
+    "wasde"
+   ],
+   "agency_acronym": "WAOB",
+   "bibliographic_citation": "",
+   "description": "",
+   "equipment_software": "",
+   "temporal_coverage": ""
+  }
+ ]
+}
