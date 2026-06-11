@@ -147,7 +147,7 @@ fig = go.Figure(
 apply_layout(fig, height=max(420, 24 * len(z) + 120))
 fig.update_layout(xaxis=dict(side="top"), yaxis=dict(autorange="reversed", dtick=1))
 fig.update_yaxes(autorange=True)
-event = st.plotly_chart(fig, width="stretch", on_select="rerun")
+st.plotly_chart(fig, width="stretch")
 st.caption(
     f"Each row is one year's **{month} report**, tracking the {crop.lower()} marketing "
     "year. Blank cells: not published. First prints (new marketing year) carry no "
@@ -155,41 +155,47 @@ st.caption(
 )
 
 # ------------------------------------------------------------------- drill-down
-points = (event or {}).get("selection", {}).get("points", [])
-if points:
-    p = points[0]
-    label_to_attr = {_col_label(a): a for a in z.columns}
-    d_attr, d_my = label_to_attr.get(p["x"], p["x"]), p["y"]
-    drill = mom[(mom["attribute"] == d_attr) & (mom["marketing_year"] == d_my)]
-    clicked = drill[drill["report_month"].dt.month == month_num]
-    st.subheader(f"{pretty(d_attr)} — {d_my} vintage")
-    dfig = go.Figure(
+st.divider()
+st.subheader("Drill into one cell")
+flat = z.abs().stack()
+hot_my, hot_attr = (flat.idxmax() if not flat.empty
+                    else (z.index[0], z.columns[0]))
+dc1, dc2 = st.columns(2)
+d_attr = dc1.selectbox("Attribute ", list(z.columns), format_func=pretty,
+                       index=list(z.columns).index(hot_attr))
+d_my = dc2.selectbox("Marketing year", z.index.tolist(),
+                     index=z.index.tolist().index(hot_my),
+                     help="Defaults to the biggest move in the matrix above.")
+drill = mom[(mom["attribute"] == d_attr) & (mom["marketing_year"] == d_my)]
+clicked = drill[drill["report_month"].dt.month == month_num]
+st.markdown(f"**{pretty(d_attr)} — {d_my} vintage**")
+dfig = go.Figure(
+    go.Scatter(
+        x=drill["report_month"],
+        y=drill["value"],
+        mode="lines+markers",
+        line=dict(color="#7f8896", width=1.6),
+        marker=dict(size=7),
+        name=d_my,
+    )
+)
+if not clicked.empty:
+    c = clicked.iloc[0]
+    dfig.add_trace(
         go.Scatter(
-            x=drill["report_month"],
-            y=drill["value"],
-            mode="lines+markers",
-            line=dict(color="#7f8896", width=1.6),
-            marker=dict(size=7),
-            name=d_my,
+            x=[c["report_month"]],
+            y=[c["value"]],
+            mode="markers",
+            marker=dict(size=14, color="#D4A93D", symbol="star"),
+            name=f"{month} report",
         )
     )
-    if not clicked.empty:
-        c = clicked.iloc[0]
-        dfig.add_trace(
-            go.Scatter(
-                x=[c["report_month"]],
-                y=[c["value"]],
-                mode="markers",
-                marker=dict(size=14, color="#D4A93D", symbol="star"),
-                name=f"{month} report",
-            )
-        )
-        st.caption(
-            f"{month} report printed **{c['value']:,.2f}** vs previous "
-            f"**{c['value_prev']:,.2f}** ({c['delta']:+,.2f}, method: {c['method']})."
-        )
-    apply_layout(dfig, height=320, yaxis_title=unit_label(attr_units.get(d_attr)))
-    st.plotly_chart(dfig, width="stretch")
+    st.caption(
+        f"{month} report printed **{c['value']:,.2f}** vs previous "
+        f"**{c['value_prev']:,.2f}** ({c['delta']:+,.2f}, method: {c['method']})."
+    )
+apply_layout(dfig, height=320, yaxis_title=unit_label(attr_units.get(d_attr)))
+st.plotly_chart(dfig, width="stretch")
 
 # ------------------------------------------------------------------- bias panel
 st.divider()
@@ -221,11 +227,22 @@ else:
     bfig.add_hline(y=0, line_dash="dot", line_color="#888888")
     bfig.update_xaxes(tickvals=list(range(len(cols))), labelalias={a: pretty(a) for a in cols})
     apply_layout(bfig, height=420, yaxis_title="(print − final) / final, %", xaxis_title="")
+    # Stock-program lines (CCC inventory, free stocks…) can run >1000% off a tiny
+    # base and would flatten every other box — clip the view, not the data.
+    ylim = float(err_m["pct_err_display"].abs().quantile(0.95)) * 1.6
+    clipped = int((err_m["pct_err_display"].abs() > ylim).sum())
+    bfig.update_yaxes(range=[-ylim, ylim])
     left.plotly_chart(bfig, width="stretch")
+    if clipped:
+        left.caption(f"y-axis clipped at ±{ylim:,.0f}% — {clipped} extreme points "
+                     "(tiny-base attributes) outside the view; hover boxes for full stats.")
 
-    summary = analytics.bias_summary(err_m, by="calendar_month").drop(
-        columns="calendar_month"
+    summary = analytics.bias_summary(err_m, by="calendar_month")
+    summary = summary.drop(
+        columns=[c for c in ("calendar_month", "table_slug", "commodity", "region")
+                 if c in summary.columns]
     )
+    summary = summary[summary["n"] > 0]
     for col in ("mean_pct_error", "median_pct_error", "mae_pct"):
         summary[col] = summary[col] * 100
     summary["attribute"] = summary["attribute"].map(pretty)

@@ -28,8 +28,9 @@ sudo apt install tesseract-ocr             # only for the 1973-94 scan era
 | `scripts/02_parse_xml_era.py` | Parse 2010-07→present XML releases into `observations` |
 | `scripts/03_parse_txt_era.py` | Parse 1995-01→2010-06 fixed-width TXT releases |
 | `scripts/04_load_agmanager.py` | Load AgManager (K-State) corn/soy sheets for cross-validation |
-| `scripts/05_ocr_corn_soy.py` | OCR 1973-94 scanned corn/soy tables (needs tesseract) |
-| `scripts/06_ocr_remaining.py` | OCR remaining commodities, best-effort |
+| `scripts/05_ocr_corn_soy.py` | Reader #1: tesseract over 1980-94 scans + identity repair |
+| `scripts/06_reconcile.py` | Reader #2: PaddleOCR + per-cell identity arbitration |
+| `scripts/07_relocate_scans.py` | Paddle-led page relocation for header-unreadable scans |
 | `scripts/10_update.py` | **Cron entrypoint**: poll ESMIS, ingest new release end-to-end |
 | `scripts/12_export.py` | Parquet exports to `data/exports/` |
 | `scripts/99_qa_report.py` | Full QA sweep; nonzero exit on failures |
