@@ -24,9 +24,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from wasde_data import db
 from wasde_data.config import load_config
-from wasde_data.paddle_ocr import ocr_page_cached
 from wasde_data.identity import identities_pass
 from wasde_data.normalize import normalize_cells
+from wasde_data.paddle_ocr import ocr_page_cached
 from wasde_data.parsers.ocr_parser import OcrPage, locate_pages, parse_page
 from wasde_data.registry import Registry
 
